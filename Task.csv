@@ -1,0 +1,28 @@
+taskId,taskLevel,taskWeight,subAreaId,taskManager,completed,createdAt,taskName,order,departmentId,completedAt,startDate,endDate
+cmsn5ufcb0fd2m8mh0vlfoh6l,,,cmsn5qtom0fa5m8mhft2j5pou,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T11:40:55.212,Dismantling work,1,cmnjx2feg00a9keverwcmq217,,2026-08-10T06:30:00,
+cmsn6jsxb0fmkm8mh6cgwpdq9,,0,cmsn6fb1k0fkom8mh17ecgkod,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:00:39.215,Fabric,2,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6livv0fnam8mhzqtdf9c5,,0,cmsn6fb1k0fkom8mh17ecgkod,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:01:59.515,Paint,3,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6mxaj0fnxm8mh3okmi5yz,,0,cmsn6fb1k0fkom8mh17ecgkod,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:03:04.843,PU Polish,4,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6s1ax0fp1m8mhznw5qyvb,,0,cmsn6fb1k0fkom8mh17ecgkod,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:07:03.322,Carpet,7,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6vzvs0fq3m8mhs2k0sgzu,,0,cmsn6vo590fq0m8mhnb39y6f8,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:10:08.105,Tiles,1,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6xuda0fqum8mh9o3k112k,,0,cmsn6vo590fq0m8mhnb39y6f8,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:11:34.27,Hardware,3,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6zlz00frjm8mhn14hf8ft,,0,cmsn6vo590fq0m8mhnb39y6f8,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:12:56.7,Paint,5,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn70fe20frum8mh5oqix533,,0,cmsn6vo590fq0m8mhnb39y6f8,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:13:34.826,Switches,6,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn7jaiu0futm8mht1in3jvi,,,cmsn6y9ji0fr0m8mhy0c429bj,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:28:14.983,Polish,6,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,
+cmsn630qg0fiem8mhtp5bwy7t,,,cmsn620so0fi8m8mhtay2vbta,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T11:47:36.184,Civil Work,1,cmnjx2feg00a9keverwcmq217,,2026-08-10T06:30:00,
+cmsn639fl0fihm8mh78sj9s9k,,,cmsn620so0fi8m8mhtay2vbta,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T11:47:47.457,Interior Work,2,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,
+cmsn6q6c80fofm8mhlnq05trj,,0,cmsn6fb1k0fkom8mh17ecgkod,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:05:36.537,Switches,5,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6r4mh0foqm8mhl6jwat6q,,0,cmsn6fb1k0fkom8mh17ecgkod,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:06:20.969,Light fixtures,6,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6ssrn0fpcm8mhc7snrkd9,,0,cmsn6fb1k0fkom8mh17ecgkod,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:07:38.915,Hardware,8,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6wy250fqjm8mhs3i1pa9q,,0,cmsn6vo590fq0m8mhnb39y6f8,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:10:52.398,Sanitary fittings,2,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6yunk0fr8m8mhww14f37p,,0,cmsn6vo590fq0m8mhnb39y6f8,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:12:21.297,Veener/ Laminate,4,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn7155z0fs8m8mhs2k4zl4m,,0,cmsn6vo590fq0m8mhnb39y6f8,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:14:08.231,Light fixtures,7,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn7ajo20fttm8mhe7m83g47,,,cmsn6y9ji0fr0m8mhy0c429bj,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:21:26.931,HVAC,4,cm2ip46nf004z7hdby1t4e7nr,,2026-08-10T06:30:00,
+cmsn790h00ftgm8mhb3mg7bh2,,,cmsn6y9ji0fr0m8mhy0c429bj,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:20:15.397,Carpet,3,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,
+cmsn73oo00fsym8mhf7sl2ayo,,,cmsn6y9ji0fr0m8mhy0c429bj,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:16:06.816,Wall,2,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,
+cmsn7fewp0fuam8mh50ap6mdz,,,cmsn6y9ji0fr0m8mhy0c429bj,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:25:14.042,EL work,5,cm2ip3q9u004v7hdb2s82onn1,,2026-08-10T06:30:00,
+cmsn73xiw0fs0m8mhyodqktth,,,cmsn6y9ji0fr0m8mhy0c429bj,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:16:18.296,Ceiling,1,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,
+cmsn6fx0a0fkrm8mhzqsjqh9q,,,cmsn6fb1k0fkom8mh17ecgkod,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T11:57:37.883,Veener,1,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,2026-08-10T06:30:00
+cmsn6hdn80fl4m8mhpwxnmpat,,,cmsn62a2f0fibm8mhyl1jijam,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T11:58:46.096,Civil Work,1,cmnjx2feg00a9keverwcmq217,,2026-08-10T06:30:00,
+cmsn6hdnf0fl8m8mhrlmqjugq,,,cmsn62a2f0fibm8mhyl1jijam,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T11:58:46.096,Interior Work,2,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,
+cmsn7nnd30fvhm8mhnostlcgp,,,cmsn6y9ji0fr0m8mhy0c429bj,cmsd322pn03ppm8mhhvalcw5t,false,2026-08-10T12:31:38.247,TV Installation,7,cmn73eknj007pe61ege37e9q5,,2026-08-10T06:30:00,

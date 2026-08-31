@@ -1,0 +1,7 @@
+subAreaId,subAreaName,createdAt,areaId,order,subAreaStatus,isDefault
+cmsn5qtom0fa5m8mhft2j5pou,Civil work,2026-08-10T11:38:07.175,cmsiuic7c08yzm8mhhzlarnv7,1,active,false
+cmsn6vo590fq0m8mhnb39y6f8,Toilet Area,2026-08-10T12:09:52.893,cmsn6db5c0fkdm8mhjf9f16pr,2,active,false
+cmsn620so0fi8m8mhtay2vbta,Male Toilet,2026-08-10T11:46:49.608,cmsiuy4qw093im8mhh4zmcq06,1,active,false
+cmsn62a2f0fibm8mhyl1jijam,Female Toilet,2026-08-10T11:47:01.623,cmsiuy4qw093im8mhh4zmcq06,2,active,false
+cmsn6fb1k0fkom8mh17ecgkod,Conference Hall,2026-08-10T11:57:09.417,cmsn6db5c0fkdm8mhjf9f16pr,1,active,false
+cmsn6y9ji0fr0m8mhy0c429bj,Interior Work,2026-08-10T12:11:53.934,cmsiuic7c08yzm8mhhzlarnv7,2,active,false
