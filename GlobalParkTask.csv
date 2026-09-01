@@ -1,0 +1,798 @@
+taskId,taskName,subAreaId,taskManager,completed,createdAt,completedAt,startDate,endDate
+cmoqvjjxk03ahc8g0en7cptsb,Panel No -7,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T11:55:48.884,2026-05-13T06:30:00,2026-05-15T06:30:00
+cmsem7cmi05qpm8mhh7n3sei0,NTP -2,cmsem7cmi05qnm8mhc10cpopp,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:08:56.475,,,2026-11-15T06:30:00
+cmsem7cmj05rkm8mhxcbqcr3m,NTP -1,cmsem7cmi05qnm8mhc10cpopp,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T12:08:56.475,2026-08-05T10:08:46.129,,2026-03-31T06:30:00
+cmsem7cmj05r6m8mhkagsqhuk,NTP -1A,cmsem7cmi05qnm8mhc10cpopp,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:08:56.475,,,2026-12-07T06:30:00
+cmsem7cmj05rym8mhvqf0xm59,NTP -3,cmsem7cmi05qnm8mhc10cpopp,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:08:56.475,,,2026-11-20T06:30:00
+cmsem7cmj05qwm8mhexmwlbpd,NTP -5,cmsem7cmi05qnm8mhc10cpopp,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:08:56.475,,,2026-12-05T06:30:00
+cmsem7cmj05rdm8mhrv1em0ka,NTP -7,cmsem7cmi05qnm8mhc10cpopp,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:08:56.475,,,2026-12-20T06:30:00
+cmpsazpbm04c52opcwr0wmfad,Panel No -1,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-02-09T06:30:00
+cmsem7cmj05rrm8mhpipfyyg7,NTP -4,cmsem7cmi05qnm8mhc10cpopp,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:08:56.475,,,2026-11-20T06:30:00
+cmsem7cmj05r3m8mhwaz7hrp6,NTP -6,cmsem7cmi05qnm8mhc10cpopp,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:08:56.475,,,2026-12-15T06:30:00
+cmpfg2om6023yry9pbzovjib1,Erection of Truss,cmpf7b0es00chry9p5npoz1ro,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:06:00.218,2026-07-08T12:34:19.219,2026-06-13T06:30:00,2026-06-20T06:30:00
+cmpsb9rvl04hd2opc7g1v1hbj,Panel No -38,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:12:33.238,,,2027-01-04T06:30:00
+cmpsb9rve04h72opc3ng51nnp,L2,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:12:33.238,,,2027-01-08T06:30:00
+cmpf9dyz300hyry9pcpwroi4p,Structure Fabrication & Supply,cmpf7b0es00chry9p5npoz1ro,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T08:58:49.547,2026-06-29T11:52:32.192,2026-05-01T06:30:00,2026-06-25T06:30:00
+cmpf9fre600i8ry9p2wu3soc3,Erection of Structure,cmpf7b0es00chry9p5npoz1ro,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T09:00:13.033,2026-06-29T11:53:49.812,2026-06-01T06:30:00,2026-06-25T06:30:00
+cmpsazpbl04a22opcagpgtzsb,Panel No -7,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-02-03T06:30:00
+cmoqvjjxj0399c8g0thjkrpbh,Panel No -10,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-13T11:15:35.884,2026-04-27T06:30:00,2026-04-28T06:30:00
+cmoqvjjxs03kvc8g0u1mu9e2r,Panel No -11,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-13T11:16:24.289,2026-04-25T06:30:00,2026-04-28T06:30:00
+cmpf9h0rf00iiry9p4xwu1pc5,Casting of Deck Slab,cmpf7b0es00chry9p5npoz1ro,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T09:01:11.825,2026-07-27T11:54:53.546,2026-06-21T06:30:00,2026-06-25T06:30:00
+cmpsazpbl04a72opcthjqa9vz,Panel No -8,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-02-02T06:30:00
+cmpsazpbl04aw2opc1ekuue6g,Panel No -31,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-10T06:30:00
+cmpsazpbm04cp2opcxovc3v66,Panel No -24,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-17T06:30:00
+cmpf9ksw300izry9pvig76kdi,Outer Wall Puff Panel From A3-D3,cmpf7b0es00chry9p5npoz1ro,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T09:04:08.253,2026-08-17T06:54:50.646,2026-08-10T06:30:00,2026-08-12T06:30:00
+cmoqvjjxr03jnc8g0hqef513n,Panel No -30,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:10:36.532,,2026-04-16T06:30:00
+cmoqvjjxo03fzc8g06axhrjak,Panel No -31,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:10:56.896,,2026-04-08T06:30:00
+cmpsazpbm04ck2opcunhgu8s3,Panel No -22,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-19T06:30:00
+cmpsazpbn04dj2opcfregfe4b,Panel No -17,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-24T06:30:00
+cmpmc33eh03ubry9puy9j10z7,B10,cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T07:48:44.135,2026-06-02T05:14:56.947,2026-05-25T06:30:00,2026-05-25T06:30:00
+cmpmc2eh203txry9p5d2pp8ia,D11,cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T07:48:11.837,2026-05-28T10:15:57.596,2026-05-23T06:30:00,2026-05-23T06:30:00
+cmpmc33ec03u8ry9p1ehrgfx2,D10,cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T07:48:44.135,2026-05-28T10:15:51.172,2026-05-22T06:30:00,2026-05-22T06:30:00
+cmpmc2egx03tury9pd8qp6ixk,D12,cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T07:48:11.837,2026-05-28T10:15:54.884,2026-05-24T06:30:00,2026-05-24T06:30:00
+cmpsazpbn04do2opcpcd0o63i,Panel No -18,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-23T06:30:00
+cmpsazpbn04dt2opc0hyaohnm,Panel No -21,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-20T06:30:00
+cmpmccee503v3ry9perwcr47b,A12,cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T07:55:58.297,2026-06-06T05:36:55.073,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmomlwiei00fwc8g0jisd37o4,Raft,cmomhg612001jc8g015w2vodp,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-01T07:43:50.819,2026-05-21T11:01:45.735,2026-05-01T06:30:00,2026-05-05T06:30:00
+cmpsazpbn04e82opc7517qjhg,Panel No -25,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-16T06:30:00
+cmpfcugi400wbry9pz0xg45md,A(1-9),cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T10:35:37.605,2026-05-26T07:42:04.078,2026-04-14T06:30:00,2026-04-20T06:30:00
+cmpsazpbn04f72opca9ws5f8z,Panel No -33,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-08T06:30:00
+cmpsazpbm04c02opci9ew4hyc,Panel No -15,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-26T06:30:00
+cmpfdbivs014jry9pi5jf77is,Raft,cmpfdbivr0144ry9pniuhvt4d,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-21T10:48:53.838,,2026-07-05T06:30:00,2026-11-25T06:30:00
+cmpmc33e203u2ry9pdigd9lnf,B11,cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T07:48:44.135,2026-06-02T05:15:27.697,2026-05-26T06:30:00,2026-05-26T06:30:00
+cmpmc33e703u5ry9pzu3y4lpo,A10,cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T07:48:44.135,2026-06-06T05:36:44.063,2026-05-28T06:30:00,2026-05-28T06:30:00
+cmpmc1zct03tpry9pb5607slo,A11,cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T07:47:52.248,2026-06-06T05:36:47.291,2026-05-29T06:30:00,2026-05-29T06:30:00
+cmpffbji201tlry9pviu1e2o2,D(1-9),cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T11:44:53.877,2026-05-26T07:42:43.247,2026-04-21T06:30:00,2026-04-29T06:30:00
+cmpffbji701tory9pwjvj1l1k,B12,cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T11:44:53.877,2026-06-02T05:15:51.249,2026-05-27T06:30:00,2026-05-27T06:30:00
+cmpff9nqc01tbry9pnhe0o9bv,B(1-9),cmpf7akp200cery9prky42e4c,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T11:43:26.047,2026-05-26T07:42:30.556,2026-04-16T06:30:00,2026-04-23T06:30:00
+cmoqvjjxn03erc8g0pfq43m4f,Panel No -1,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-06-06T04:47:35.336,2026-05-24T06:30:00,2026-05-26T06:30:00
+cmoqvjjxx03qdc8g0z84t60l3,Panel No -4,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T11:54:16.397,2026-05-07T06:30:00,2026-05-09T06:30:00
+cmoqvjjxz03stc8g0k66zxebx,Panel No -5,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T11:56:15.657,2026-05-19T06:30:00,2026-05-21T06:30:00
+cmoqvjjxw03p5c8g0f05ii7mo,Panel No -6,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T11:55:29.631,2026-05-28T06:30:00,2026-05-30T06:30:00
+cmoqvjjxp03glc8g02m8s84az,Panel No -8,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-13T11:14:44.887,2026-05-02T06:30:00,2026-05-04T06:30:00
+cmoqvjjxy03rlc8g06gilr12v,Panel No -9,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:05:01.95,2026-04-30T06:30:00,2026-05-02T06:30:00
+cmoqvjjy003u1c8g0985bfciq,Panel No -12,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-13T11:17:06.561,2026-04-27T06:30:00,2026-04-30T06:30:00
+cmoqvjjxk03b3c8g0x79w7dni,Panel No -14,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T11:58:37.599,2026-05-22T06:30:00,2026-05-24T06:30:00
+cmoqvjjxl03cbc8g0mv4bv4dm,Panel No -15,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T12:00:09.346,2026-04-09T06:30:00,2026-04-11T06:30:00
+cmoqvjjxm03cxc8g0cxxh2275,Panel No -13,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-06-13T05:55:23.174,2026-04-25T06:30:00,2026-04-27T06:30:00
+cmoqvjjxy03s7c8g0f818zgc9,Panel No -2,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-06-06T04:47:25.612,2026-05-21T06:30:00,2026-05-24T06:30:00
+cmoqvjjxw03prc8g0l046ztik,Panel No -3,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T04:56:03.405,2026-05-17T06:30:00,2026-05-20T06:30:00
+cmoqvjjxq03htc8g0d3ako6ra,Panel No -16,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T11:59:46.389,,2026-05-06T06:30:00
+cmoqvjjxs03k9c8g090u23uiv,Panel No -17,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T12:00:35.187,,2026-04-10T06:30:00
+cmoqvjjy103v9c8g0do4d47lh,Panel No -18,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T12:01:02.899,,2026-04-26T06:30:00
+cmoqvjjxl03bpc8g0gc8aefvm,Panel No -19,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T12:01:29.819,,2026-05-02T06:30:00
+cmoqvjjxq03ifc8g0dy3p2euu,Panel No -20,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T12:01:58.122,,2026-05-02T06:30:00
+cmoqvjjxu03nbc8g0rs72n8mh,Panel No -21,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T12:03:07.028,,2026-04-10T06:30:00
+cmoqvjjxt03lhc8g0jkqacz08,Panel No -22,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-21T12:03:40.96,,2026-04-15T06:30:00
+cmoqvjjxt03m3c8g02k59qf4r,Panel No -23,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:08:39.358,,2026-04-16T06:30:00
+cmqahcdtc1d742opc2xgseuci,Panel No -44,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-12T05:22:23.811,,,
+cmoqvjjxj039vc8g0wibzd68x,Panel No -26,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:09:00.787,,2026-05-08T06:30:00
+cmoqvjjxp03h7c8g00jopt8ol,Panel No -27,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:10:39.63,,2026-05-01T06:30:00
+cmoqvjjxn03e5c8g081sxu37q,Panel No -28,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:09:51.945,,2026-04-29T06:30:00
+cmoqvjjy003unc8g0x5itzi51,Panel No -29,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:10:17.993,,2026-05-11T06:30:00
+cmoqvjjxf034zc8g0slj6sigh,Panel No -32,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:11:27.06,,2026-04-29T06:30:00
+cmoqvjjxi0381c8g00f43mt1e,Panel No -33,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:11:51.01,,2026-04-10T06:30:00
+cmoqvjjxo03fdc8g01ownopmz,Panel No -34,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:12:18.691,,2026-04-19T06:30:00
+cmoqvjjxi037fc8g0h2qpbhzv,Panel No -35,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:12:41.175,,2026-05-01T06:30:00
+cmoqvjjxm03djc8g028vqqsee,Panel No -36,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:13:04.25,,2026-04-14T06:30:00
+cmoqvjjxi038nc8g0cmh8rqwa,Panel No -37,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:13:21.613,,2026-04-11T06:30:00
+cmoqvjjxg035lc8g0msqot4s8,Panel No -38,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:13:42.845,,2026-04-07T06:30:00
+cmoqvjjxh036tc8g0mjocqey5,Panel No -39,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:14:04.722,,2026-03-31T06:30:00
+cmqahdxwf1d7m2opctc0ex2ic,Panel No -40,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-12T05:22:23.811,,,
+cmqahdxw71d7g2opc299y04cj,Panel No -41,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-12T05:22:23.811,,,
+cmqahcdtk1d7a2opcqmt85er0,Panel No -43,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-12T05:22:23.811,,,
+cmqahcdsr1d6y2opc1hsq8crd,Panel No -42,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-12T05:22:23.811,,,
+cmoqvjjxu03nxc8g0b4rosbjs,Panel No -24,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:08:16.178,,2026-04-08T06:30:00
+cmoqvjjxu03mpc8g065fwsrw7,Panel No -25,cmoqvjjx9034xc8g0c6bkg2mo,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-04T07:24:47.084,2026-05-22T05:08:37.716,,2026-04-15T06:30:00
+cmpsazpbm04cu2opc8i861kqv,Panel No -23,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-18T06:30:00
+cmsioodgb08f4m8mhws6pyg5v,Raft,cmsioodgb08f2m8mh97qldb7v,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:29:14.635,,,2026-09-09T06:30:00
+cmsiphoty08kwm8mhu9ao007j,Column & Shear Wall at B2  ,cmsiphotx08kum8mhnjpdz73v,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:02.38,,,2026-09-11T06:30:00
+cmsiphotz08lym8mhuxvsai6a,Column & Shear Wall at B2  ,cmsiphoty08lwm8mh8bj0e8oe,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:02.38,,,2026-08-25T06:30:00
+cmsiphou008o2m8mhs0waocs7,Column & Shear Wall at B2  ,cmsiphou008o0m8mhkfb6eog1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:02.38,,,2026-10-21T06:30:00
+cmsiphou008nom8mh14pbprxt,Column & Shear Wall at B2  ,cmsiphotz08mym8mh0r6d245v,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-07T08:52:02.38,2026-08-18T10:49:30.22,,2026-07-28T06:30:00
+cmsiphotw08jgm8mhit2xxhq5,Column & Shear Wall at B2  ,cmsiphotv08iqm8mh4kl6dmdv,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:02.38,,,2026-12-12T06:30:00
+cmsiphotx08jum8mhcgdlv0kv,Column & Shear Wall at B2  ,cmsiphotw08jsm8mhxehfivpe,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:02.38,,,2026-11-27T06:30:00
+cmsiphyam08qam8mhebmpbp84,Column & Shear Wall at GF ,cmsiphyam08q8m8mhdzg982s7,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:14.654,,,2026-10-02T06:30:00
+cmsiphyal08p8m8mh1gl0jcs8,Column & Shear Wall at GF ,cmsiphyak08p6m8mhuwwh15pk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:14.654,,,2026-09-12T06:30:00
+cmsiphyan08s0m8mhs0j1xtei,Column & Shear Wall at GF ,cmsiphyan08ram8mhze6cg6n8,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:14.654,,,2026-09-13T06:30:00
+cmsiphyao08sem8mhbhh6zgsn,Column & Shear Wall at GF ,cmsiphyao08scm8mhwjomtarb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:14.654,,,2026-11-21T06:30:00
+cmsiphotv08i2m8mhpok725e7,Column & Shear Wall at B2  ,cmsiphotv08i0m8mhzwm92913,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-07T08:52:02.38,2026-08-18T10:50:23.156,,2026-07-28T06:30:00
+cmpsazpbl04bg2opc9900bffd,Panel No -2,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-02-08T06:30:00
+cmpsazpbl04ah2opcrzudv9zk,Panel No -3,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-02-07T06:30:00
+cmpsazpbm04ca2opc1wpylgqy,Panel No -4,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-02-06T06:30:00
+cmpsazpbl04ac2opcrm2qq62s,Panel No -5,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-02-05T06:30:00
+cmpsazpbm04cf2opcg9o8g6w5,Panel No -6,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-02-04T06:30:00
+cmpsazpbl04bb2opcnog0son2,Panel No -9,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-02-01T06:30:00
+cmpsazpbl04am2opc4x8d3fn9,Panel No -10,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-31T06:30:00
+cmpsazpbl04ar2opcor2ao318,Panel No -11,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-30T06:30:00
+cmpsazpbm04bq2opc7bvfhwbh,Panel No -12,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-29T06:30:00
+cmpsazpbm04bv2opc69gdu6dg,Panel No -13,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-28T06:30:00
+cmpsazpbm04bl2opc34x5w61u,Panel No -14,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-27T06:30:00
+cmpsazpbo04g12opcuc7vm1fg,Panel No -16,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-25T06:30:00
+cmpsazpbn04dy2opcsvaaebt6,Panel No -19,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-22T06:30:00
+cmpsazpbn04e32opcopui8b15,Panel No -20,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-21T06:30:00
+cmpsazpbn04ei2opczalfk7dw,Panel No -26,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-15T06:30:00
+cmpsazpbn04ex2opcmfse2mbg,Panel No -27,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-14T06:30:00
+cmpsazpbn04ed2opcy0yjk2df,Panel No -28,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-13T06:30:00
+cmpsazpbn04en2opcm0ohfz1h,Panel No -29,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-12T06:30:00
+cmpsazpbl04b12opcbfjtum83,Panel No -30,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-11T06:30:00
+cmpsazpbn04es2opcrdqg0v7s,Panel No -32,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-09T06:30:00
+cmpsazpbn04f22opc6duu2v56,Panel No -34,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-07T06:30:00
+cmpsazpbo04fm2opcudlindee,Panel No -35,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-06T06:30:00
+cmpsazpbo04fh2opcm8zj7ip6,Panel No -36,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-05T06:30:00
+cmpsazpbo04fc2opc3gbmwrch,Panel No -37,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-03T06:30:00
+cmpsazpbo04fw2opcwc38c6hr,Panel No -39,cmpsazpbk04a12opchh2k2ffz,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-30T12:04:43.355,,,2027-01-02T06:30:00
+cmsel98gx05fhm8mhnqcz2bka,NTP -3,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:42:24.793,,2026-08-04T06:30:00,2026-08-08T06:30:00
+cmsekx49z05ekm8mhsrcnmgdr,RW 14,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:32:59.495,,2026-08-04T06:30:00,2027-03-31T06:30:00
+cmseleyg605gzm8mh2ypy0ayl,TP -1,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T11:46:51.739,2026-08-05T09:05:54.712,2026-08-04T06:30:00,2026-08-04T06:30:00
+cmseleyg105gwm8mhe4ui1et8,NTP -4,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:46:51.739,,2026-08-04T06:30:00,2026-09-10T06:30:00
+cmsekscgf05dfm8mhjc0b6nie,RW 1,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:29:16.815,,2026-08-04T06:30:00,2026-10-15T06:30:00
+cmsekwnrr05dtm8mhdmcis7z5,RW 2,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:32:38.104,,2026-08-04T06:30:00,2026-10-30T06:30:00
+cmsektnuu05dwm8mh0f8bjba9,RW 3,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:30:18.246,,2026-08-04T06:30:00,2026-11-10T06:30:00
+cmsekturi05dzm8mhulj9worj,RW 4,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:30:27.198,,2026-08-04T06:30:00,2026-11-20T06:30:00
+cmseku20905e2m8mhdwktju87,RW 5,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:30:36.585,,2026-08-04T06:30:00,2026-11-30T06:30:00
+cmseku7cb05e5m8mhxo2ykid9,RW 6,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:30:43.5,,2026-08-04T06:30:00,2026-12-15T06:30:00
+cmsekudch05e8m8mhwl5vymu4,RW 7,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:30:51.281,,2026-08-04T06:30:00,2026-12-20T06:30:00
+cmsel98h205fkm8mhj3qyzxwy,TP -2,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T11:42:24.793,2026-08-05T09:08:29.026,2026-07-05T06:30:00,2026-07-29T06:30:00
+cmsel3s4o05f1m8mhby09rc6j,TP -3,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T11:38:10.345,2026-08-05T09:08:37.886,2026-07-05T06:30:00,2026-07-07T06:30:00
+cmseleygg05h5m8mhta85p1v7,NTP -1,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T11:46:51.739,2026-08-05T09:54:41.905,2026-08-04T06:30:00,2026-08-05T06:30:00
+cmsekwmap05ebm8mh0xlxyd6x,RW 11,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:32:36.193,,2026-08-04T06:30:00,2027-03-02T06:30:00
+cmsekwu4s05eem8mhm03rt2kj,RW 12,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:32:46.349,,2026-08-04T06:30:00,2027-03-12T06:30:00
+cmseleygb05h2m8mhpviixejg,NTP -1A,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:46:51.739,,2026-08-04T06:30:00,2026-08-08T06:30:00
+cmsekwzah05ehm8mhaou9fl1a,RW 13,cmsek8igk05b9m8mhefwghyqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:32:53.033,,2026-08-04T06:30:00,2027-03-22T06:30:00
+cmsel8os505fbm8mh6x1htms3,NTP -2,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T11:41:59.279,2026-08-05T09:55:27.552,2026-08-04T06:30:00,2026-08-04T06:30:00
+cmselmt6005j2m8mhv6nxs218,NTP -5,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:52:58.136,,2026-08-04T06:30:00,2026-09-25T06:30:00
+cmselmt5p05iwm8mhm859uvqm,NTP -6,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:52:58.136,,2026-08-04T06:30:00,2026-10-05T06:30:00
+cmselmt6605j5m8mh1mf12bkp,NTP -7,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:52:58.136,,2026-08-04T06:30:00,2026-10-15T06:30:00
+cmselja0f05icm8mh0po7f1g1,RW 8,cmseliawj05i7m8mh0kkwzx0u,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:50:13.359,,2026-08-04T06:30:00,2027-01-20T06:30:00
+cmselksgw05ijm8mhituwqi91,RW 9,cmseliawj05i7m8mh0kkwzx0u,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:51:23.936,,2026-08-04T06:30:00,2027-02-10T06:30:00
+cmsellxlk05irm8mhdxceh1s1,RW 15,cmseliawj05i7m8mh0kkwzx0u,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:52:17.241,,2026-08-04T06:30:00,2027-04-10T06:30:00
+cmselmylz05j9m8mhcle3zowb,RW 16,cmseliawj05i7m8mh0kkwzx0u,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:53:05.208,,2026-08-04T06:30:00,2027-04-20T06:30:00
+cmselnrva05jdm8mhlucjdg7f,RW 17,cmseliawj05i7m8mh0kkwzx0u,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:53:43.126,,2026-08-04T06:30:00,2027-04-30T06:30:00
+cmselmt5v05izm8mhjj2otj9u,NTP -8,cmsekm6nz05bcm8mhazoanfgu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:52:58.136,,2026-08-04T06:30:00,2026-10-30T06:30:00
+cmseltyvy05jym8mh0e70ab34,RW 10,cmselq37f05jom8mh7xwaprqg,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T11:58:32.159,,2026-08-04T06:30:00,2027-02-20T06:30:00
+cmsmsuy7e0a8qm8mhmmmug6y9,Structure Erection of New Grid,cmpf7b0es00chry9p5npoz1ro,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T05:37:24.65,,2026-08-16T06:30:00,2026-08-18T06:30:00
+cmsmt1ol60a9km8mhew6klo4b,Outer wall Puff Paneling of New Grid,cmpf7b0es00chry9p5npoz1ro,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T05:42:38.778,,2026-08-25T06:30:00,2026-08-27T06:30:00
+cmsmsvs0n0a8um8mhw8bu9odv,Roof Sheeting,cmpf7b0es00chry9p5npoz1ro,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T05:38:03.287,2026-08-24T10:32:23.072,2026-08-20T06:30:00,2026-08-22T06:30:00
+cmselzqz505k8m8mh3219w8a1,NTP -10,cmselzqz505k6m8mh97dkqv9r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:03:01.826,,,2027-02-02T06:30:00
+cmsmsxrk10a9em8mh5nis8lvu,Casting of New Grid,cmpf7b0es00chry9p5npoz1ro,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T05:39:36.002,2026-08-24T10:32:26.282,2026-08-20T06:30:00,2026-08-22T06:30:00
+cmselzqz605l3m8mh9ee1s8yr,TP -4,cmselzqz505k6m8mh97dkqv9r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:03:01.826,,,2027-02-10T06:30:00
+cmselzqz605kpm8mh9lvzv9hy,NTP -9,cmselzqz505k6m8mh97dkqv9r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T12:03:01.826,,,2027-01-25T06:30:00
+cmsmue34l0ak2m8mh79xi85vp,Area - 884 SQM,cmsmue34l0ak0m8mhe88p1zkj,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:20:17.096,,,
+cmsmufdi40akgm8mh4sfqeo36,Area - 210 SQM,cmsmufdi40akem8mh2tx5s0k6,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:21:17.204,,,2026-09-06T06:30:00
+cmsmutmat0aqpm8mhcg3trozb,Slab  at B2,cmsmutmat0aqbm8mhbkc1kms3,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:32:21.759,2026-08-18T10:55:49.504,,2026-07-27T06:30:00
+cmsmutmau0arfm8mhu3fvxzxj,Slab  at B2,cmsmutmau0ardm8mhxtj1jsom,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:32:21.759,2026-08-18T10:58:42.143,,2026-08-07T06:30:00
+cmsmutmas0aoxm8mhjvpxuiq6,Slab  at B2,cmsmutmar0ao7m8mh9kqmw1cj,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:32:21.759,2026-08-18T10:59:25.049,,2026-08-14T06:30:00
+cmsmutmav0astm8mhvveyia3m,Slab  at B2,cmsmutmav0as3m8mhkwhgjprm,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:32:21.759,,,2026-12-17T06:30:00
+cmsmutmaw0atvm8mhvn9bzabt,Slab  at B2,cmsmutmaw0at5m8mhj3l0t1sj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:32:21.759,,,2026-12-02T06:30:00
+cmsmutmap0amtm8mhqx7fp9mx,Slab  at B2,cmsmutmap0am3m8mhw0sqfxpv,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:32:21.759,,,2026-09-16T06:30:00
+cmsmutmaq0anvm8mh81ulzi4z,Slab  at B2,cmsmutmaq0an5m8mhee8uuuhn,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:32:21.759,,,2026-08-30T06:30:00
+cmsmutmat0apzm8mhdhwrtf21,Slab  at B2,cmsmutmas0ap9m8mhnkswxwe7,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:32:21.759,,,2026-10-26T06:30:00
+cmsmunjqi0albm8mhpivww1gy,Area - 412 SQM,cmsmunjqi0al9m8mh6323knti,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:27:38.529,2026-08-10T08:28:41.831,,2026-08-03T06:30:00
+cmpfgkxq7026ory9pd5z6mp93,(A-B/1-3),cmpfgcc8j025cry9pfulhhk0l,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:20:11.821,2026-05-26T07:57:51.804,2026-05-10T06:30:00,2026-05-15T06:30:00
+cmpfgln6a026zry9pczadjfa9,(A-B/3-6),cmpfgcc8j025cry9pfulhhk0l,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:20:44.812,2026-05-26T07:58:01.276,2026-05-11T06:30:00,2026-05-17T06:30:00
+cmpfgm84b027ary9psru2fdqh,(A-B/6-9),cmpfgcc8j025cry9pfulhhk0l,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:21:11.952,2026-05-26T07:58:12.271,2026-05-13T06:30:00,2026-05-19T06:30:00
+cmsfsvh9o063fm8mherw866sy,NTP -8,cmsfsvh9n062zm8mhzwzgw6b8,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:03:26.11,,,2027-03-30T06:30:00
+cmsfsvh9o0638m8mhww7dct1y,TP -2,cmsfsvh9n062zm8mhzwzgw6b8,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:03:26.11,,,2027-04-15T06:30:00
+cmpmcpmp303xlry9p14l8fzx6,A-11,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:06:15.576,2026-06-09T05:13:13.494,2026-05-29T06:30:00,2026-05-29T06:30:00
+cmsfteb7w067fm8mhdmmujlbi,TP -1,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:18:04.732,2026-08-05T10:20:03.374,,2026-07-15T06:30:00
+cmsfsvh9o063mm8mhmauqbw16,NTP -9,cmsfsvh9n062zm8mhzwzgw6b8,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:03:26.11,,,2027-04-30T06:30:00
+cmsfteb7v066dm8mheowsds8l,NTP -1A,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-08-10T06:30:00
+cmsfteb7v0678m8mhi87yjzeu,TP -2,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:18:04.732,2026-08-05T10:20:29.331,,2026-06-09T06:30:00
+cmsfteb7v0671m8mhu4l3e4y3,TP -3,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-08-15T06:30:00
+cmsfteb7v066km8mhc6l7jifj,NTP -2,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:18:04.732,2026-08-05T10:23:30.33,,2026-07-08T06:30:00
+cmsfteb7v066rm8mhh7tjj5ya,NTP -3,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-08-11T06:30:00
+cmsfteb7w0680m8mh79p28636,NTP -6,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-10-10T06:30:00
+cmsfteb7v066um8mh5p53kl4z,NTP -4,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-09-14T06:30:00
+cmsfteb7w067tm8mhevhtqre0,NTP -5,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-09-29T06:30:00
+cmsfteb7w0683m8mhb3pp4l26,NTP -7,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-10-18T06:30:00
+cmsfteb7w068am8mhkf5d288f,NTP -8,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-11-05T06:30:00
+cmsfteb8p068nm8mhsx4b6aef,TP -4,cmsfteb8p068em8mh364ymm1e,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2027-02-14T06:30:00
+cmsfteb9b069bm8mhu0qncnpi,NTP -1A,cmsfteb990692m8mhoc41qy7q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-12-10T06:30:00
+cmsfteb8q068um8mhvzcdz7cr,NTP -9,cmsfteb8p068em8mh364ymm1e,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2027-01-29T06:30:00
+cmsfteb8p068gm8mh7opxi6jf,NTP -10,cmsfteb8p068em8mh364ymm1e,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2027-03-01T06:30:00
+cmsfteb9a0694m8mhfu12sft9,NTP -1,cmsfteb990692m8mhoc41qy7q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-11-20T06:30:00
+cmsfteb9b069wm8mhiqpt3irz,NTP -4,cmsfteb990692m8mhoc41qy7q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-10-03T06:30:00
+cmsfteb9b069im8mh4ddgaa8w,NTP -2,cmsfteb990692m8mhoc41qy7q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-11-18T06:30:00
+cmsfteb9b069pm8mhn01tbjr0,NTP -3,cmsfteb990692m8mhoc41qy7q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-11-26T06:30:00
+cmsfteb9b06a3m8mh4vrmoies,NTP -5,cmsfteb990692m8mhoc41qy7q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-12-10T06:30:00
+cmsfteb9b06aam8mhubzgc9v3,NTP -6,cmsfteb990692m8mhoc41qy7q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-12-19T06:30:00
+cmpfgsuu4028zry9poaajh4b0,(A-B/1-5),cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:26:21.328,2026-05-26T07:25:00.588,2026-05-18T06:30:00,2026-05-20T06:30:00
+cmpfgnp1l027yry9pyydr8fsn,(B-D/2-8),cmpfgcc8j025cry9pfulhhk0l,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:22:20.548,2026-06-02T05:17:29.397,2026-05-20T06:30:00,2026-05-26T06:30:00
+cmpfgsuu4029dry9pqlaxgwgo,(B-D/1-2),cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:26:21.328,2026-05-26T08:00:11.612,2026-05-23T06:30:00,2026-05-26T06:30:00
+cmsfteb9z06anm8mht8tlts3f,TP -2,cmsfteb9y06alm8mhu43eoxzh,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2027-04-20T06:30:00
+cmomrrjez01fjc8g0rnqqgl98,Raft,cmomrrjez01fhc8g0dnr05icv,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-01T10:27:56.543,2026-06-17T05:30:32.021,2026-06-03T06:30:00,2026-06-11T06:30:00
+cmpfgomic028iry9pwe1wvig4,(A-D/8-12),cmpfgcc8j025cry9pfulhhk0l,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:23:03.919,2026-06-09T05:13:10.104,2026-05-26T06:30:00,2026-05-28T06:30:00
+cmpfgsuu40296ry9pca3ud3zu,A-6,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:26:21.328,2026-05-27T16:06:38.45,2026-05-25T06:30:00,2026-05-25T06:30:00
+cmpfgsuu5029rry9pn20tjzpv,A-7,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:26:21.328,2026-05-27T16:06:41.867,2026-05-25T06:30:00,2026-06-25T06:30:00
+cmpfgsuu5029yry9pfn8lyuvn,A-8,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:26:21.328,2026-05-27T16:06:44.703,2026-06-25T06:30:00,2026-06-25T06:30:00
+cmpfgy1io02ajry9p905dc0l1,B-6,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:30:23.276,2026-05-27T16:06:47.307,2026-05-26T06:30:00,2026-05-26T06:30:00
+cmpmcqtxn03y5ry9pnzp1ldow,D-9,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmpmdipkb0405ry9pquujggaq,D-10,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:28:52.327,,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmpmcpmpo03xxry9p9vwjnnel,C-11,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:06:15.576,2026-06-09T05:39:49.165,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmsfteb9z06aum8mhdm6rc5m2,NTP -8,cmsfteb9y06alm8mhu43eoxzh,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2027-04-03T06:30:00
+cmomrrdu501gxc8g0m88eyijm,Raft,cmomrrdu501gvc8g083whxubv,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-01T10:27:49.312,2026-05-15T06:13:37.3,2026-05-01T06:30:00,2026-05-05T06:30:00
+cmpmcqty903yery9pjrvvoyqf,C3,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-05-29T08:47:49.423,2026-05-27T06:30:00,2026-05-27T06:30:00
+cmpmcqtyd03yhry9phc3sh0f8,C4,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-05-29T08:49:26.439,2026-05-27T06:30:00,2026-05-27T06:30:00
+cmpmcqtyi03ykry9p0z6aqtte,C5,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-05-29T08:49:28.87,2026-05-27T06:30:00,2026-05-27T06:30:00
+cmpmcqtyn03ynry9p5j49j7fc,C6,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-05-29T08:51:15.426,2026-05-27T06:30:00,2026-05-27T06:30:00
+cmpmcqtyx03ytry9pmywn45dq,D4,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-05-29T08:52:15.591,2026-05-27T06:30:00,2026-05-27T06:30:00
+cmpmcqtys03yqry9p3zwfd4f0,D3,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-05-29T08:53:00.169,2026-05-27T06:30:00,2026-05-27T06:30:00
+cmpfcsc5200uiry9pz8gvagnr,Raft,cmpfcsc5100ugry9px7b2i5gr,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T10:33:58.633,,,2026-05-13T06:30:00
+cmpfgn56w027mry9p61rhvfrg,(B-D/1-2),cmpfgcc8j025cry9pfulhhk0l,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T12:21:54.817,2026-05-26T07:58:20.686,2026-05-19T06:30:00,2026-05-24T06:30:00
+cmpmcnrly03wory9pxlu2lph8,D5,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:04:48.642,2026-05-31T04:08:36.833,2026-05-27T06:30:00,2026-05-27T06:30:00
+cmpmcqtxx03y8ry9p2j983gmv,B-7,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-05-28T09:48:55.1,2026-05-26T06:30:00,2026-05-26T06:30:00
+cmpmcqty303ybry9piuu0gag2,B-8,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-05-28T10:16:00.858,2026-05-26T06:30:00,2026-05-26T06:30:00
+cmpmcoi2b03wtry9pcpn0ck09,D6,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:05:22.927,2026-05-29T08:51:22.623,2026-05-27T06:30:00,2026-05-27T06:30:00
+cmpmcoy0t03x7ry9pmlaosv1y,D8,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:05:43.599,2026-06-05T10:26:09.7,2026-05-28T06:30:00,2026-05-28T06:30:00
+cmpmcoi2g03wwry9pbhq4jekx,C7,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:05:22.927,2026-06-06T05:36:50.32,2026-05-28T06:30:00,2026-05-28T06:30:00
+cmpfdevii016sry9panbsijg2,Raft,cmpfdevii016qry9pxfzlo88u,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-21T10:51:30.175,,2026-07-09T06:30:00,2026-08-12T06:30:00
+cmpfd0fbl00xfry9p6m7re5j8,Raft,cmpfd0fbk00x0ry9pcvz7j9o0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T10:40:16.004,2026-07-21T06:19:00.867,2026-07-05T06:30:00,2026-07-07T06:30:00
+cmpfdgcog018dry9py49onxo2,Raft,cmpfdgcof018bry9pvbmqopgi,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T10:52:39.075,2026-07-06T05:11:54.096,2026-07-07T06:30:00,2026-07-10T06:30:00
+cmpmcoy0j03x1ry9p639numfm,C8,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:05:43.599,2026-06-05T10:26:03.973,2026-05-28T06:30:00,2026-05-28T06:30:00
+cmpmcoy0o03x4ry9p6i33c42c,D7,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:05:43.599,2026-06-05T10:27:18.877,2026-05-28T06:30:00,2026-05-28T06:30:00
+cmpmcoy0y03xary9pn8n4nvcf,A-9,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:05:43.599,2026-06-05T10:26:14.673,2026-05-29T06:30:00,2026-05-29T06:30:00
+cmpfd2olt00zhry9p34sop3wd,Raft,cmpfd2ols00ypry9pluj5y7ad,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-21T10:42:01.346,2026-05-21T11:32:42.589,,2026-05-21T06:30:00
+cmpmcpmpe03xrry9p0ull0uaj,B-9,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:06:15.576,2026-06-05T10:26:17.126,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmpmcpmpi03xury9p8mzsmxlo,B-10,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:06:15.576,2026-06-09T05:13:18.655,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmpmcpmox03xiry9pb2f5xmct,A-10,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:06:15.576,2026-06-09T05:13:16.245,2026-05-29T06:30:00,2026-05-29T06:30:00
+cmpmcqtzg03z5ry9pltobquwu,C-10,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-06-09T05:13:22.394,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmpmcqtz203ywry9p6enb7wxi,B-11,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-06-09T05:13:25.379,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmpmcpmor03xfry9pm6x7o6x6,D-11,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:06:15.576,,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmpmcqtzb03z2ry9plhcazk6u,C-9,cmpfgsuu4028xry9psch6cugd,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-26T08:07:11.623,2026-06-05T10:26:12.352,2026-05-30T06:30:00,2026-05-30T06:30:00
+cmomrsm6j01ibc8g0n6dz5j1r,Raft,cmomrsm6j01i9c8g0bn85dwni,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-01T10:28:46.784,2026-05-15T06:13:55.596,2026-05-01T06:30:00,2026-05-05T06:30:00
+cmsfsvh9o0631m8mhjgxgkzjb,TP -1,cmsfsvh9n062zm8mhzwzgw6b8,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:03:26.11,,,2027-03-10T06:30:00
+cmqhz7nal00q7141wvh04u6ze,Panel no. B11,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:16:59.175,2026-08-09T06:02:34.044,2026-07-15T06:30:00,2026-07-24T06:30:00
+cmqhzcpkd00tl141w3j8s1bu0,Panel no. B13,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:55.342,2026-08-12T03:50:47.046,2026-07-16T06:30:00,2026-07-25T06:30:00
+cmqhzcbro00s3141wx62bdk53,Panel no. B12,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:37.511,2026-08-12T03:50:55.396,2026-07-15T06:30:00,2026-07-24T06:30:00
+cmsfteb7w067mm8mhtwnv4n48,NTP -1,cmsfteb7u066bm8mh7izkvu6q,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:18:04.732,2026-08-05T10:22:40.984,,2026-07-15T06:30:00
+cmqhzcbtd00sn141wt5jpjym0,Panel no. B24,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:20:37.511,,2026-07-21T06:30:00,2026-07-30T06:30:00
+cmqhz7to500ql141wck7qax2f,Panel no. B14,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:17:07.44,,2026-07-16T06:30:00,2026-07-25T06:30:00
+cmqhzcpkm00tp141wte09a7qz,Panel no. B17,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:20:55.342,,2026-07-18T06:30:00,2026-07-27T06:30:00
+cmsfy04u707jkm8mhol6dra0z,NTP -1B,cmsfteb990692m8mhoc41qy7q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T10:27:01.37,,,2026-09-15T06:30:00
+cmqhz9yqh00rb141w5t0kvwzf,Panel no. B18,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:18:47.313,,2026-07-18T06:30:00,2026-07-27T06:30:00
+cmqhzcpkt00tt141wtgh2gb0g,Panel no. B20,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:20:55.342,,2026-07-19T06:30:00,2026-07-28T06:30:00
+cmqhz5c8100pu141wfsz9sq27,Panel no. B1,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:15:11.512,2026-08-09T05:59:25.274,2026-07-10T06:30:00,2026-07-19T06:30:00
+cmqhzcpis00st141wo5f3okbn,Panel no. B3,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:55.342,2026-08-09T06:00:37.958,2026-07-11T06:30:00,2026-07-20T06:30:00
+cmqhzcpj000sx141wdvahokaq,Panel no. B4,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:55.342,2026-08-09T06:00:46.987,2026-07-11T06:30:00,2026-07-20T06:30:00
+cmqhzcpj700t1141wuf3so862,Panel no. B5,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:55.342,2026-08-09T06:00:49.594,2026-07-12T06:30:00,2026-07-21T06:30:00
+cmqhza4hp00rp141wjuz9pb01,Panel no. B21,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:18:54.776,,2026-07-20T06:30:00,2026-07-29T06:30:00
+cmqhzcbt500sj141wxklacsqz,Panel no. B19,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:20:37.511,,2026-07-19T06:30:00,2026-07-28T06:30:00
+cmqhzcbsi00s7141wvmkgvauc,Panel no. B2,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:37.511,2026-08-09T06:00:53.906,2026-07-10T06:30:00,2026-07-19T06:30:00
+cmqhzcbsr00sb141wfipob9ac,Panel no. B8,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:37.511,2026-08-09T06:02:37.632,2026-07-13T06:30:00,2026-07-22T06:30:00
+cmqhzcbsy00sf141wy0tliwx8,Panel no. B15,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:20:37.511,,2026-07-17T06:30:00,2026-07-26T06:30:00
+cmqhzcpjp00t9141w39ad73j5,Panel no. B9,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:55.342,2026-08-09T06:02:40.05,2026-07-14T06:30:00,2026-07-23T06:30:00
+cmqhzcpjw00td141w43ftdiaa,Panel no. B10,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:55.342,2026-08-09T06:02:42.997,2026-07-14T06:30:00,2026-07-23T06:30:00
+cmqhzcpk400th141wsp00oxvu,Panel no. B16,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:20:55.342,,2026-07-17T06:30:00,2026-07-26T06:30:00
+cmqhzcpl900u1141wfha27gtk,Panel no. B22,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:20:55.342,,2026-07-20T06:30:00,2026-07-29T06:30:00
+cmqhzcpjh00t5141wua2zfuzo,Panel no. B6,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:20:55.342,2026-08-09T06:02:46.011,2026-07-12T06:30:00,2026-07-21T06:30:00
+cmqhz2c2i00pf141wutdjs0pj,Panel no. B7,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-17T11:12:51.334,2026-08-09T06:02:58.426,2026-07-13T06:30:00,2026-07-22T06:30:00
+cmqhzcpl100tx141wiqadxj7e,Panel no. B23,cmqhyxa9000p4141wypx9zhck,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:20:55.342,,2026-07-21T06:30:00,2026-07-30T06:30:00
+cmsfteb9z06b8m8mhxtm2h5gt,NTP -9,cmsfteb9y06alm8mhu43eoxzh,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2027-05-03T06:30:00
+cmsfteb9z06b1m8mhgv886kmc,TP -1,cmsfteb9y06alm8mhu43eoxzh,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2027-03-16T06:30:00
+cmsfteb9b06adm8mh3cvpw2od,NTP -7,cmsfteb990692m8mhoc41qy7q,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2026-12-25T06:30:00
+cmsiphyap08tgm8mhimgsvq1w,Column & Shear Wall at GF ,cmsiphyap08tem8mhjlvsiorn,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:14.654,,,2026-08-29T06:30:00
+cmsiphyaq08uim8mhqggnj1i4,Column & Shear Wall at GF ,cmsiphyaq08ugm8mh95yke6my,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:14.654,,,2026-08-22T06:30:00
+cmsiphyar08vwm8mh45tbourw,Column & Shear Wall at GF ,cmsiphyaq08v6m8mhyg4uoveu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:14.654,,,2027-01-18T06:30:00
+cmsiphyas08wam8mh8pdqgy87,Column & Shear Wall at GF ,cmsiphyar08w8m8mhzzqb86ez,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T08:52:14.654,,,2027-01-09T06:30:00
+cmsmv1bc30b4fm8mhm9i25o9o, Slab at B1,cmsmv1bc20b3pm8mhr3h5lgip,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:20.803,,,2026-09-20T06:30:00
+cmsmv1bc50b6jm8mhw07px8et, Slab at B1,cmsmv1bc40b5tm8mhb3xe8tai,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:20.803,,,2026-11-26T06:30:00
+cmsmv0ex20awxm8mhmux1bjat,Column & Shear Wall at B1  ,cmsmv0ex10awjm8mhkrsxry67,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:37:38.781,2026-08-31T05:35:41.858,,2026-08-28T06:30:00
+cmsmv0ex40aypm8mhw0gtxwaq,Column & Shear Wall at B1  ,cmsmv0ex30aynm8mh65w5c58m,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:37:38.781,2026-08-18T11:03:42.271,,2026-08-13T06:30:00
+cmsmv0ex40azrm8mhstvsdul6,Column & Shear Wall at B1  ,cmsmv0ex40azpm8mhbrj31rqe,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:37:38.781,2026-08-18T11:04:28.37,,2026-08-07T06:30:00
+cmsmv0ex50b0tm8mhl8cbtwfw,Column & Shear Wall at B1  ,cmsmv0ex50b0fm8mh6l3l5bi6,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:37:38.781,,,2026-12-28T06:30:00
+cmsmv0ex60b1jm8mhg2l1g1ax,Column & Shear Wall at B1  ,cmsmv0ex60b1hm8mhc3bmtiou,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:37:38.781,,,2026-12-17T06:30:00
+cmsmv0ewz0auhm8mh3ut06qu2,Column & Shear Wall at B1  ,cmsmv0ewz0aufm8mhcgb3aeyx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:37:38.781,,,2026-09-26T06:30:00
+cmsmv0ex10avjm8mhwwft6efy,Column & Shear Wall at B1  ,cmsmv0ex00avhm8mhn9ohjzc8,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:37:38.781,,,2026-09-15T06:30:00
+cmsmv0ex20axnm8mh8viwfvzi,Column & Shear Wall at B1  ,cmsmv0ex20axlm8mhw2q1fdqw,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:37:38.781,,,2026-11-06T06:30:00
+cmsmv1bc60b7lm8mhcr2fb1rs, Slab at B1,cmsmv1bc50b6vm8mhby3rwmie,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:38:20.803,2026-08-18T11:08:51.708,,2026-08-18T06:30:00
+cmsmv1bc60b8bm8mhxz1wlbhy, Slab at B1,cmsmv1bc60b7xm8mh6dxv3u8p,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:38:20.803,2026-08-18T11:09:24.36,,2026-08-12T06:30:00
+cmsmv1bc40b5hm8mhvz94fo4z, Slab at B1,cmsmv1bc30b4rm8mh5gqwyq27,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:20.803,,,2026-09-03T06:30:00
+cmsmv1bc20b3dm8mh5k488t0i, Slab at B1,cmsmv1bc10b2nm8mhlrrndxfv,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:20.803,,,2026-09-30T06:30:00
+cmsmv1bc70b9dm8mhpe7842zp, Slab at B1,cmsmv1bc60b8nm8mh540wl9zq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:20.803,,,2027-01-02T06:30:00
+cmsfsywh6064rm8mhzhpzwtgd,NTP -3,cmsfsywh5064pm8mhezds5swj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:06:05.791,,,2028-12-31T06:30:00
+cmsfsywh60655m8mhrl864by4,NTP -1,cmsfsywh5064pm8mhezds5swj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:06:05.791,,,2027-05-15T06:30:00
+cmsft8duv065sm8mhbdehvtyw,NTP -2,cmsft8duv065qm8mhnwq5cfcc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:13:28.222,,,2027-05-30T06:30:00
+cmsft8duv065zm8mh363r7d7b,NTP -4,cmsft8duv065qm8mhnwq5cfcc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:13:28.222,,,2028-01-31T06:30:00
+cmomrsqah01l3c8g0vhoecwy8,Raft,cmomrsqah01l1c8g0t2q0uo14,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-01T10:28:52.111,2026-05-27T07:04:26.959,,2026-05-23T06:30:00
+cmsftebah06bpm8mhj6x9ot2u,NTP -3,cmsftebah06bgm8mhqsjl14ak,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2029-01-05T06:30:00
+cmsftebah06bim8mha2flsuwy,NTP -1,cmsftebah06bgm8mhqsjl14ak,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2027-05-20T06:30:00
+cmsftebay06bzm8mhl1owksgf,NTP -2,cmsftebaw06bxm8mh0yafbxpb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2027-06-06T06:30:00
+cmsftebay06c6m8mhizj4ho8a,NTP -4,cmsftebaw06bxm8mh0yafbxpb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:18:04.732,,,2028-02-06T06:30:00
+cmsftgyln06cim8mhn31vr7wl,NTP -1A,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-08-20T06:30:00
+cmsftgyln06cwm8mhg1ourh9r,NTP -4,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-09-22T06:30:00
+cmsftgyln06czm8mh53xvcbc2,NTP -4A,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-08-28T06:30:00
+cmsftgylo06drm8mhibsmfvhu,NTP -1,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:20:08.35,2026-08-10T09:38:05.127,,2026-07-30T06:30:00
+cmsftgyln06ddm8mhoyzpa21o,TP -2,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:20:08.35,2026-08-25T10:52:40.282,,2026-09-05T06:30:00
+cmsftgylo06dym8mhqa0kcsgs,NTP -5,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-10-07T06:30:00
+cmsftgylo06e5m8mhned4ilmh,NTP -6,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-10-16T06:30:00
+cmsftgylo06e8m8mh67typ0jv,NTP -7,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-10-25T06:30:00
+cmsftgymg06esm8mhkek7c9h2,TP -4,cmsftgymf06ejm8mhue3ots3z,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-02-28T06:30:00
+cmsftgylo06efm8mh4xhwjnbm,NTP -8,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-11-13T06:30:00
+cmsftgyn006fgm8mh3jr9m1po,NTP -1A,cmsftgymz06f7m8mhfdatszq3,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-12-17T06:30:00
+cmsftgymg06ezm8mhfmmps6lo,NTP -9,cmsftgymf06ejm8mhue3ots3z,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-02-02T06:30:00
+cmsftgymg06elm8mhzrzudm7k,NTP -10,cmsftgymf06ejm8mhue3ots3z,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-03-14T06:30:00
+cmsftgyn006f9m8mhkg0s0q36,NTP -1,cmsftgymz06f7m8mhfdatszq3,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-10-05T06:30:00
+cmsftgyn006fum8mhsgmij582,NTP -3,cmsftgymz06f7m8mhfdatszq3,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-12-15T06:30:00
+cmsftgyn006fnm8mhbs4s5cbk,NTP -2,cmsftgymz06f7m8mhfdatszq3,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-11-30T06:30:00
+cmsftgyn006g1m8mh516gxdhx,NTP -4,cmsftgymz06f7m8mhfdatszq3,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-12-16T06:30:00
+cmsftgyn106g8m8mhaxpbklpa,NTP -5,cmsftgymz06f7m8mhfdatszq3,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-12-23T06:30:00
+cmsftgyn106gfm8mh5c1iok84,NTP -6,cmsftgymz06f7m8mhfdatszq3,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-12-31T06:30:00
+cmsftgyno06h6m8mhubwf9mwm,TP -1,cmsftgynn06gqm8mhjv0u4ag1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-04-04T06:30:00
+cmsftgyno06gzm8mhibibwgg4,NTP -8,cmsftgynn06gqm8mhjv0u4ag1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-04-16T06:30:00
+cmsftgynn06gsm8mh4wcagfmc,TP -2,cmsftgynn06gqm8mhjv0u4ag1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-05-07T06:30:00
+cmsftgyo506hnm8mhrdbzi0nb,NTP -1,cmsftgyo506hlm8mh749iua10,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-06-10T06:30:00
+cmsftgyno06hdm8mht8a5gznu,NTP -9,cmsftgynn06gqm8mhjv0u4ag1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-05-15T06:30:00
+cmsftgyo506hum8mh6ofi92rc,NTP -3,cmsftgyo506hlm8mh749iua10,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2029-01-20T06:30:00
+cmsftgyok06i4m8mhjvhsy6i2,NTP -2,cmsftgyok06i2m8mhydg87lky,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-06-25T06:30:00
+cmsftgyol06ibm8mhqneaasnl,NTP -4,cmsftgyok06i2m8mhydg87lky,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2028-02-25T06:30:00
+cmsftn5s606p6m8mhus1t7l8f,NTP -3,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:24:57.589,2026-08-10T10:03:19.963,,2026-07-30T06:30:00
+cmsftn5s706pgm8mhf1v0zc38,TP -3,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-11-20T06:30:00
+cmsftn5s706q1m8mhvcwic3js,NTP -1,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:24:57.589,2026-08-10T09:56:30.762,,2026-07-27T06:30:00
+cmsftn5ti06rqm8mh081h9cmn,NTP -9,cmsftn5ti06ram8mh9l1csthu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-02-20T06:30:00
+cmsftn5s706qim8mh3yobuj1b,NTP -7,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-10-31T06:30:00
+cmsftn5ti06rjm8mhb5z474hy,TP -4,cmsftn5ti06ram8mh9l1csthu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-03-08T06:30:00
+cmsftn5u706s0m8mhuw5nnqdz,NTP -1,cmsftn5u706rym8mh0efexnqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-10-15T06:30:00
+cmsftn5ti06rcm8mhljxk838d,NTP -10,cmsftn5ti06ram8mh9l1csthu,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-03-22T06:30:00
+cmsftn5u806s7m8mhdra1kuza,NTP -1A,cmsftn5u706rym8mh0efexnqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-12-22T06:30:00
+cmsftn5sz06qvm8mhj2a2al60,NTP -2,cmsftn5sz06qtm8mhv44kdtj6,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-07-06T06:30:00
+cmsftn5t006r2m8mh0mdz2kjq,NTP -4,cmsftn5sz06qtm8mhv44kdtj6,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2028-03-08T06:30:00
+cmsftn5v206tqm8mh13scuuy3,NTP -8,cmsftn5v106thm8mhd0i8injs,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-04-21T06:30:00
+cmsftn5v106tjm8mho0owq0x7,TP -2,cmsftn5v106thm8mhd0i8injs,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-05-28T06:30:00
+cmsftn5vq06uem8mh270bqdto,NTP -1,cmsftn5vq06ucm8mhamv84w02,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-06-30T06:30:00
+cmsftn5v206u4m8mh8id4ca3a,NTP -9,cmsftn5v106thm8mhd0i8injs,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-05-21T06:30:00
+cmsftn5vq06ulm8mhwg8zjksc,NTP -3,cmsftn5vq06ucm8mhamv84w02,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2029-01-28T06:30:00
+cmsftqwwf0704m8mhvw8xmcdf,NTP -1A,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-09-10T06:30:00
+cmsftqwwg070am8mhcml8d8zj,NTP -2,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:27:52.696,2026-08-18T15:39:46.015,,2026-08-15T06:30:00
+cmsftqwwg070gm8mhjs13dcsl,NTP -3,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-08-26T06:30:00
+cmsftqwwg070im8mhizyt00m2,NTP -4,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-10-10T06:30:00
+cmsftqwwg070um8mhxhbe6i0x,TP -2,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-10-10T06:30:00
+cmsftqwwg070om8mhu2cmaiv1,TP -3,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-10-08T06:30:00
+cmsftqwwg071cm8mhbjo1u9q1,NTP -5,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-10-27T06:30:00
+cmsftqwwg0716m8mhd2bsqp8b,NTP -1,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-10-31T06:30:00
+cmsftqwwg071im8mhbjr71pol,NTP -6,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-11-18T06:30:00
+cmsftqwwh071um8mhiwcw6k7i,NTP -10,cmsftqwwh071sm8mhjdqinvnj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-04-14T06:30:00
+cmsftqwwh0720m8mhct2mzyu8,TP -4,cmsftqwwh071sm8mhjdqinvnj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-03-30T06:30:00
+cmsftqwwh0726m8mht2r2e8gk,NTP -9,cmsftqwwh071sm8mhjdqinvnj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-03-16T06:30:00
+cmsftqwwi072em8mhih6qkg5u,NTP -1,cmsftqwwh072cm8mhdsxwl90r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-10-31T06:30:00
+cmsftqwwi072qm8mhyb2aly29,NTP -2,cmsftqwwh072cm8mhdsxwl90r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-12-21T06:30:00
+cmsftqwwj073om8mhlj58dz6j,TP -2,cmsftqwwj073mm8mhsnsdygxb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-06-30T06:30:00
+cmsftqwwj0740m8mhj3wbco8w,TP -1,cmsftqwwj073mm8mhsnsdygxb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-05-30T06:30:00
+cmsftqwwj0746m8mhw6ivpzs8,NTP -9,cmsftqwwj073mm8mhsnsdygxb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-05-09T06:30:00
+cmsftqwwk074ym8mhvpm5mjkq,NTP -4,cmsftqwwk074qm8mhf9o8mgvr,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2028-04-10T06:30:00
+cmsftqwwj073um8mhgboclmmj,NTP -8,cmsftqwwj073mm8mhsnsdygxb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-05-12T06:30:00
+cmsftqwwk074sm8mhntn013ca,NTP -2,cmsftqwwk074qm8mhf9o8mgvr,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-08-16T06:30:00
+cmsftqwwk074km8mh3xp08i67,NTP -3,cmsftqwwk074cm8mhmoqle8bp,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2029-02-25T06:30:00
+cmsftqwwk074em8mhunfrhsrl,NTP -1,cmsftqwwk074cm8mhmoqle8bp,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-08-10T06:30:00
+cmsftuzif075um8mhaxea9es2,TP -3,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-11-18T06:30:00
+cmsftuzig0760m8mhrlibku87,TP -2,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-11-13T06:30:00
+cmsftuzig0766m8mhbb2pelsu,TP -1,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-11-30T06:30:00
+cmsftuzif075gm8mh82miahtr,NTP -2,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-09-06T06:30:00
+cmsftuzif075am8mhx8alvea6,NTP -1A,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-10-02T06:30:00
+cmsftuzig076cm8mhel8oi8io,NTP -1,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-09-01T06:30:00
+cmsftuzig076qm8mhegy8wynb,NTP -7,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-12-31T06:30:00
+cmsftuzif075mm8mhpholu9jh,NTP -3,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-09-20T06:30:00
+cmsftuzig076im8mh06koet7c,NTP -5,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-11-22T06:30:00
+cmsftuzig076om8mhnpmrkvas,NTP -6,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-12-13T06:30:00
+cmsftuzif075om8mhiahyzl54,NTP -4A,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-10-20T06:30:00
+cmsftuzii077qm8mh60enqxw7,NTP -1B,cmsftuzih077im8mhpmes35jx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-11-26T06:30:00
+cmsftuzih077cm8mh89sye4z2,NTP -9,cmsftuzih076ym8mhj12yv635,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-04-16T06:30:00
+cmsftuzih0770m8mhwma43fs3,NTP -10,cmsftuzih076ym8mhj12yv635,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-05-13T06:30:00
+cmsftuzih077km8mhlnufoktv,NTP -1,cmsftuzih077im8mhpmes35jx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2026-11-30T06:30:00
+cmsftuzii077wm8mhy83oprvb,NTP -2,cmsftuzih077im8mhpmes35jx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-01-19T06:30:00
+cmsftuzii0782m8mhcopj7q5o,NTP -3,cmsftuzih077im8mhpmes35jx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-03-10T06:30:00
+cmsftuzii0788m8mhv5ug9b50,NTP -4,cmsftuzih077im8mhpmes35jx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-03-06T06:30:00
+cmsftuzii078em8mh6l2pyir2,NTP -5,cmsftuzih077im8mhpmes35jx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-03-22T06:30:00
+cmsftuzii078km8mhbz8bht6a,NTP -6,cmsftuzih077im8mhpmes35jx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-03-15T06:30:00
+cmsftuzii078mm8mh47jr0ola,NTP -7,cmsftuzih077im8mhpmes35jx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-03-26T06:30:00
+cmsftuzij078um8mhy04i6yyx,TP -2,cmsftuzii078sm8mh7rvvuely,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-08-25T06:30:00
+cmsftuzij0790m8mh69sx4a1s,NTP -8,cmsftuzii078sm8mh7rvvuely,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-06-09T06:30:00
+cmsftuzij0796m8mhyodikxy5,TP -1,cmsftuzii078sm8mh7rvvuely,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-07-22T06:30:00
+cmsftuzij079cm8mhus3tquee,NTP -9,cmsftuzii078sm8mh7rvvuely,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-07-04T06:30:00
+cmqi0mji3013s141w3zshq1q6,Panel no. B19,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-04T06:30:00,2026-08-13T06:30:00
+cmqi0mji4015g141w5qellv70,Panel no. B24,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-06T06:30:00,2026-08-15T06:30:00
+cmqi0mji30142141wevu4v5fk,Panel no. B20,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-04T06:30:00,2026-08-13T06:30:00
+cmqi0mji50174141w72fp2qea,Panel no. B10,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-30T06:30:00,2026-08-08T06:30:00
+cmqi0mji1010w141w8ynuy7qq,Panel no. B11,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-31T06:30:00,2026-08-09T06:30:00
+cmsftgylo06dkm8mhyganoeju,TP -1,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:20:08.35,2026-08-19T06:44:51.667,,2026-08-25T06:30:00
+cmqi0mji10116141w6d4pwpif,Panel no. B12,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-31T06:30:00,2026-08-09T06:30:00
+cmqi0mji2011g141wnzqyifms,Panel no. B13,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-01T06:30:00,2026-08-10T06:30:00
+cmqi0mji2011q141wf9sqwdr9,Panel no. B14,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-01T06:30:00,2026-08-10T06:30:00
+cmqi0mji3012u141wrccm85wc,Panel no. B15,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-02T06:30:00,2026-08-11T06:30:00
+cmqi0mji30134141wgd3fytgv,Panel no. B16,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-02T06:30:00,2026-08-11T06:30:00
+cmqi0mji3013e141wzttajo62,Panel no. B17,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-03T06:30:00,2026-08-12T06:30:00
+cmqi0mji4014c141wn6476aly,Panel no. B21,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-05T06:30:00,2026-08-14T06:30:00
+cmqi0mji3013i141w37jmfbcy,Panel no. B18,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-03T06:30:00,2026-08-12T06:30:00
+cmqi0mji4014m141w6u36ajhn,Panel no. B22,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-05T06:30:00,2026-08-14T06:30:00
+cmqi0mji40156141wcwbfoyzd,Panel no. B23,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-08-06T06:30:00,2026-08-15T06:30:00
+cmsftgyln06d6m8mhgbmrst60,TP -3,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2026-09-05T06:30:00
+cmqi0mji2012a141wqn8g4o9f,Panel no. B1,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-26T06:30:00,2026-08-04T06:30:00
+cmqi0mji2012k141wl0k3z738,Panel no. B2,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-26T06:30:00,2026-08-04T06:30:00
+cmqi0mji5015q141whblrkmtu,Panel no. B3,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-27T06:30:00,2026-08-05T06:30:00
+cmqi0mji50160141whyrzvbd1,Panel no. B4,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-27T06:30:00,2026-08-05T06:30:00
+cmqi0mji5016a141ws6at0qfp,Panel no. B5,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-28T06:30:00,2026-08-06T06:30:00
+cmqi0mji5016k141w0v8z3l2h,Panel no. B6,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-28T06:30:00,2026-08-06T06:30:00
+cmqi0mji20120141w22oi46rb,Panel no. B7,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-29T06:30:00,2026-08-07T06:30:00
+cmqi0mji4014w141wcob5nbho,Panel no. B8,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-29T06:30:00,2026-08-07T06:30:00
+cmqi0mji5016u141w9ozwy3nj,Panel no. B9,cmqi0mjhz010u141w2ubjkg0n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-06-17T11:56:33.656,,2026-07-30T06:30:00,2026-08-08T06:30:00
+cmsfyh25p07kgm8mh8br8pn7d,NTP -1B,cmsftgymz06f7m8mhfdatszq3,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T10:40:11.049,,,2026-09-30T06:30:00
+cmsftgyn106gim8mha3nsg0au,NTP -7,cmsftgymz06f7m8mhfdatszq3,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:20:08.35,,,2027-01-10T06:30:00
+cmsftgyln06cpm8mhghtphapa,NTP -2,cmsftgylm06cgm8mh45qro7f0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:20:08.35,2026-08-10T09:40:02.5,,2026-07-01T06:30:00
+cmsftn5s706pnm8mh8iwseucr,TP -2,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-09-15T06:30:00
+cmsftn5s606osm8mhnjfau3bk,NTP -1A,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-08-23T06:30:00
+cmsftn5s606ozm8mhfskhrc42,NTP -2,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:24:57.589,2026-08-10T09:59:21.794,,2026-07-29T06:30:00
+cmsftn5s706pum8mhq1qpqclh,TP -1,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-05T08:24:57.589,2026-08-19T06:40:03.109,,2026-09-13T06:30:00
+cmsftn5u806slm8mhskynrpxa,NTP -3,cmsftn5u706rym8mh0efexnqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-12-26T06:30:00
+cmsftn5v206txm8mhl55h792u,TP -1,cmsftn5v106thm8mhd0i8injs,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-04-25T06:30:00
+cmsftn5u806ssm8mh4i5wunnn,NTP -4,cmsftn5u706rym8mh0efexnqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-12-22T06:30:00
+cmsfyxs2g07lcm8mhev6zy2wh,NTP -4,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T10:53:11.123,,,2026-09-25T06:30:00
+cmsftn5s606p9m8mhi93foljc,NTP -4A,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-09-04T06:30:00
+cmsftn5s706q8m8mhognerdiu,NTP -5,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-10-11T06:30:00
+cmsftn5s706qfm8mhxnpoe03b,NTP -6,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-10-20T06:30:00
+cmsftn5s706qpm8mh4cen1kqo,NTP -8,cmsftn5s506oqm8mhdkkhttse,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-11-18T06:30:00
+cmsftn5u806szm8mhslbu9x0x,NTP -5,cmsftn5u706rym8mh0efexnqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-01-06T06:30:00
+cmsfz6ynb07lpm8mh04ipy84j,NTP -1B,cmsftn5u706rym8mh0efexnqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T11:00:19.555,,,2026-10-10T06:30:00
+cmsftn5u806sem8mh88b4kxri,NTP -2,cmsftn5u706rym8mh0efexnqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2026-12-06T06:30:00
+cmsftn5u806t6m8mhysz81vb3,NTP -6,cmsftn5u706rym8mh0efexnqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-01-10T06:30:00
+cmsftn5u806t9m8mhs2sujpwb,NTP -7,cmsftn5u706rym8mh0efexnqx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:24:57.589,,,2027-01-20T06:30:00
+cmsd2w2ix01zum8mho3bpkppp,Panel No -1,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2ib01j4m8mhhsbhfihx,Panel No -1,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-24T06:30:00
+cmsd2w2ic01jjm8mh32vkqqjc,Panel No -4,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-17T06:30:00
+cmsd2w2ic01jym8mhv39ykk8z,Panel No -5,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-10T06:30:00
+cmsd2w2i901h1m8mhvpjs7c0j,Panel No -7,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-24T06:30:00
+cmsd2w2ic01kdm8mh6qz91szz,Panel No -6,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-08-01T06:30:00
+cmsd2w2id01ksm8mh2zs7hdzg,Panel No -8,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-08-03T06:30:00
+cmsd2w2id01l7m8mhbx7jjcmp,Panel No -9,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-30T06:30:00
+cmsd2w2ia01hgm8mhfug5btyb,Panel No -10,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-29T06:30:00
+cmsd2w2ia01iam8mheukk274p,Panel No -20,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:13:26.565,,2026-07-30T06:30:00
+cmsd2w2j00240m8mhw3n0qydt,Panel No -12,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2iy021xm8mh93b76tg0,Panel No -2,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-01T06:30:00
+cmsd2w2iz022cm8mhvyz4yuev,Panel No -3,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2iz022rm8mh66r1v1jm,Panel No -4,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2iz0236m8mhjljdwwqw,Panel No -5,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-01T06:30:00
+cmsd2w2j0023lm8mhetez00b4,Panel No -6,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-06T06:30:00
+cmsd2w2j0024fm8mhvse3fgba,Panel No -9,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-29T06:30:00
+cmsd2w2j1024um8mhj5tztmld,Panel No -10,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2j10259m8mh6tz1mzul,Panel No -11,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsftqwwg0710m8mhaub39cbu,TP -1,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-10-15T06:30:00
+cmsg13q8807mvm8mho4bo0mk2,NTP -4A,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T11:53:47.908,,,2026-11-24T06:30:00
+cmsftqwwh071km8mh6gdawjqr,NTP -7,cmsftqwwf0702m8mh45batp2l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-12-06T06:30:00
+cmsd2w2jn02r2m8mhiz0aj3no,L-1,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-30T06:30:00
+cmsd2w2jj02pqm8mhz9i42ba1,Panel No -17,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2jo02rhm8mhv0e7nmhk,Panel No. 18,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2jj02owm8mhz8wt1r3n,Panel No -18,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-08T06:30:00
+cmsd2w2ji02nnm8mhs7abpuey,Panel No -16,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,
+cmsd2w2jg02kqm8mh1f5onmk0,Panel No -20,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-06T06:30:00
+cmsg19h1o07nbm8mhg2jiq1d9,NTP -1A,cmsftqwwh072cm8mhdsxwl90r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T11:58:15.942,,,2027-01-05T06:30:00
+cmsd2w2jn02qnm8mh6bok561m,Panel No. 16,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsftqwwi072km8mhvh5gmzoi,NTP -1B,cmsftqwwh072cm8mhdsxwl90r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2026-10-29T06:30:00
+cmsd2w2jg02kbm8mh6qtlkhy4,Panel No -1,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-28T06:30:00
+cmsd2w2jg02lkm8mhdiv7f3b2,Panel No -2,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-28T06:30:00
+cmsd2w2jg02l5m8mhukdbshr4,Panel No -3,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-27T06:30:00
+cmsd2w2ji02ohm8mhorovfpnk,Panel No -8,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-27T06:30:00
+cmsd2w2ji02o2m8mhzakgz3k8,Panel No -9,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-28T06:30:00
+cmsd2w2jh02mtm8mhfaiuseut,Panel No -11,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-08-01T06:30:00
+cmsftqwwi072wm8mhdqeybr76,NTP -3,cmsftqwwh072cm8mhdsxwl90r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-01-23T06:30:00
+cmsd2w2jh02mem8mh4izhh0m7,Panel No -15,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-01T06:30:00
+cmsftqwwi0732m8mha4pu3ay2,NTP -4,cmsftqwwh072cm8mhdsxwl90r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-02-10T06:30:00
+cmsftqwwi0738m8mhag8d953k,NTP -5,cmsftqwwh072cm8mhdsxwl90r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-02-02T06:30:00
+cmsftqwwi073em8mhly3onko3,NTP -6,cmsftqwwh072cm8mhdsxwl90r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-02-05T06:30:00
+cmsftqwwj073gm8mhn89h43lb,NTP -7,cmsftqwwh072cm8mhdsxwl90r,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:52.696,,,2027-02-15T06:30:00
+cmsd2w2jo02scm8mh7wk97z4l,Panel No -12,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2jo02rwm8mhzoaz1djn,Panel No -7,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2jn02q7m8mh3ooif99a,Panel No -3,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2wmbz036tm8mhn550n0je,Panel no. B3,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmbz0372m8mhbs0dzcrd,Panel no. B24,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmbz037bm8mhtr7py83j,Panel no. B4,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmbz037km8mho2cnl2qo,Panel no. B11,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmbz037tm8mhi9uuvrqd,Panel no. B18,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc00382m8mhgjfhmlkx,Panel no. B12,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc0038bm8mhenl5ir7w,Panel no. B5,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc0038km8mh90kgao45,Panel no. B13,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc0038tm8mhwd3lh89j,Panel no. B19,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc00392m8mheg4ena5q,Panel no. B14,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc0039bm8mhvzdgzsjn,Panel no. B20,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc1039km8mhguwjnywd,Panel no. B21,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc1039tm8mh08w9itkk,Panel no. B22,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc103a2m8mh4kdilrgf,Panel no. B6,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc103abm8mhysf0uso0,Panel no. B23,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc103akm8mh71xanabo,Panel no. B15,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc103atm8mho8wo3zzc,Panel no. B7,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc203b2m8mh2xfc01y0,Panel no. B1,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc203bbm8mhku1qhwis,Panel no. B8,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc203bkm8mhq8yz9056,Panel no. B2,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc203btm8mhbyppvsu8,Panel no. B16,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc203c2m8mhfn9eovq0,Panel no. B9,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc203cbm8mhw7hp0f2p,Panel no. B17,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsd2wmc303ckm8mhhcr9ktxt,Panel no. B10,cmsd2wmbx036rm8mhw7131jzk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-03T10:20:56.878,,,
+cmsg2rq7z07pam8mhrkspdyoi,NTP -4,cmsftuzie0758m8mhowxgho8n,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T12:42:54.96,,,2026-11-05T06:30:00
+cmsftuzih0776m8mh97em4spl,TP -4,cmsftuzih076ym8mhj12yv635,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-04-28T06:30:00
+cmsg2uwqr07pnm8mhwwcbc1oa,NTP -1A,cmsftuzih077im8mhpmes35jx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T12:42:55.679,,,2027-01-26T06:30:00
+cmsd2w2if01nam8mhvue8tt3a,Panel No -2,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-08-13T06:30:00
+cmsd2w2if01npm8mhjrlr7smy,Panel No -3,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-08-01T06:30:00
+cmsd2w2je02htm8mhxzptt5at,Panel No -5,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-29T06:30:00
+cmsd2w2je02i8m8mh6qpwxlci,Panel No -6,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-27T06:30:00
+cmsd2w2je02hem8mht2cs67ye,Panel No -7,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-27T06:30:00
+cmsd2w2jd02g5m8mhb40twq7t,Panel No -10,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-06T06:30:00
+cmsd2w2jd02gkm8mhfx21uzsg,Panel No -12,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-28T06:30:00
+cmsd2w2jd02gzm8mhk1iic7sp,Panel No -13,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-28T06:30:00
+cmsd2w2jf02j2m8mhc2h6wtu8,Panel No -14,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-28T06:30:00
+cmsd2w2ii01q7m8mhi4802cjj,Panel No -11,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:11:38.995,,2026-07-28T06:30:00
+cmsd2w2ii01qmm8mhn72gek74,Panel No -12,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:11:51.343,,2026-07-29T06:30:00
+cmsd2w2ii01r1m8mhrx2xj9pk,Panel No -13,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:12:02.486,,2026-07-29T06:30:00
+cmsd2w2iq01yjm8mhljus83dv,Panel No -14,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:12:12.308,,2026-08-01T06:30:00
+cmsd2w2iq01yym8mhix1bbst4,Panel No -15,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:12:24.612,,2026-07-28T06:30:00
+cmsd2w2ij01rvm8mhyd04f1f2,Panel No -16,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:12:34.196,,2026-07-28T06:30:00
+cmsd2w2ik01sam8mhoo0v9t8s,Panel No -17,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:12:44.714,,2026-07-29T06:30:00
+cmsd2w2ik01spm8mhumdvqdfr,Panel No -18,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:12:55.698,,2026-07-30T06:30:00
+cmsd2w2ik01t4m8mh1tslpixj,Panel No -19,cmsd2w2i501gzm8mhhr6w10xw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,2026-08-03T12:13:12.57,,2026-07-28T06:30:00
+cmsd2w2jf02jwm8mhlaxn7qqx,Panel No -4,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-27T06:30:00
+cmsd2w2jf02inm8mh9scbuwq7,Panel No -19,cmsd2w2jb02g3m8mhz1ojeae0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-16T06:30:00
+cmsd2w2j10263m8mh4b2kham6,Panel No -13,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,
+cmsd2w2j40290m8mhz6qsoget,Panel No -7,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-27T06:30:00
+cmsd2w2jr02wcm8mhda7v2g73,Panel No -6,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2j4029fm8mhlrk207u4,Panel No -8,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2js02xvm8mhwaf2shqj,Panel No. 17,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-01T06:30:00
+cmsd2w2j2026im8mhq6ui7ei8,Panel No -14,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2j802f9m8mhgcvodemr,Panel No -15,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2js02xom8mhn9pli5jr,Panel No -15,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2j2026xm8mhm534ykv3,Panel No -16,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2jr02vwm8mh8vddab2w,Panel No -5,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2j602bim8mhkfsu7gf4,Panel No -17,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2jp02t8m8mht0zetz8q,Panel No -14,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2j502aom8mhklvkjhsq,Panel No -18,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2j3027cm8mhrswjeqtg,Panel No -19,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2jo02ssm8mhawltpi11,Panel No -13,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2j1025om8mh4v1iqpsu,Panel No -20,cmsd2w2it01zdm8mhr2c5hc9t,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2js02yam8mhm3fogats,Panel No. 19,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-31T06:30:00
+cmsd2w2jq02v0m8mhox4zd5pd,Panel No -4,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2js02x8m8mhbembj4iy,Panel No -11,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsd2w2jp02tom8mhxb34ukmq,Panel No -2,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-28T06:30:00
+cmsd2w2jq02vgm8mhypr64utf,Panel No -10,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-07T06:30:00
+cmsd2w2jp02u4m8mh49ycruha,Panel No -1,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-07-27T06:30:00
+cmsd2w2jr02wsm8mh5rao6xgw,Panel No -9,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-30T06:30:00
+cmsd2w2jq02ukm8mh14ikod6r,Panel No -8,cmsd2w2jl02q5m8mhruu8akc4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:31.091,,,2026-06-29T06:30:00
+cmsmv1bc80bafm8mhxxilqx1m, Slab at B1,cmsmv1bc70b9pm8mht5w2ap88,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:20.803,,,2026-12-22T06:30:00
+cmsmv1yos0bblm8mhd10yhsw9, Slab at GF ,cmsmv1yor0bavm8mhgrcqwtbw,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:51.062,,,2026-09-30T06:30:00
+cmonvnjb902dcc8g0g9qseuk1,Panel No -10,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-21T12:22:59.843,2026-05-01T06:30:00,2026-05-04T06:30:00
+cmonvnjba02dqc8g0xa80p002,Panel No -12,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-22T05:16:49.467,2026-05-13T06:30:00,2026-05-16T06:30:00
+cmonvnjba02dxc8g08m4r30px,Panel No -13,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-22T05:17:10.479,2026-05-11T06:30:00,2026-05-14T06:30:00
+cmonvnjbb02foc8g06gd6it8v,Panel No -7,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-21T12:17:41.146,2026-05-11T06:30:00,2026-05-14T06:30:00
+cmonvnjba02fac8g025ao27un,Panel No -5,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-27T16:06:31.906,2026-05-23T06:30:00,2026-05-25T06:30:00
+cmonvnjbb02fhc8g0tlq2eaov,Panel No -6,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-27T06:51:20.743,2026-05-21T06:30:00,2026-05-23T06:30:00
+cmonvuo1902kxc8g06hehu0l5,Panel No -3,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T04:58:36.137,2026-05-09T06:30:00,2026-05-11T06:30:00
+cmovg27xx00f8tz0btr7gcinb,Panel No. 16,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-07T12:10:15.083,2026-05-07T12:10:56.352,2026-04-02T06:30:00,2026-04-02T06:30:00
+cmpw8y2jh05e02opclj0oyzp9,L-1,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-02T06:18:32.666,2026-06-10T05:12:36.62,2026-06-07T06:30:00,2026-06-10T06:30:00
+cmpw8uhif05cy2opcv06bflmt,Panel No. 18,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-02T06:15:45.438,2026-06-16T05:09:47.351,2026-06-05T06:30:00,2026-06-07T06:30:00
+cmonvuo1b02p0c8g02hwmstm6,Panel No -7,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T04:59:59.094,2026-04-27T06:30:00,2026-05-02T06:30:00
+cmonvuo1a02n2c8g0tswmajh4,Panel No -12,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T05:01:56.476,2026-05-06T06:30:00,2026-05-08T06:30:00
+cmonvuo1a02n9c8g0me0pafp3,Panel No -13,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T05:02:26.631,2026-05-04T06:30:00,2026-05-06T06:30:00
+cmonvuo1b02p7c8g0zg7mdglh,Panel No -14,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T05:02:46.621,2026-05-03T06:30:00,2026-05-05T06:30:00
+cmonvnjba02ewc8g0nc99lxjd,Panel No -19,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-23T05:52:46.486,2026-05-23T06:30:00,2026-05-25T06:30:00
+cmonvnjbb02fvc8g0q5sy2mql,Panel No -14,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-21T12:18:19.142,2026-05-15T06:30:00,2026-05-18T06:30:00
+cmonvnjb7028ac8g00nvhh2ny,Panel No -23,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-06-15T06:18:25.075,2026-05-27T06:30:00,2026-05-29T06:30:00
+cmonvnjba02f3c8g0nm42vk7p,Panel No -4,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-30T07:52:42.962,2026-05-24T06:30:00,2026-05-26T06:30:00
+cmonvnjb6027ic8g0lxpnyack,Panel No -1,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-06-12T16:54:52.687,2026-05-26T06:30:00,2026-05-28T06:30:00
+cmonvnjb7027pc8g07n1eyxko,Panel No -20,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-06-02T04:28:45.983,2026-05-24T06:30:00,2026-05-26T06:30:00
+cmonvuo1902kqc8g0pqh79ruy,Panel No -2,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-21T12:18:08.587,2026-05-12T06:30:00,2026-05-14T06:30:00
+cmonvnjb902blc8g0q3xedofy,Panel No -3,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-06-05T10:25:57.096,2026-05-21T06:30:00,2026-05-23T06:30:00
+cmonvnjb902bec8g003m35r1u,Panel No -2,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-06-06T10:00:21.45,2026-05-22T06:30:00,2026-05-24T06:30:00
+cmonvnjb7027wc8g03pctmxmv,Panel No -21,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-06-05T10:25:59.593,2026-05-25T06:30:00,2026-05-27T06:30:00
+cmonvuo1702guc8g0sdo07w92,Panel No -1,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-06-03T04:34:53.995,2026-05-22T06:30:00,2026-05-25T06:30:00
+cmonvnjba02e4c8g029i42k1f,Panel No -15,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,,2026-05-13T06:30:00,2026-05-16T06:30:00
+cmonvnjba02djc8g0n0qnbssk,Panel No -11,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-22T05:16:33.162,2026-05-10T06:30:00,2026-05-13T06:30:00
+cmonvnjb70283c8g0jph2dj7a,Panel No -22,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-06-11T05:53:52.076,2026-05-26T06:30:00,2026-05-28T06:30:00
+cmonvuo1a02mac8g0yhpk27yl,Panel No -8,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T05:00:19.377,2026-04-30T06:30:00,2026-05-04T06:30:00
+cmonvuo1b02ofc8g06b0r7m0j,Panel No -4,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T04:59:04.542,,2026-04-30T06:30:00
+cmonvuo1a02moc8g05md2v407,Panel No -10,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T05:00:56.037,,2026-04-15T06:30:00
+cmonvuo1b02omc8g0wg18wv28,Panel No -5,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T04:59:22.552,,2026-04-27T06:30:00
+cmonvuo1b02otc8g0rjczg2tz,Panel No -6,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T04:59:39.791,,2026-04-28T06:30:00
+cmonvnjba02ebc8g0bjd3nbib,Panel No -16,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-25T12:11:45.397,2026-05-22T06:30:00,2026-05-24T06:30:00
+cmonvnjb902d5c8g0hx5uroi9,Panel No -9,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-24T05:41:07.252,2026-05-20T06:30:00,2026-05-22T06:30:00
+cmonvnjb902cyc8g03df9uoil,Panel No -8,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-29T10:20:12.622,2026-05-20T06:30:00,2026-05-22T06:30:00
+cmonvnjba02epc8g0p1r2ozel,Panel No -18,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-24T05:41:04.246,2026-05-24T06:30:00,2026-05-26T06:30:00
+cmonvuo1a02mhc8g0cxuyiszg,Panel No -9,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T05:00:37.024,2026-04-26T06:30:00,2026-04-29T06:30:00
+cmonvnjb7028hc8g0eq9w3821,Panel No -24,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-06-15T06:09:09.95,2026-05-25T06:30:00,2026-05-27T06:30:00
+cmonvnjba02eic8g070bkmg47,Panel No -17,cmonvnjb5027hc8g0bwwy5tbw,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:04:34.39,2026-05-29T07:02:49.743,2026-05-23T06:30:00,2026-05-25T06:30:00
+cmsftw6bd07amm8mh4902n7i2,NTP -2,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-08-28T06:30:00
+cmsftw6bd07b6m8mh1c7b0xbi,TP -2,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-11-02T06:30:00
+cmsftw6bd07b0m8mhkdq8hemz,TP -3,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-11-06T06:30:00
+cmsftw6bd07bim8mhf48y5jsg,NTP -1,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-08-24T06:30:00
+cmsftw6bc07agm8mhmw95sngk,NTP -1A,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-09-24T06:30:00
+cmsftw6bd07bom8mhh1o3lsrv,NTP -5,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-11-14T06:30:00
+cmsftw6bd07asm8mhulpjk2jk,NTP -3,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-09-13T06:30:00
+cmsftw6bd07aum8mhaduzigi0,NTP -4A,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-10-12T06:30:00
+cmsftw6bd07bum8mhzmeo52ys,NTP -6,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-12-05T06:30:00
+cmsftw6be07c6m8mhfz26ql0b,NTP -10,cmsftw6be07c4m8mh1308gvnt,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-05-05T06:30:00
+cmsftw6bd07bwm8mh6jqekfpp,NTP -7,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-12-23T06:30:00
+cmsftw6be07ccm8mhdqs0bbyq,TP -4,cmsftw6be07c4m8mh1308gvnt,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-04-20T06:30:00
+cmsftw6be07cim8mh0ahcx9sb,NTP -9,cmsftw6be07c4m8mh1308gvnt,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-04-08T06:30:00
+cmsftw6bf07cwm8mh0h4wifsx,NTP -1B,cmsftw6bf07com8mhlbv44pqc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-11-16T06:30:00
+cmsftw6bf07cqm8mh0vb9dyxv,NTP -1,cmsftw6bf07com8mhlbv44pqc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-11-20T06:30:00
+cmsftw6bf07d2m8mhqqh8npuw,NTP -2,cmsftw6bf07com8mhlbv44pqc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-01-10T06:30:00
+cmsftw6bf07d8m8mh5o1p771s,NTP -3,cmsftw6bf07com8mhlbv44pqc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-02-25T06:30:00
+cmsftw6bf07dem8mh591qnsqf,NTP -4,cmsftw6bf07com8mhlbv44pqc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-02-28T06:30:00
+cmsftuzij079km8mh2bdav97f,NTP -1,cmsftuzij079im8mhicccsr0g,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-10-04T06:30:00
+cmsftuzij079qm8mh1830bphr,NTP -3,cmsftuzij079im8mhicccsr0g,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2029-04-04T06:30:00
+cmsftuzik079ym8mh2v853ewd,NTP -2,cmsftuzij079wm8mh43nvcr45,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2027-10-09T06:30:00
+cmsftuzik07a4m8mhpyj31a4m,NTP -4,cmsftuzij079wm8mh43nvcr45,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:02.702,,,2028-05-27T06:30:00
+cmonvuo1a02mvc8g0fq2a9ty8,Panel No -11,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-02T05:10:07.122,2026-05-22T05:01:21.031,2026-04-27T06:30:00,2026-04-30T06:30:00
+cmovfzf5200eptz0by51meixd,Panel No -15,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-07T12:08:04.443,2026-05-22T05:03:03.398,2026-05-03T06:30:00,2026-05-05T06:30:00
+cmovg2cmk00g2tz0bkzbtemsf,Panel No. 17,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-07T12:10:21.159,2026-06-02T11:49:04.491,2026-04-11T06:30:00,2026-04-11T06:30:00
+cmqai97mi1da82opcwag9jd6k,Panel No. 19,cmonvuo1602gtc8g0utr79l5h,cmonwu1ck02tkc8g0uozpb3b6,true,2026-06-12T05:47:55.472,2026-06-12T05:49:27.207,,2026-06-05T06:30:00
+cmsftw6bg07dqm8mhrtp5z841,NTP -6,cmsftw6bf07com8mhlbv44pqc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-03-03T06:30:00
+cmsftw6bg07dsm8mhoc3qsuak,NTP -7,cmsftw6bf07com8mhlbv44pqc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-03-10T06:30:00
+cmsftw6bg07ecm8mh6zq4rh2a,TP -1,cmsftw6bg07dym8mhkew691oq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-07-10T06:30:00
+cmsftw6bg07e0m8mh147t5xc1,TP -2,cmsftw6bg07dym8mhkew691oq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-08-12T06:30:00
+cmsftw6bg07e6m8mh9zaaidji,NTP -8,cmsftw6bg07dym8mhkew691oq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-05-29T06:30:00
+cmsftw6bh07eim8mhk5ziemf0,NTP -9,cmsftw6bg07dym8mhkew691oq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-06-26T06:30:00
+cmsftw6bh07eqm8mhfrwqtgut,NTP -1,cmsftw6bh07eom8mhy4li3ozf,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-11-18T06:30:00
+cmsftw6bh07ewm8mhccib0yx9,NTP -3,cmsftw6bh07eom8mhy4li3ozf,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2029-03-24T06:30:00
+cmsftw6bh07f4m8mhcdafj2g4,NTP -2,cmsftw6bh07f2m8mh23ivjpf0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-09-22T06:30:00
+cmsftw6bh07fam8mhl5ifosy0,NTP -4,cmsftw6bh07f2m8mh23ivjpf0,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2028-05-17T06:30:00
+cmrackmxi04sz141wye5ygd19,Raft,cmrackmxi04sx141w4yiju3n9,cmonwu1ck02tkc8g0uozpb3b6,false,2026-07-07T07:48:33.161,,,2026-08-30T06:30:00
+cmsd2wmbs031xm8mh614wwg3g,Panel no. B24,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-29T06:30:00
+cmsd2wmbu0340m8mh8cfzovvf,Panel no. B21,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-27T06:30:00
+cmsd2wmbr030xm8mhfkbh1a67,Panel no. B11,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-06-30T06:30:00
+cmsftw6bd07bcm8mhoks1eek0,TP -1,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2026-11-15T06:30:00
+cmsg1zmh007oem8mhgu9xxkbj,NTP -4,cmsftw6bc07aem8mh8z2h6tj1,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T12:18:36.031,,,2026-10-27T06:30:00
+cmsg27rd307otm8mhsnmrnghy,NTP -1A,cmsftw6bf07com8mhlbv44pqc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T12:24:55.619,,,2027-01-18T06:30:00
+cmsftw6bg07dkm8mh1wsmonoy,NTP -5,cmsftw6bf07com8mhlbv44pqc,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:31:58.173,,,2027-03-10T06:30:00
+cmsd2wmbw0369m8mh2650g9y7,Panel no. B12,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-06-30T06:30:00
+cmsd2wmbw036im8mhqptg5xwt,Panel no. B23,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-28T06:30:00
+cmsd2wmbw0360m8mhf0csna2e,Panel no. B22,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-27T06:30:00
+cmsd2wmbw035rm8mhncw6igrj,Panel no. B16,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-06-30T06:30:00
+cmsd2wmbs0316m8mhky9f9zoh,Panel no. B3,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-27T06:30:00
+cmsd2wmbs031om8mhw10yd373,Panel no. B13,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-06-29T06:30:00
+cmsd2wmbt032fm8mhu46v19cf,Panel no. B4,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-06T06:30:00
+cmsd2wmbt0326m8mh7idowi57,Panel no. B8,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-30T06:30:00
+cmsd2wmbs031fm8mhhea345k5,Panel no. B18,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-10T06:30:00
+cmsd2wmbu033im8mhmcx4dzup,Panel no. B1,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-29T06:30:00
+cmsd2wmbu0349m8mhl7geurc3,Panel no. B2,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-28T06:30:00
+cmsd2wmbv034rm8mhl4nut66w,Panel no. B10,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-28T06:30:00
+cmsd2wmbu033rm8mhsxhei8s5,Panel no. B5,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-06-30T06:30:00
+cmsd2wmbu0339m8mhvfyba7of,Panel no. B20,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-02T06:30:00
+cmsd2wmbv0350m8mhx4ilnpsx,Panel no. B6,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-06-30T06:30:00
+cmsd2wmbt032om8mh0avksk1o,Panel no. B14,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-06-30T06:30:00
+cmsd2wmbw035im8mhpb39befy,Panel no. B7,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-01T06:30:00
+cmsd2wmbt032xm8mh0epnmjrq,Panel no. B9,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-06-30T06:30:00
+cmsd2wmbv0359m8mh16o3ifr9,Panel no. B15,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-06-30T06:30:00
+cmsd2wmbt0336m8mhhrv7y1j2,Panel no. B17,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-03T06:30:00
+cmsd2wmbv034im8mh79fmjzev,Panel no. B19,cmsd2wmbq030vm8mhmi73stc9,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T10:20:56.878,,,2026-07-09T06:30:00
+cmsmu1n0r0ag5m8mhzkyqyp15,Area - 960 SQM,cmsmu1n0r0ag3m8mh40wo55x0,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:10:36.292,,,2026-07-27T06:30:00
+cmsmu1mz00aerm8mh41hq21no,Area - 1023 SQM,cmsmu1mz00aepm8mhq0wzkq67,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:10:36.292,,,2026-07-01T06:30:00
+cmsmu1mzq0afbm8mh3q8rofxx,Area - 929 SQM,cmsmu1mzq0af9m8mh44q3cftv,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:10:36.292,,,2026-07-29T06:30:00
+cmsmu1n020aflm8mhucolq5io,Area - 1539 SQM,cmsmu1n020afjm8mhy4aqq2nq,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:10:36.292,,,2026-07-28T06:30:00
+cmsmu1n120agbm8mhubv7zllx,Area - 516 SQM,cmsmu1n120ag9m8mhb1dzj0yu,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:10:36.292,,,2026-07-28T06:30:00
+cmsmu1n0e0afvm8mh4ts2m35p,Area - 1474 SQM,cmsmu1n0d0aftm8mhrebi1n3n,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:10:36.292,,,2026-07-05T06:30:00
+cmsmu1n1f0aglm8mhim5yy57i,Area - 432 SQM,cmsmu1n1f0agjm8mhxmtvnven,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:10:36.292,2026-08-10T06:17:17.035,,2026-07-28T06:30:00
+cmsmu1n1q0agrm8mhmovsrd0o,Area - 356 SQM,cmsmu1n1q0agpm8mh55yk6jb2,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:10:36.292,2026-08-10T06:17:33.776,,2026-07-29T06:30:00
+cmsmu1n220ah1m8mhkh6msvyl,Area - 356 SQM,cmsmu1n220agzm8mhm4xqt6dz,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T06:10:36.292,2026-08-10T06:18:13.332,,2026-06-25T06:30:00
+cmsmu1n2f0ahbm8mhx0r0mj7y,Area - 356 SQM,cmsmu1n2f0ah9m8mhe66x7l54,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:10:36.292,,,2026-11-21T06:30:00
+cmsmu1n330ahvm8mhv5lf8p5l,Area - 356 SQM,cmsmu1n330ahtm8mh4uc0u7ci,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:10:36.292,,,2026-08-21T06:30:00
+cmsmu1n4e0aifm8mh1f1xeegj,Area - 356 SQM,cmsmu1n4e0aidm8mhc45ekp28,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:10:36.292,,,2026-10-01T06:30:00
+cmsmu1n2s0ahlm8mh8t6uzx7e,Area - 356 SQM,cmsmu1n2s0ahjm8mhk9hr38y8,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:10:36.292,,,2026-11-24T06:30:00
+cmsmvmows0bjdm8mh4kirl17e,Skin wall B1 Level,cmsmvlu9t0bj8m8mh7ys6ro1h,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:54:58.198,,,
+cmsmv1yox0bftm8mhlhc6g1kc, Slab at GF ,cmsmv1yow0bf3m8mh3j41m1db,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:51.062,,,2026-09-03T06:30:00
+cmsmv1yox0bgjm8mhai0mcjqf, Slab at GF ,cmsmv1yox0bg5m8mhcco9d89m,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:51.062,,,2026-08-27T06:30:00
+cmsmv1yov0bdpm8mhos6dcqep, Slab at GF ,cmsmv1you0bczm8mho6dgu5bf,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:51.062,,,2026-09-18T06:30:00
+cmsmv1yoy0bhlm8mhljjslcvj, Slab at GF ,cmsmv1yoy0bgvm8mh3u9c5lhx,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:51.062,,,2027-01-24T06:30:00
+cmsmv1yoz0binm8mhh7i938nd, Slab at GF ,cmsmv1yoz0bhxm8mhf9zwudft,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:51.062,,,2027-01-22T06:30:00
+cmsmv1yot0bcnm8mhxh4t3pda, Slab at GF ,cmsmv1yot0bbxm8mhv160hveq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:51.062,,,2026-09-20T06:30:00
+cmsmv1yow0berm8mh8kqzfd0q, Slab at GF ,cmsmv1yov0be1m8mh4oxe8axj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:38:51.062,,,2026-11-11T06:30:00
+cmsmvojug0bk3m8mheav8jayj,Skin wall B2 Level,cmsmvojug0bk1m8mhb16n0k3p,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:56:24.943,,,
+cmt6s3fji0lm0m8mhfgtt9v8m,Panel no. A4,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-08-28T06:30:00,2026-09-02T06:30:00
+cmt6s3fjn0lm4m8mhbyv7f3se,Panel no. A5,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-08-30T06:30:00,2026-09-03T06:30:00
+cmt6s3fju0lm8m8mhupwt2l8g,Panel no. A6,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-08-31T06:30:00,2026-09-03T06:30:00
+cmt6s3fk10lmcm8mhlri4nawy,Panel no. A7,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-02T06:30:00,2026-09-04T06:30:00
+cmt6s3fkc0lmgm8mh7s1p9d86,Panel no. A8,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-03T06:30:00,2026-09-04T06:30:00
+cmt6s3fkj0lmkm8mhxlr322nu,Panel no. A9,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-05T06:30:00,2026-09-05T06:30:00
+cmt6s3fkq0lmom8mhrwvvbm8u,Panel no. A10,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-06T06:30:00,2026-09-06T06:30:00
+cmt6s3fkw0lmsm8mhoos7pm2v,Panel no. A11,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-06T06:30:00,2026-09-08T06:30:00
+cmt6s3fl30lmwm8mhv2rit1eh,Panel no. A12,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-06T06:30:00,2026-09-08T06:30:00
+cmt6s3flb0ln0m8mhl481cys3,Panel no. A13,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-07T06:30:00,2026-09-11T06:30:00
+cmt6s3flh0ln4m8mhxtcgql9f,Panel no. A14,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-07T06:30:00,2026-09-12T06:30:00
+cmt6s3flp0ln8m8mhsu4wzqka,Panel no. A15,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-08T06:30:00,2026-09-14T06:30:00
+cmt6s3flv0lncm8mhg3buot4u,Panel no. A16,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-08T06:30:00,2026-09-15T06:30:00
+cmt6s3fm20lngm8mhfyc2veil,Panel no. A17,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-09T06:30:00,2026-09-17T06:30:00
+cmt6s3fil0llom8mhaubec6t4,Panel no. A1,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-08-24T06:30:00,2026-09-01T06:30:00
+cmt6s3fj30llsm8mhwr43euap,Panel no. A2,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-08-25T06:30:00,2026-09-01T06:30:00
+cmt6s3fjb0llwm8mh004rwhli,Panel no. A3,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-08-27T06:30:00,2026-09-02T06:30:00
+cmt6s3fma0lnkm8mhvtj6fcf9,Panel no. A18,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-09T06:30:00,2026-09-18T06:30:00
+cmt6s3fmo0lnsm8mh7a8kh3ol,Panel no. A20,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-10T06:30:00,2026-09-21T06:30:00
+cmt6s3fmh0lnom8mhwoa8u0r1,Panel no. A19,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:24.227,,2026-09-10T06:30:00,2026-09-20T06:30:00
+cmt6s40ka0lnym8mhu3b2l4yv,Panel no. A21,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:51.51,,2026-09-11T06:30:00,2026-09-23T06:30:00
+cmt6s40kg0lo2m8mhm2t20knj,Panel no. A22,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:51.51,,2026-09-11T06:30:00,2026-09-24T06:30:00
+cmt6s4lzq0logm8mhi6dur9bj,Panel no. A23,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:12:19.281,,2026-06-12T06:30:00,2026-09-26T06:30:00
+cmt6s40kp0lo6m8mhmteyok6t,Panel no. A24,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:51.51,,2026-09-12T06:30:00,2026-09-27T06:30:00
+cmt6s4lzw0lokm8mht3usmopj,Panel no. A25,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:12:19.281,,2026-09-13T06:30:00,2026-09-29T06:30:00
+cmt6s40kx0loam8mhc8hnh46h,Panel no. A26,cmt6s2u190llkm8mh81ynguqk,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-24T05:11:51.51,,2026-09-13T06:30:00,2026-09-30T06:30:00
+cmomrtc9y01nvc8g01hrtnra1,Raft,cmomrtc9x01ntc8g0mrftncmr,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-01T10:29:20.604,,2026-07-01T06:30:00,2026-09-30T06:30:00
+cmomrtqlw01p9c8g05j5mtw0h,Raft,cmomrtqlw01p7c8g0mhw5iws4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-01T10:29:39.177,,2026-07-07T06:30:00,2026-10-11T06:30:00
+cmomrseqf01jpc8g0kvhc4hz3,Raft,cmomrseqe01jnc8g0trlsssir,cmonwu1ck02tkc8g0uozpb3b6,true,2026-05-01T10:28:37.132,2026-06-27T09:19:39.002,2026-06-11T06:30:00,2026-06-18T06:30:00
+cmpfd4aas010yry9phiw9cqir,Raft,cmpfd4aaq010jry9p189nqn13,cmonwu1ck02tkc8g0uozpb3b6,false,2026-05-21T10:43:16.112,,2026-07-12T06:30:00,2026-11-28T06:30:00
+cmsftq2p906zem8mhka2zlxil,NTP -3,cmsftq2p806z6m8mh1o3hzg5e,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2029-02-15T06:30:00
+cmsftq2p806z8m8mhk12vdt2k,NTP -1,cmsftq2p806z6m8mh1o3hzg5e,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2027-07-20T06:30:00
+cmsftq2p906zsm8mh9ase5r8x,NTP -4,cmsftq2p906zkm8mhiic6nhjw,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2028-03-25T06:30:00
+cmsftq2p906zmm8mh7avmowwy,NTP -2,cmsftq2p906zkm8mhiic6nhjw,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2027-06-26T06:30:00
+cmsg0go8z07m1m8mhth74rl39,NTP -4,cmsftq2p306uwm8mhxxyv2zao,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T11:35:52.253,,,2027-02-02T06:30:00
+cmsftq2p406vam8mhih7ajitu,NTP -3,cmsftq2p306uwm8mhxxyv2zao,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2027-01-10T06:30:00
+cmsftq2p506w0m8mhzr4ams7s,NTP -1,cmsftq2p306uwm8mhxxyv2zao,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2026-10-25T06:30:00
+cmsftq2p506w6m8mhgq8p1n2m,NTP -5,cmsftq2p306uwm8mhxxyv2zao,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2027-01-20T06:30:00
+cmsftq2p406uym8mhb4x7ovg8,NTP -1A,cmsftq2p306uwm8mhxxyv2zao,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2027-01-02T06:30:00
+cmsftq2p506vim8mh9bs2mjw1,NTP -1B,cmsftq2p306uwm8mhxxyv2zao,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2026-10-22T06:30:00
+cmsftq2p506wcm8mhsursxr9d,NTP -6,cmsftq2p306uwm8mhxxyv2zao,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2027-01-25T06:30:00
+cmsftq2p406v4m8mhhp3cedou,NTP -2,cmsftq2p306uwm8mhxxyv2zao,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2026-12-13T06:30:00
+cmsftq2p506wem8mhll16xppt,NTP -7,cmsftq2p306uwm8mhxxyv2zao,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-05T08:27:13.547,,,2027-02-05T06:30:00
+cmsill2bf08ejm8mhr6lnl7h2,Area - 661 SQM,cmsilkyhf08egm8mhlbf65q4l,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-07T07:02:41.403,,2026-08-07T06:30:00,2026-10-21T06:30:00
+cmsd7f8hj04cjm8mhn1jkegoi,Area - 356 SQM,cmsd7f8hj04chm8mh1wl0vpal,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-03T12:27:23.939,2026-08-10T06:18:16.881,,2026-07-27T06:30:00
+cmsefmuyi0553m8mhgeriy6wu,Area - 1023 SQM,cmsefmuyh0552m8mhvq94bzsl,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-04T09:19:44.007,,2026-07-27T06:30:00
+cmsefmv0s0567m8mhhkax7y0m,Area - 356 SQM,cmsefmv0s0566m8mh8i5oj5fa,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T09:05:02.768,,,2026-11-23T06:30:00
+cmsefmuz3055bm8mhhuvz8azi,Area - 929 SQM,cmsefmuz3055am8mhcqys3sz4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-04T09:20:13.129,,2026-07-28T06:30:00
+cmsefmv0z056bm8mht66mivbg,Area - 356 SQM,cmsefmv0z056am8mhtunwu58z,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T09:05:02.768,,,2026-11-23T06:30:00
+cmsefmv17056fm8mh6tpveh3c,Area - 356 SQM,cmsefmv16056em8mhwmj52kr6,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T09:05:02.768,,,2026-10-23T06:30:00
+cmsefmuyv0557m8mhtmwvgk7x,Area - 210 SQM,cmsefmuyv0556m8mh84w6zzpy,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T09:05:02.768,,,2026-09-09T06:30:00
+cmsefmuza055fm8mhtdu406xh,Area - 312 SQM,cmsefmuza055em8mh30ynny1e,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-10T08:29:12.819,,2026-07-28T06:30:00
+cmsefmuzy055rm8mhnb8bfcw7,Area - 257 SQM,cmsefmuzy055qm8mh8ubnn2yx,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-10T08:29:39.185,,2026-07-28T06:30:00
+cmsefmuzi055jm8mhttd60ac2,Area - 1474 SQM,cmsefmuzi055im8mhgwz43ezj,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-04T09:24:00.505,,2026-07-28T06:30:00
+cmsefmv0c055zm8mhsur0tbto,Area - 356 SQM,cmsefmv0c055ym8mht2er3ao2,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-10T08:17:20.161,,2026-07-28T06:30:00
+cmsefmuzq055nm8mhnhqk82r6,Area - 960 SQM,cmsefmuzq055mm8mhqdm2m686,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-04T09:24:14.881,,2026-07-06T06:30:00
+cmsefmv0l0563m8mhk86dw7te,Area - 356 SQM,cmsefmv0l0562m8mhh1961k7s,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-10T08:17:36.864,,2026-07-27T06:30:00
+cmsefmv05055vm8mh6vgjra6h,Area - 432 SQM,cmsefmv05055um8mh5je60qcx,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-10T08:17:38.93,,2026-07-30T06:30:00
+cmsefmv1e056jm8mhhg9zh6vt,Area - 356 SQM,cmsefmv1d056im8mho0gtpc37,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-04T09:05:02.768,2026-08-10T08:17:58.081,,2026-08-02T06:30:00
+cmsefmv1l056nm8mh5uv6ywsz,Area - 356 SQM,cmsefmv1l056mm8mhvxa1oyub,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-04T09:05:02.768,,,2026-10-03T06:30:00
+cmsmvos8j0bklm8mhzd5mqirq,Skin wall B1 Level,cmsmvos8i0bkjm8mh6wbqgcc6,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T06:56:35.817,,,
+cmsmw9i000blum8mhsz50bqsc,Skin wall B1 Level,cmsmw9hzz0blsm8mhkowl4r1s,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T07:12:42.327,,,
+cmsmwn2g80bn0m8mh8t8cbv2y,Column & Shear Wall at B2 ,cmsmwn2g80bmym8mhtxqe37us,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T07:23:15.359,2026-08-18T10:47:51.987,,2026-07-27T06:30:00
+cmsmyomue0bpim8mhd3s20i83,Area - 356 SQM,cmsmyomue0bpgm8mhfh7l54cm,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T08:20:27.672,,,2026-08-23T06:30:00
+cmsn3kmmj0dqjm8mhlssl5ml6,TP -4,cmsftq2p606wmm8mhxf9k5jlj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:37:18.851,,,2027-03-22T06:30:00
+cmsn3kmms0dqom8mhgqc7qjic,NTP -9,cmsftq2p606wmm8mhxf9k5jlj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:37:18.851,,,2027-03-06T06:30:00
+cmsn3kmmy0dqtm8mhckhl29hf,NTP -10,cmsftq2p606wmm8mhxf9k5jlj,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:37:18.851,,,2027-04-04T06:30:00
+cmsn3tflx0dvsm8mhs6zqxyhy,TP -1,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn3tflx0dw5m8mhq8aeg0tn,NTP -4,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn3tflx0dwim8mh1wl9hh3z,TP -2,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn3tfly0dwvm8mh9f4yfde3,TP -3,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn3tfly0dxlm8mhjtyjvti3,NTP -1A,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn3tflz0dybm8mh6izxk9hv,NTP -3,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn3tflz0dyom8mhxyfkta3a,NTP -4A,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn3tflz0dz1m8mhyv0ezmzr,NTP -5,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn3tfm00dzem8mh9c0atp65,NTP -6,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn3tfm00dzrm8mh2e9lpcv9,NTP -7,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:44:09.648,,,
+cmsn480uy0e6am8mhe8utstle,TP -1,cmsn480uw0e5im8mhpuizyega,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:55:30.376,,,2027-05-15T06:30:00
+cmsn480uy0e70m8mhqqacguu6,TP -2,cmsn480uw0e5im8mhpuizyega,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:55:30.376,,,2027-06-15T06:30:00
+cmsn480uz0e7dm8mh29ngzsnb,NTP -8,cmsn480uw0e5im8mhpuizyega,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:55:30.376,,,2027-05-05T06:30:00
+cmsn480uz0e83m8mhiucrhf5s,NTP -9,cmsn480uw0e5im8mhpuizyega,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T10:55:30.376,,,2027-06-02T06:30:00
+cmsn3tflz0dxym8mhtamwg6f7,NTP -2,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T10:44:09.648,2026-08-12T03:50:58.127,,
+cmsn3tfly0dx8m8mhz78grzv1,NTP -1,cmsn3tflw0dvqm8mhiwvf1ye2,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T10:44:09.648,2026-08-12T07:24:09.829,,
+cmsn4l1ad0eham8mhynowcv3c,NTP -1A,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-09-17T06:30:00
+cmsn4l1ac0efmm8mha2i7rbut,TP -1,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-11-01T06:30:00
+cmsn4l1ad0ehmm8mh1nh7benw,NTP -2,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-08-22T06:30:00
+cmsn4l1ae0ehym8mh11e0eog6,NTP -3,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-09-05T06:30:00
+cmsn4l1ak0eoum8mh1umlviqj,NTP -7,cmsn4l1ah0em4m8mh3xitx5fq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-02-25T06:30:00
+cmsn4l1ae0eimm8mh0mh18lcb,NTP -5,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-11-04T06:30:00
+cmsn4l1ad0egam8mhbaqypylv,TP -2,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-10-20T06:30:00
+cmsn4l1ac0efym8mho7wo42oy,NTP -4,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-10-17T06:30:00
+cmsn4l1ak0eoim8mh667jyrcx,NTP -2,cmsn4l1ah0em4m8mh3xitx5fq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-12-29T06:30:00
+cmsn4l1ad0egmm8mhl2imdb57,TP -3,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-10-23T06:30:00
+cmsn4l1af0ejom8mhhe9xkc20,TP -4,cmsn4l1af0ejmm8mh1gua85nf,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-04-08T06:30:00
+cmsn4l1al0eq8m8mhamcoysgj,NTP -9,cmsn4l1ak0ep6m8mh93971uyb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-06-27T06:30:00
+cmsn4l1ae0eiam8mh0nddzdeq,NTP -4A,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-10-02T06:30:00
+cmsn4l1ag0ek0m8mhufcd0wsp,NTP -9,cmsn4l1af0ejmm8mh1gua85nf,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-03-23T06:30:00
+cmsn4l1ae0eiym8mheiup7omv,NTP -6,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-11-25T06:30:00
+cmsn4l1ai0emim8mhpib9xbsf,NTP -3,cmsn4l1ah0em4m8mh3xitx5fq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-02-04T06:30:00
+cmsn4l1ag0ekcm8mhdepd7zvo,NTP -10,cmsn4l1af0ejmm8mh1gua85nf,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-04-21T06:30:00
+cmsn4l1aj0enim8mhdzat9rqy,NTP -1A,cmsn4l1ah0em4m8mh3xitx5fq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-01-12T06:30:00
+cmsn4l1ak0ep8m8mhddj15ofh,TP -1,cmsn4l1ak0ep6m8mh93971uyb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-06-17T06:30:00
+cmsn4l1ae0ejam8mhuj7wv125,NTP -7,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-12-13T06:30:00
+cmsn4l1ai0em6m8mhkxph9xu5,NTP -4,cmsn4l1ah0em4m8mh3xitx5fq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-02-18T06:30:00
+cmsn4l1aj0emum8mh9skdsd8n,NTP -1,cmsn4l1ah0em4m8mh3xitx5fq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-11-11T06:30:00
+cmsn4l1aj0enum8mho2ucvyr1,NTP -1B,cmsn4l1ah0em4m8mh3xitx5fq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2026-11-07T06:30:00
+cmsn4l1aj0en6m8mh106fqsx1,NTP -5,cmsn4l1ah0em4m8mh3xitx5fq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-02-18T06:30:00
+cmsn4l1al0epkm8mh914eaf4g,TP -2,cmsn4l1ak0ep6m8mh93971uyb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-07-20T06:30:00
+cmsn4l1aj0eo6m8mh8ti0q78b,NTP -6,cmsn4l1ah0em4m8mh3xitx5fq,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-02-15T06:30:00
+cmsn4l1al0epwm8mh1sqw4os6,NTP -8,cmsn4l1ak0ep6m8mh93971uyb,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-05-19T06:30:00
+cmsn4l1ad0egym8mhdvnc0pw5,NTP -1,cmsn4l1ab0efkm8mhkk4g8ur4,cmonwu1ck02tkc8g0uozpb3b6,true,2026-08-10T11:05:37.43,2026-08-29T10:10:42.576,,2026-08-17T06:30:00
+cmsn4l1ag0el2m8mhz6q6kz84,NTP -1,cmsn4l1ag0ekom8mh30kjwxj7,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-08-26T06:30:00
+cmsn4l1ag0ekqm8mhn67s8etm,NTP -3,cmsn4l1ag0ekom8mh30kjwxj7,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2029-03-12T06:30:00
+cmsn4l1ah0elsm8mhlo9p2yqj,NTP -2,cmsn4l1ah0elem8mh0g9o8dsa,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2027-07-31T06:30:00
+cmsn4l1ah0elgm8mhub3tiphx,NTP -4,cmsn4l1ah0elem8mh0g9o8dsa,cmonwu1ck02tkc8g0uozpb3b6,false,2026-08-10T11:05:37.43,,,2028-04-25T06:30:00

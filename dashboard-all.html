@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Homeland Group</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --panel: #ffffff;
+    --border: #dde1e6;
+    --text: #1c1f24;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-bg: #eaf1ff;
+    --green: #16a34a;
+    --green-bg: #e9f9ef;
+    --amber: #d97706;
+    --amber-bg: #fef3e0;
+    --red: #dc2626;
+    --red-bg: #fdeaea;
+  }
+  html[data-theme="dark"] {
+    --bg: #0b1220;
+    --panel: #101a30;
+    --border: #223154;
+    --text: #b8c2dc;
+    --muted: #7c8bad;
+    --accent: #729bdb;
+    --accent-bg: #16244a;
+    --green: #34d372;
+    --green-bg: #0f2b28;
+    --amber: #f2a93c;
+    --amber-bg: #2e2412;
+    --red: #f16060;
+    --red-bg: #301826;
+  }
+  * { box-sizing: border-box; font-family: inherit; }
+  html { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    transition: background .15s, color .15s;
+  }
+  button, input, select, textarea { font-family: inherit; }
+  svg text { font-family: inherit; }
+  #topBar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  #topBar {
+    background:
+      linear-gradient(180deg, rgba(10,14,26,0.75), rgba(10,14,26,0.6) 60%, rgba(10,14,26,0.85)),
+      url('Homeland Group.png');
+    background-size: cover;
+    background-position: center;
+  }
+  header {
+    padding: 6px 28px 2px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  header h1 {
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: -0.2px;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #d3d9e8;
+  }
+  header .sub { color: rgba(255,255,255,0.75); font-size: 13px; margin-top: 3px; }
+  #themeToggle, #refreshBtn, #overviewBtn {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 20px;
+    padding: 7px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  #themeToggle:hover, #refreshBtn:hover, #overviewBtn:hover { background: var(--accent-bg); }
+  header #themeToggle, header #refreshBtn, #topBar #overviewBtn { color: #d3d9e8; border-color: rgba(255,255,255,0.28); background: rgba(255,255,255,0.08); }
+  header #themeToggle:hover, header #refreshBtn:hover, #topBar #overviewBtn:hover { background: rgba(255,255,255,0.22); }
+  .headerChip {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.28);
+    color: #d3d9e8;
+    border-radius: 20px;
+    padding: 6px 13px;
+    font-size: 12.5px;
+    cursor: pointer;
+  }
+  .headerChip:hover { background: rgba(255,255,255,0.22); }
+  #refreshBtn.spinning { animation: spin-fade 0.6s ease; }
+  @keyframes spin-fade { 0% { opacity: 0.5; } 100% { opacity: 1; } }
+  main { padding: 22px 28px 40px; max-width: 1200px; margin: 0 auto; }
+
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    margin-bottom: 26px;
+  }
+  .kpi {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    transition: transform .12s, box-shadow .12s;
+  }
+  .kpi:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,0.07); }
+  .kpi .value { font-size: 26px; font-weight: 700; color: var(--accent); }
+  .kpi .label { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+
+  .project-names {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 26px;
+  }
+  @media (max-width: 800px) { .project-names { grid-template-columns: 1fr; } }
+  .name-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  .name-card .pname { font-size: 16px; font-weight: 700; }
+  .name-card .pstatus {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 11px;
+    padding: 2px 9px;
+    border-radius: 10px;
+    background: var(--green-bg);
+    color: var(--green);
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  @media (max-width: 900px) { .projects { grid-template-columns: 1fr; } }
+  .projects .pcard { padding: 12px 14px; border-radius: 10px; }
+  .projects .pcard-head { margin-bottom: 0; }
+  .projects .pcard-head h2 { font-size: 13px; }
+  .pcard {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: transform .12s, box-shadow .12s;
+  }
+  .pcard-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pcard-head h2 { font-size: 16px; margin: 0; }
+  .pcard-head .status {
+    font-size: 11px;
+    padding: 2px 9px;
+    border-radius: 10px;
+    background: var(--green-bg);
+    color: var(--green);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .stat-row .stat { text-align: left; }
+  .stat-row .stat .n { font-size: 18px; font-weight: 700; }
+  .stat-row .stat .l { font-size: 11px; color: var(--muted); }
+
+  .bar { height: 9px; background: #eef0f3; border-radius: 5px; overflow: hidden; margin-bottom: 4px; }
+  .bar > div { height: 100%; background: var(--accent); border-radius: 5px; }
+  .plabel { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--muted); margin-bottom: 8px; }
+
+  .overdue-tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: var(--red-bg);
+    color: var(--red);
+  }
+  .overdue-tag.none { background: var(--green-bg); color: var(--green); }
+
+  .links { margin-top: 12px; }
+  .links a {
+    font-size: 12.5px;
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 14px;
+  }
+
+  .empty, .loading { padding: 40px; text-align: center; color: var(--muted); }
+
+  .pcard { cursor: pointer; }
+  .pcard.selected {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .pcard.selected h2 { color: #fff; }
+  .headerChip.selected {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .pcard:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  .pcard.expanded { cursor: default; }
+  .expand-hint { font-size: 11.5px; color: var(--accent); margin-top: 10px; }
+
+  .area-panel {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .area-panel table { font-size: 12.5px; }
+  .area-panel thead th {
+    text-align: left; padding: 6px 8px; color: var(--muted);
+    font-weight: 600; border-bottom: 1px solid var(--border); font-size: 11px;
+  }
+  .area-panel tbody td { padding: 7px 8px; border-bottom: 1px solid #f2f3f5; }
+  .area-panel tbody tr:last-child td { border-bottom: none; }
+  .mini-bar { height: 6px; background: #eef0f3; border-radius: 4px; overflow: hidden; width: 70px; display: inline-block; vertical-align: middle; margin-right: 6px; }
+  .mini-bar > div { height: 100%; background: var(--accent); border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<div id="topBar">
+  <header>
+    <div>
+      <h1>Homeland Group</h1>
+      <div class="sub">Homeland Group &middot; portfolio overview across all active projects</div>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:flex-end; gap:10px;">
+      <div style="display:flex; gap:10px;">
+        <button id="refreshBtn">🔄 Refresh</button>
+        <button id="themeToggle"><span id="themeIcon">🌙</span><span id="themeText">Dark mode</span></button>
+      </div>
+      <div style="display:flex; gap:10px;">
+        <button class="headerChip" id="crridCard">🏗️ CRRID</button>
+        <button class="headerChip" id="globalParkCard">🏢 Homeland Global Park</button>
+      </div>
+    </div>
+  </header>
+
+  <div style="padding:0 28px 4px; display:flex; justify-content:flex-start; gap:28px; font-size:13px; font-weight:600; color:rgba(255,255,255,0.9);">
+    <span><span style="font-size:14px; margin-right:2px;">📍</span> <span id="siteLocation">Locating...</span></span>
+    <span><span style="font-size:14px; margin-right:2px;">🕒</span> <span id="siteClock">--:--:--</span> · <span id="siteDate"></span></span>
+    <span><span style="font-size:14px; margin-right:2px;">🌡️</span> <span id="siteTemp">--°C</span></span>
+    <span><span style="font-size:14px; margin-right:2px;">🌧️</span> <span id="siteRain">-- mm</span></span>
+  </div>
+
+  <div style="padding:2px 28px 8px;">
+    <button id="overviewBtn">📊 Overview</button>
+  </div>
+</div>
+
+<main id="app">
+  <div class="loading">Loading...</div>
+</main>
+
+<script>
+(function themeInit() {
+  let saved = "light";
+  try { saved = localStorage.getItem("crrid-theme") || "light"; } catch (e) {}
+  document.documentElement.setAttribute("data-theme", saved);
+})();
+
+function applyThemeButton() {
+  const theme = document.documentElement.getAttribute("data-theme") || "light";
+  const icon = document.getElementById("themeIcon");
+  const text = document.getElementById("themeText");
+  if (theme === "dark") {
+    icon.textContent = "☀️";
+    text.textContent = "Light mode";
+  } else {
+    icon.textContent = "🌙";
+    text.textContent = "Dark mode";
+  }
+}
+
+document.getElementById("themeToggle").addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme") || "light";
+  const next = current === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("crrid-theme", next); } catch (e) {}
+  applyThemeButton();
+});
+
+applyThemeButton();
+
+// Live site clock (real device time)
+function tickClock() {
+  const now = new Date();
+  document.getElementById("siteClock").textContent = now.toLocaleTimeString();
+  document.getElementById("siteDate").textContent = now.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" });
+}
+tickClock();
+setInterval(tickClock, 1000);
+
+// Demo-only temperature & rain gauge (no real sensor feed connected) — random within a plausible range
+document.getElementById("siteTemp").textContent = (26 + Math.random() * 8).toFixed(1) + "°C";
+document.getElementById("siteRain").textContent = (Math.random() * 15).toFixed(1) + " mm";
+
+// Real current location via browser geolocation + map reverse-geocoding (OpenStreetMap Nominatim — no API key needed)
+function setLocationText(text) {
+  const el = document.getElementById("siteLocation");
+  if (el) el.textContent = text;
+}
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(
+    async (pos) => {
+      const { latitude, longitude } = pos.coords;
+      try {
+        const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=10&addressdetails=1`);
+        const data = await res.json();
+        const a = data.address || {};
+        const city = a.city || a.town || a.village || a.county || a.state_district || "";
+        const region = a.state || a.country || "";
+        setLocationText([city, region].filter(Boolean).join(", ") || "Location unavailable");
+      } catch (e) {
+        setLocationText(`${latitude.toFixed(2)}, ${longitude.toFixed(2)}`);
+      }
+    },
+    () => setLocationText("Chandigarh, India"),
+    { timeout: 8000 }
+  );
+} else {
+  setLocationText("Chandigarh, India");
+}
+
+document.getElementById("overviewBtn").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  const crridCard = document.getElementById("crridCard");
+  if (crridCard) crridCard.click();
+});
+
+document.getElementById("refreshBtn").addEventListener("click", () => {
+  const btn = document.getElementById("refreshBtn");
+  btn.classList.add("spinning");
+  location.reload();
+});
+
+function parseCSV(text) {
+  const rows = [];
+  let row = [], field = "", inQuotes = false;
+  text = text.replace(/\r\n/g, "\n");
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQuotes = false; }
+      else field += c;
+    } else {
+      if (c === '"') inQuotes = true;
+      else if (c === ',') { row.push(field); field = ""; }
+      else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ""; }
+      else field += c;
+    }
+  }
+  if (field.length || row.length) { row.push(field); rows.push(row); }
+  if (rows.length && rows[rows.length-1].length === 1 && rows[rows.length-1][0] === "") rows.pop();
+  return rows;
+}
+
+async function loadTable(name) {
+  try {
+    const res = await fetch(name + ".csv");
+    if (!res.ok) return [];
+    const rows = parseCSV(await res.text());
+    if (!rows.length) return [];
+    const cols = rows[0];
+    return rows.slice(1).map(r => {
+      const obj = {};
+      cols.forEach((c, i) => obj[c] = r[i] !== undefined ? r[i] : "");
+      return obj;
+    });
+  } catch (e) {
+    return [];
+  }
+}
+
+function esc(s) {
+  return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+function num(v) { return parseInt(v, 10) || 0; }
+
+const MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+// Counts items into 12 buckets (Jan..Dec) by the month of a date field, regardless of year.
+function countsByMonthIndex(list, dateField) {
+  const counts = new Array(12).fill(0);
+  list.forEach(t => {
+    if (!t[dateField]) return;
+    const d = new Date(t[dateField]);
+    if (isNaN(d)) return;
+    counts[d.getMonth()]++;
+  });
+  return counts;
+}
+
+// Fixed Jan-Dec monthly chart. series = [{ name, color, counts: [12 numbers], style, fill }]
+function buildMonthlyChart(series) {
+  const W = 720, H = 260, padL = 42, padR = 20, padT = 26, padB = 34;
+  const rawMax = Math.max(...series.flatMap(s => s.counts), 1);
+  const niceMax = (() => {
+    const magnitude = Math.pow(10, Math.floor(Math.log10(rawMax || 1)));
+    const steps = [1, 2, 2.5, 5, 10];
+    for (const s of steps) { if (rawMax <= s * magnitude) return s * magnitude; }
+    return 10 * magnitude;
+  })();
+  const maxVal = niceMax;
+  const stepX = (W - padL - padR) / 11;
+  const x = i => padL + i * stepX;
+  const y = v => padT + (H - padT - padB) * (1 - v / maxVal);
+
+  const xLabels = MONTH_NAMES.map((m, i) =>
+    `<text x="${x(i).toFixed(1)}" y="${H - 10}" font-size="11" fill="var(--muted)" text-anchor="middle">${m}</text>`
+  ).join("");
+
+  const ySteps = 4;
+  const gridLines = Array.from({ length: ySteps + 1 }, (_, i) => i / ySteps).map(f => {
+    const yy = padT + (H - padT - padB) * (1 - f);
+    return `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="${padL - 8}" y="${(yy + 3).toFixed(1)}" font-size="10" fill="var(--muted)" text-anchor="end">${Math.round(maxVal * f)}</text>`;
+  }).join("");
+
+  const gradId = "gradFillM" + Math.random().toString(36).slice(2, 8);
+
+  const seriesSvg = series.map((s, idx) => {
+    const linePath = s.counts.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+    const dashArr = s.style === "dashed" ? `stroke-dasharray="6 5"` : "";
+    const dots = s.counts.map((v, i) => `
+      <circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.5" fill="${s.style === "dashed" ? "var(--panel)" : s.color}" stroke="${s.color}" stroke-width="1.5">
+        <title>${esc(s.name)} in ${MONTH_NAMES[i]}: ${v}</title>
+      </circle>
+      <text x="${x(i).toFixed(1)}" y="${(y(v) - 10).toFixed(1)}" font-size="10.5" font-weight="600" fill="${s.color}" text-anchor="middle">${v}</text>
+    `).join("");
+    let fillSvg = "";
+    if (s.fill) {
+      const areaPath = linePath + ` L ${x(11).toFixed(1)} ${y(0).toFixed(1)} L ${x(0).toFixed(1)} ${y(0).toFixed(1)} Z`;
+      fillSvg = `
+        <defs>
+          <linearGradient id="${gradId}${idx}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="${s.color}" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="${s.color}" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="${areaPath}" fill="url(#${gradId}${idx})" stroke="none" />
+      `;
+    }
+    return `${fillSvg}<path d="${linePath}" fill="none" stroke="${s.color}" stroke-width="2.5" ${dashArr} />${dots}`;
+  }).join("");
+
+  const legend = series.map(s => `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:16px; height:0; border-top:2.5px ${s.style === "dashed" ? "dashed" : "solid"} ${s.color}; display:inline-block;"></span>${esc(s.name)}
+    </span>
+  `).join("");
+
+  return `
+    <div style="background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:18px 14px 10px;">
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%; height:auto; overflow:visible;">
+        ${gridLines}
+        ${seriesSvg}
+        ${xLabels}
+      </svg>
+      <div style="text-align:center; margin-top:6px;">${legend}</div>
+    </div>
+  `;
+}
+
+// Same visual style as buildMonthlyChart but with arbitrary category labels on the x-axis
+// (used where no per-task dates are available, e.g. Homeland Global Park area rollups).
+// series = [{ name, color, values: [numbers, one per label], style, fill }]
+function buildCategoryChart(labels, series) {
+  const n = Math.max(labels.length, 1);
+  const W = Math.max(480, n * 70), H = 260, padL = 42, padR = 20, padT = 26, padB = 46;
+  const rawMax = Math.max(...series.flatMap(s => s.values), 1);
+  const niceMax = (() => {
+    const magnitude = Math.pow(10, Math.floor(Math.log10(rawMax || 1)));
+    const steps = [1, 2, 2.5, 5, 10];
+    for (const s of steps) { if (rawMax <= s * magnitude) return s * magnitude; }
+    return 10 * magnitude;
+  })();
+  const maxVal = niceMax;
+  const stepX = n > 1 ? (W - padL - padR) / (n - 1) : 0;
+  const x = i => n > 1 ? padL + i * stepX : (padL + W - padR) / 2;
+  const y = v => padT + (H - padT - padB) * (1 - v / maxVal);
+
+  const xLabels = labels.map((l, i) =>
+    `<text x="${x(i).toFixed(1)}" y="${H - padB + 22}" font-size="10" fill="var(--muted)" text-anchor="middle" transform="rotate(20 ${x(i).toFixed(1)} ${H - padB + 22})">${esc(l.length > 14 ? l.slice(0, 13) + "…" : l)}</text>`
+  ).join("");
+
+  const ySteps = 4;
+  const gridLines = Array.from({ length: ySteps + 1 }, (_, i) => i / ySteps).map(f => {
+    const yy = padT + (H - padT - padB) * (1 - f);
+    return `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="${padL - 8}" y="${(yy + 3).toFixed(1)}" font-size="10" fill="var(--muted)" text-anchor="end">${Math.round(maxVal * f)}</text>`;
+  }).join("");
+
+  const gradId = "gradFillC" + Math.random().toString(36).slice(2, 8);
+
+  const seriesSvg = series.map((s, idx) => {
+    const linePath = s.values.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+    const dashArr = s.style === "dashed" ? `stroke-dasharray="6 5"` : "";
+    const dots = s.values.map((v, i) => `
+      <circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.5" fill="${s.style === "dashed" ? "var(--panel)" : s.color}" stroke="${s.color}" stroke-width="1.5">
+        <title>${esc(s.name)} — ${esc(labels[i])}: ${v}</title>
+      </circle>
+      <text x="${x(i).toFixed(1)}" y="${(y(v) - 10).toFixed(1)}" font-size="10.5" font-weight="600" fill="${s.color}" text-anchor="middle">${v}</text>
+    `).join("");
+    let fillSvg = "";
+    if (s.fill && n > 1) {
+      const areaPath = linePath + ` L ${x(n - 1).toFixed(1)} ${y(0).toFixed(1)} L ${x(0).toFixed(1)} ${y(0).toFixed(1)} Z`;
+      fillSvg = `
+        <defs>
+          <linearGradient id="${gradId}${idx}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="${s.color}" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="${s.color}" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="${areaPath}" fill="url(#${gradId}${idx})" stroke="none" />
+      `;
+    }
+    return `${fillSvg}<path d="${linePath}" fill="none" stroke="${s.color}" stroke-width="2.5" ${dashArr} />${dots}`;
+  }).join("");
+
+  const legend = series.map(s => `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:16px; height:0; border-top:2.5px ${s.style === "dashed" ? "dashed" : "solid"} ${s.color}; display:inline-block;"></span>${esc(s.name)}
+    </span>
+  `).join("");
+
+  return `
+    <div style="background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:18px 14px 10px; overflow-x:auto;">
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%; min-width:${W}px; height:auto; overflow:visible;">
+        ${gridLines}
+        ${seriesSvg}
+        ${xLabels}
+      </svg>
+      <div style="text-align:center; margin-top:6px;">${legend}</div>
+    </div>
+  `;
+}
+
+// Builds a dependency-free multi-series SVG line chart, styled like a dark analytics card:
+// dashed reference line + solid line-with-gradient-fill, dashed gridlines, bottom legend.
+// series = [{ name, color, points: [{date, value}], style: "dashed"|"solid", fill: true|false }]
+function buildLineChart(series, granularity) {
+  const allPoints = series.flatMap(s => s.points);
+  if (!allPoints.length) {
+    return '<div class="empty">No task data to chart.</div>';
+  }
+  const dates = [...new Set(allPoints.map(p => p.date))].sort();
+  const W = 720, H = 260, padL = 42, padR = 20, padT = 20, padB = 34;
+  const rawMax = Math.max(...allPoints.map(p => p.value), 1);
+  // round the axis max up to a "nice" number so grid labels look clean (e.g. 200, 400, 600, 800)
+  const niceMax = (() => {
+    const magnitude = Math.pow(10, Math.floor(Math.log10(rawMax || 1)));
+    const steps = [1, 2, 2.5, 5, 10];
+    for (const s of steps) { if (rawMax <= s * magnitude) return s * magnitude; }
+    return 10 * magnitude;
+  })();
+  const maxVal = niceMax;
+  const stepX = dates.length > 1 ? (W - padL - padR) / (dates.length - 1) : 0;
+  const x = i => padL + (dates.length > 1 ? i * stepX : (W - padL - padR) / 2);
+  const y = v => padT + (H - padT - padB) * (1 - v / maxVal);
+
+  const formatLabel = d => granularity === "month"
+    ? new Date(d + "T00:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" })
+    : new Date(d + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+
+  const labelEvery = granularity === "month" ? 1 : Math.max(1, Math.ceil(dates.length / 7));
+  const xLabels = dates.map((d, i) => (i % labelEvery === 0 || i === dates.length - 1)
+    ? `<text x="${x(i).toFixed(1)}" y="${H - 10}" font-size="11" fill="var(--muted)" text-anchor="middle">${esc(formatLabel(d))}</text>`
+    : "").join("");
+
+  const ySteps = 4;
+  const gridLines = Array.from({ length: ySteps + 1 }, (_, i) => i / ySteps).map(f => {
+    const yy = padT + (H - padT - padB) * (1 - f);
+    return `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="${padL - 8}" y="${(yy + 3).toFixed(1)}" font-size="10" fill="var(--muted)" text-anchor="end">${Math.round(maxVal * f)}</text>`;
+  }).join("");
+
+  const gradId = "gradFill" + Math.random().toString(36).slice(2, 8);
+
+  const seriesSvg = series.map((s, idx) => {
+    let last = 0;
+    const byDate = Object.fromEntries(s.points.map(p => [p.date, p.value]));
+    const filled = dates.map(d => {
+      if (byDate[d] !== undefined) { last = byDate[d]; return last; }
+      return s.cumulative ? last : 0;
+    });
+    const linePath = filled.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+    const dashArr = s.style === "dashed" ? `stroke-dasharray="6 5"` : "";
+    const dots = filled.map((v, i) => {
+      const label = granularity === "month"
+        ? `<text x="${x(i).toFixed(1)}" y="${(y(v) - 10).toFixed(1)}" font-size="10.5" font-weight="600" fill="${s.color}" text-anchor="middle">${v}</text>`
+        : "";
+      const niceDate = new Date(dates[i] + "T00:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+      return `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="${s.style === "dashed" ? "var(--panel)" : s.color}" stroke="${s.color}" stroke-width="1.5"><title>${esc(s.name)} as of ${esc(niceDate)}: ${v}</title></circle>${label}`;
+    }).join("");
+    let fillSvg = "";
+    if (s.fill) {
+      const areaPath = linePath + ` L ${x(dates.length - 1).toFixed(1)} ${y(0).toFixed(1)} L ${x(0).toFixed(1)} ${y(0).toFixed(1)} Z`;
+      fillSvg = `
+        <defs>
+          <linearGradient id="${gradId}${idx}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="${s.color}" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="${s.color}" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="${areaPath}" fill="url(#${gradId}${idx})" stroke="none" />
+      `;
+    }
+    return `${fillSvg}<path d="${linePath}" fill="none" stroke="${s.color}" stroke-width="2.5" ${dashArr} />${dots}`;
+  }).join("");
+
+  const legend = series.map(s => `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:16px; height:0; border-top:2.5px ${s.style === "dashed" ? "dashed" : "solid"} ${s.color}; display:inline-block;"></span>${esc(s.name)}
+    </span>
+  `).join("");
+
+  return `
+    <div style="background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:18px 14px 10px;">
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%; height:auto; overflow:visible;">
+        ${gridLines}
+        ${seriesSvg}
+        ${xLabels}
+      </svg>
+      <div style="text-align:center; margin-top:6px;">${legend}</div>
+    </div>
+  `;
+}
+
+// Circular progress ring showing a single percentage
+function buildProgressRing(pct, color, label) {
+  const size = 140, stroke = 12, r = (size - stroke) / 2, c = 2 * Math.PI * r;
+  const offset = c - (Math.min(100, Math.max(0, pct)) / 100) * c;
+  return `
+    <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+      <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--border)" stroke-width="${stroke}" />
+      <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="${stroke}"
+        stroke-linecap="round" stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="${offset.toFixed(1)}"
+        transform="rotate(-90 ${size/2} ${size/2})" style="transition: stroke-dashoffset .3s;" />
+      <text x="50%" y="47%" text-anchor="middle" font-size="24" font-weight="700" fill="var(--text)">${pct}%</text>
+      <text x="50%" y="63%" text-anchor="middle" font-size="11" fill="var(--muted)">${esc(label)}</text>
+    </svg>
+  `;
+}
+
+(async function init() {
+  const app = document.getElementById("app");
+  const allAreas = await loadTable("AllAreas");
+  const allProjectsRows = await loadTable("AllProjects");
+  const crridAreas = allAreas.filter(a => a.projectName.trim() === "CRRID");
+  const globalParkAreas = allAreas.filter(a => a.projectName.trim() === "Homeland Global Park");
+  const globalParkProjectRow = allProjectsRows.find(p => p.projectName.trim() === "Homeland Global Park");
+  const globalParkOverdueTotal = globalParkProjectRow ? num(globalParkProjectRow.overdueTasks) : 0;
+  const crridSubAreas = await loadTable("SubArea");
+  const crridTasks = await loadTable("Task");
+  const crridUsers = await loadTable("User");
+  const subAreaToArea = Object.fromEntries(crridSubAreas.map(s => [s.subAreaId, s.areaId]));
+  const subAreaNameById = Object.fromEntries(crridSubAreas.map(s => [s.subAreaId, s.subAreaName]));
+  const areaNameById = Object.fromEntries(crridAreas.map(a => [a.areaId, a.areaName]));
+  const towerNameByAreaId = Object.fromEntries(crridAreas.map(a => [a.areaId, a.towerName.trim()]));
+  const userNameById = Object.fromEntries(crridUsers.map(u => [u.userId, (u.firstName + " " + u.lastName).trim() || u.username || u.email]));
+
+  // Homeland Global Park: real per-task data (live-pulled snapshot), merged into the
+  // same lookup maps as CRRID so the task-list drill-down works identically for both.
+  const gpSubAreas = await loadTable("GlobalParkSubArea");
+  const gpTasks = await loadTable("GlobalParkTask");
+  const gpUsers = await loadTable("GlobalParkUser");
+  crridTasks.forEach(t => { t._project = "CRRID"; });
+  gpTasks.forEach(t => { t._project = "Homeland Global Park"; });
+  const gpSubAreaToArea = Object.fromEntries(gpSubAreas.map(s => [s.subAreaId, s.areaId]));
+  const gpSubAreaNameById = Object.fromEntries(gpSubAreas.map(s => [s.subAreaId, s.subAreaName]));
+  const gpAreaNameById = Object.fromEntries(globalParkAreas.map(a => [a.areaId, a.areaName]));
+  const gpTowerNameByAreaId = Object.fromEntries(globalParkAreas.map(a => [a.areaId, a.towerName.trim()]));
+  const gpUserNameById = Object.fromEntries(gpUsers.map(u => [u.userId, (u.firstName + " " + u.lastName).trim() || u.username || u.email]));
+  Object.assign(subAreaToArea, gpSubAreaToArea);
+  Object.assign(subAreaNameById, gpSubAreaNameById);
+  Object.assign(areaNameById, gpAreaNameById);
+  Object.assign(towerNameByAreaId, gpTowerNameByAreaId);
+  Object.assign(userNameById, gpUserNameById);
+
+  function taskAreaName(t) { return areaNameById[subAreaToArea[t.subAreaId]] || "—"; }
+  function taskSubAreaName(t) { return subAreaNameById[t.subAreaId] || "—"; }
+  function taskManagerName(t) { return userNameById[t.taskManager] || "—"; }
+  function taskTowerName(t) { return towerNameByAreaId[subAreaToArea[t.subAreaId]] || "—"; }
+  function taskProjectName(t) { return (t && t._project) || "CRRID"; }
+  const NOW = new Date("2026-08-31");
+  const SEVEN_DAYS_AGO = new Date(NOW.getTime() - 7 * 24 * 60 * 60 * 1000);
+
+  const AREA_ICONS = {
+    "Seminar Hall": { icon: "🎤", color: "#7c3aed" },
+    "Material Selection": { icon: "🧱", color: "#b45309" },
+    "Toilet Block": { icon: "🚿", color: "#0891b2" },
+
+    "Anchor": { icon: "⚓", color: "#0f766e" },
+    "Excavation": { icon: "⛏️", color: "#78350f" },
+    "Retaining Wall": { icon: "🧱", color: "#92400e" },
+    "D -Wall Work": { icon: "🧱", color: "#92400e" },
+    "Skin Wall": { icon: "🪟", color: "#0369a1" },
+    "PCC": { icon: "🪨", color: "#6b7280" },
+    "Basement Raft work": { icon: "🕳️", color: "#57534e" },
+    "Basement Raft Work": { icon: "🕳️", color: "#57534e" },
+    "Column Schedule B1 Level": { icon: "📐", color: "#1d4ed8" },
+    "Column Schedule B2 Level": { icon: "📐", color: "#1d4ed8" },
+    "Column Schedule GF Level": { icon: "📐", color: "#1d4ed8" },
+    "Column Casting - B1": { icon: "🏛️", color: "#475569" },
+    "Column Casting - B2": { icon: "🏛️", color: "#475569" },
+    "Column Casting - GF": { icon: "🏛️", color: "#475569" },
+    "Slab Schedule B1 Level": { icon: "📋", color: "#1d4ed8" },
+    "Slab Schedule B2 Level": { icon: "📋", color: "#1d4ed8" },
+    "Slab Schedule GF Level": { icon: "📋", color: "#1d4ed8" },
+    "Slab Casting - B1": { icon: "🏗️", color: "#334155" },
+    "Slab Casting - B2": { icon: "🏗️", color: "#334155" },
+    "Slab Casting - GF": { icon: "🏗️", color: "#334155" },
+    "HGP - Sales Office": { icon: "🏢", color: "#15803d" }
+  };
+  function areaStyle(name) {
+    return AREA_ICONS[name] || { icon: "📍", color: "var(--accent)" };
+  }
+
+  app.innerHTML = `
+    <div class="projects" id="areaCards"></div>
+
+    <div id="summaryLabel" style="margin-top:10px; margin-bottom:8px; font-size:13px; color:var(--muted);">Showing: All CRRID areas</div>
+    <div id="crridSummary"></div>
+
+    <div class="pcard" id="progressCard" style="margin-top:18px; cursor:default;">
+      <div class="pcard-head"><h2 id="chartTitle" style="font-size:14.5px;">📈 Project Progress</h2></div>
+      <div style="display:grid; grid-template-columns:160px 1fr; gap:20px; align-items:center;">
+        <div id="progressRing" style="display:flex; justify-content:center;"></div>
+        <div id="taskChart"></div>
+      </div>
+    </div>
+
+    <div class="pcard" id="taskListPanel" style="margin-top:18px; cursor:default; display:none;">
+      <div class="pcard-head">
+        <h2 id="taskListTitle" style="font-size:14.5px;">📋 Tasks <span id="taskListCount" style="color:var(--muted); font-weight:400;"></span></h2>
+        <button id="closeTaskList" style="background:var(--bg); border:1px solid var(--border); color:var(--text); border-radius:8px; padding:6px 12px; font-size:13px; cursor:pointer;">✕ Close</button>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+        <input id="taskSearch" type="text" placeholder="Search tasks..." style="flex:1; min-width:160px; padding:8px 12px; border:1px solid var(--border); border-radius:8px; background:var(--bg); color:var(--text); font-size:13px;">
+        <select id="taskStatusFilter" style="padding:8px 12px; border:1px solid var(--border); border-radius:8px; background:var(--bg); color:var(--text); font-size:13px;">
+          <option value="">All statuses</option>
+          <option value="completed">Completed</option>
+          <option value="pending">Pending</option>
+        </select>
+        <select id="taskAreaFilter" style="padding:8px 12px; border:1px solid var(--border); border-radius:8px; background:var(--bg); color:var(--text); font-size:13px;">
+          <option value="">All areas</option>
+        </select>
+      </div>
+      <div id="taskListBody"></div>
+    </div>
+  `;
+
+  const stat = (icon, l, value, color, filterKey) => `
+    <div class="kpi" data-filter="${filterKey || ""}" style="border-left:4px solid ${color}; ${filterKey ? "cursor:pointer;" : ""}">
+      <div class="value" style="color:${color};">${icon} ${value}</div>
+      <div class="label">${l}</div>
+    </div>
+  `;
+
+  function hideTaskList() {
+    document.getElementById("taskListPanel").style.display = "none";
+    document.getElementById("progressCard").style.display = "";
+  }
+
+  function statusBadge(t) {
+    return t.completed === "true"
+      ? `<span style="display:inline-block; padding:2px 11px; border-radius:12px; background:var(--green-bg); color:var(--green); font-size:11.5px; font-weight:700; border:1px solid var(--green);">DONE</span>`
+      : `<span style="display:inline-block; padding:2px 11px; border-radius:12px; background:var(--amber-bg); color:var(--amber); font-size:11.5px; font-weight:700; border:1px solid var(--amber);">PENDING</span>`;
+  }
+
+  function fmtDate(d) {
+    if (!d) return "—";
+    const dt = new Date(d);
+    if (isNaN(dt)) return "—";
+    return (dt.getMonth() + 1) + "/" + dt.getDate() + "/" + dt.getFullYear();
+  }
+
+  let taskListBaseTasks = [];
+
+  function renderTaskListRows() {
+    const q = document.getElementById("taskSearch").value.trim().toLowerCase();
+    const statusVal = document.getElementById("taskStatusFilter").value;
+    const areaVal = document.getElementById("taskAreaFilter").value;
+
+    const filtered = taskListBaseTasks.filter(t => {
+      if (q && !(t.taskName || "").toLowerCase().includes(q)) return false;
+      if (statusVal === "completed" && t.completed !== "true") return false;
+      if (statusVal === "pending" && t.completed === "true") return false;
+      if (areaVal && taskAreaName(t) !== areaVal) return false;
+      return true;
+    });
+
+    document.getElementById("taskListCount").textContent = `(${filtered.length} of ${taskListBaseTasks.length})`;
+    const body = document.getElementById("taskListBody");
+
+    if (!filtered.length) {
+      body.innerHTML = `<div class="empty" style="padding:14px 0;">No tasks match.</div>`;
+      return;
+    }
+
+    body.innerHTML = `
+      <div style="max-height:360px; overflow:auto; border:1px solid var(--border); border-radius:8px;">
+        <table style="width:100%; border-collapse:collapse; font-size:13px; white-space:nowrap;">
+          <thead><tr>
+            <th style="text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); position:sticky; top:0; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.03em;">TASK</th>
+            <th style="text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); position:sticky; top:0; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.03em;">PROJECT</th>
+            <th style="text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); position:sticky; top:0; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.03em;">LOCATION</th>
+            <th style="text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); position:sticky; top:0; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.03em;">AREA</th>
+            <th style="text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); position:sticky; top:0; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.03em;">SUB-AREA</th>
+            <th style="text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); position:sticky; top:0; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.03em;">MANAGER</th>
+            <th style="text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); position:sticky; top:0; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.03em;">STATUS</th>
+            <th style="text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); position:sticky; top:0; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.03em;">DUE</th>
+            <th style="text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); position:sticky; top:0; background:var(--panel); color:var(--muted); font-size:11px; letter-spacing:.03em;">COMPLETED</th>
+          </tr></thead>
+          <tbody>
+            ${filtered.map(t => `
+              <tr>
+                <td style="padding:8px 10px; border-bottom:1px solid var(--border); white-space:normal; font-weight:600;">${esc(t.taskName || "—")}</td>
+                <td style="padding:8px 10px; border-bottom:1px solid var(--border); color:var(--muted);">${esc(taskProjectName(t))}</td>
+                <td style="padding:8px 10px; border-bottom:1px solid var(--border); color:var(--muted);">${esc(taskTowerName(t))}</td>
+                <td style="padding:8px 10px; border-bottom:1px solid var(--border); color:var(--muted);">${esc(taskAreaName(t))}</td>
+                <td style="padding:8px 10px; border-bottom:1px solid var(--border); color:var(--muted);">${esc(taskSubAreaName(t))}</td>
+                <td style="padding:8px 10px; border-bottom:1px solid var(--border); color:var(--muted);">${esc(taskManagerName(t))}</td>
+                <td style="padding:8px 10px; border-bottom:1px solid var(--border);">${statusBadge(t)}</td>
+                <td style="padding:8px 10px; border-bottom:1px solid var(--border); color:var(--muted);">${fmtDate(t.endDate)}</td>
+                <td style="padding:8px 10px; border-bottom:1px solid var(--border); color:var(--muted);">${fmtDate(t.completedAt)}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+
+  function showTaskList(tasks, title) {
+    document.getElementById("progressCard").style.display = "none";
+    const panel = document.getElementById("taskListPanel");
+    panel.style.display = "";
+    document.getElementById("taskListTitle").innerHTML = "📋 " + esc(title) + ` <span id="taskListCount" style="color:var(--muted); font-weight:400;"></span>`;
+
+    taskListBaseTasks = tasks;
+
+    const areaFilter = document.getElementById("taskAreaFilter");
+    const areaNames = [...new Set(tasks.map(t => taskAreaName(t)))].sort();
+    areaFilter.innerHTML = `<option value="">All areas</option>` + areaNames.map(a => `<option value="${esc(a)}">${esc(a)}</option>`).join("");
+
+    document.getElementById("taskSearch").value = "";
+    document.getElementById("taskStatusFilter").value = "";
+
+    renderTaskListRows();
+
+    document.getElementById("taskSearch").oninput = renderTaskListRows;
+    document.getElementById("taskStatusFilter").onchange = renderTaskListRows;
+    document.getElementById("taskAreaFilter").onchange = renderTaskListRows;
+    document.getElementById("closeTaskList").onclick = (e) => { e.preventDefault(); hideTaskList(); };
+  }
+
+  function attachStatCardHandlers(getTasksForFilter) {
+    document.querySelectorAll("#crridSummary .kpi[data-filter]").forEach(card => {
+      const key = card.dataset.filter;
+      if (!key) return;
+      card.addEventListener("click", () => {
+        const result = getTasksForFilter(key);
+        if (result === null) {
+          showTaskList([], "Task list not available (only aggregate data exported for this project)");
+        } else {
+          showTaskList(result.tasks, result.title);
+        }
+      });
+    });
+  }
+
+  // CRRID summary: built from real task-level data (dates available), so overdue,
+  // "done last 7 days" and the monthly trend chart are all accurate.
+  function renderSummary(tasks, label) {
+    const total = tasks.length;
+    const completed = tasks.filter(t => t.completed === "true").length;
+    const pending = tasks.filter(t => t.completed !== "true").length;
+    const overdue = tasks.filter(t => {
+      if (t.completed === "true" || !t.endDate) return false;
+      return new Date(t.endDate) < NOW;
+    }).length;
+    const doneLast7 = tasks.filter(t => {
+      if (t.completed !== "true" || !t.completedAt) return false;
+      const d = new Date(t.completedAt);
+      return d >= SEVEN_DAYS_AGO && d <= NOW;
+    }).length;
+
+    document.getElementById("summaryLabel").textContent = "Showing: " + label;
+    document.getElementById("crridSummary").innerHTML = `
+      <div class="kpis" style="grid-template-columns:repeat(5, 1fr); margin-bottom:0;">
+        ${stat("📋", "Total Tasks", total, "var(--accent)", "total")}
+        ${stat("✅", "Completed", completed, "var(--green)", "completed")}
+        ${stat("⏳", "Pending", pending, "var(--amber)", "pending")}
+        ${stat("⚠️", "Overdue", overdue, "var(--red)", "overdue")}
+        ${stat("📅", "Done Last 7 Days", doneLast7, "var(--green)", "doneLast7")}
+      </div>
+    `;
+
+    hideTaskList();
+    attachStatCardHandlers(key => {
+      const overdueTasks = tasks.filter(t => t.completed !== "true" && t.endDate && new Date(t.endDate) < NOW);
+      const doneLast7Tasks = tasks.filter(t => t.completed === "true" && t.completedAt && new Date(t.completedAt) >= SEVEN_DAYS_AGO && new Date(t.completedAt) <= NOW);
+      const map = {
+        total: { tasks, title: "Total Tasks — " + label },
+        completed: { tasks: tasks.filter(t => t.completed === "true"), title: "Completed Tasks — " + label },
+        pending: { tasks: tasks.filter(t => t.completed !== "true"), title: "Pending Tasks — " + label },
+        overdue: { tasks: overdueTasks, title: "Overdue Tasks — " + label },
+        doneLast7: { tasks: doneLast7Tasks, title: "Done Last 7 Days — " + label }
+      };
+      return map[key] || null;
+    });
+
+    document.getElementById("chartTitle").textContent = "📈 Project Progress — " + label;
+
+    const pct = total ? Math.round((completed / total) * 100) : 0;
+    document.getElementById("progressRing").innerHTML = buildProgressRing(pct, "var(--accent)", "Tasks Complete");
+
+    const createdCounts = countsByMonthIndex(tasks, "createdAt");
+    const completedCounts = countsByMonthIndex(tasks.filter(t => t.completed === "true"), "completedAt");
+
+    document.getElementById("taskChart").innerHTML = buildMonthlyChart([
+      { name: "Total tasks", color: "#729bdb", counts: createdCounts, style: "dashed", fill: false },
+      { name: "Completed", color: "#34d372", counts: completedCounts, style: "solid", fill: true }
+    ]);
+  }
+
+  // Homeland Global Park summary: this export only has area-level rollups for it
+  // (no per-task dates), so overdue is shown only for the whole project and
+  // "done last 7 days" / the monthly trend aren't available.
+  function renderSummaryFromAreaRows(rows, label, isWholeProject) {
+    const total = rows.reduce((s, r) => s + num(r.tasks), 0);
+    const completed = rows.reduce((s, r) => s + num(r.tasksCompleted), 0);
+    const pending = total - completed;
+    const overdue = isWholeProject ? globalParkOverdueTotal : null;
+
+    document.getElementById("summaryLabel").textContent = "Showing: " + label;
+    document.getElementById("crridSummary").innerHTML = `
+      <div class="kpis" style="grid-template-columns:repeat(5, 1fr); margin-bottom:0;">
+        ${stat("📋", "Total Tasks", total, "var(--accent)", "total")}
+        ${stat("✅", "Completed", completed, "var(--green)", "completed")}
+        ${stat("⏳", "Pending", pending, "var(--amber)", "pending")}
+        ${stat("⚠️", "Overdue", overdue === null ? "—" : overdue, "var(--red)", "overdue")}
+        ${stat("📅", "Done Last 7 Days", "—", "var(--green)", "doneLast7")}
+      </div>
+    `;
+
+    hideTaskList();
+    attachStatCardHandlers(() => null); // no per-task list exported for this project
+
+    document.getElementById("chartTitle").textContent = "📈 Project Progress — " + label;
+    const pct = total ? Math.round((completed / total) * 100) : 0;
+    document.getElementById("progressRing").innerHTML = buildProgressRing(pct, "#0891b2", "Tasks Complete");
+
+    const totalCounts = new Array(12).fill(0);
+    const completedCounts = new Array(12).fill(0);
+    totalCounts[NOW.getMonth()] = total;
+    completedCounts[NOW.getMonth()] = completed;
+    document.getElementById("taskChart").innerHTML = buildMonthlyChart([
+      { name: "Total tasks", color: "#729bdb", counts: totalCounts, style: "dashed", fill: false },
+      { name: "Completed", color: "#34d372", counts: completedCounts, style: "solid", fill: true }
+    ]);
+  }
+
+  function groupByTower(areas) {
+    const map = {};
+    areas.forEach(a => {
+      const key = a.towerId;
+      if (!map[key]) map[key] = { towerId: a.towerId, towerName: a.towerName.trim(), areas: [] };
+      map[key].areas.push(a);
+    });
+    return Object.values(map);
+  }
+
+  function renderAreaCards(areas, color) {
+    document.getElementById("areaCards").innerHTML = areas.map(a => {
+      const s = areaStyle(a.areaName);
+      const c = color || s.color;
+      return `
+        <div class="pcard" data-area-id="${esc(a.areaId)}" data-tasks="${esc(a.tasks)}" data-completed="${esc(a.tasksCompleted)}" style="border-left:4px solid ${c};">
+          <div class="pcard-head" style="margin-bottom:0;">
+            <h2>${s.icon} ${esc(a.areaName)}</h2>
+          </div>
+        </div>
+      `;
+    }).join("");
+    attachAreaCardHandlers();
+  }
+
+  function renderLocationCards(towers, accentColor) {
+    document.getElementById("areaCards").innerHTML = towers.map(t => `
+      <div class="pcard" data-tower-id="${esc(t.towerId)}" style="border-left:4px solid ${accentColor};">
+        <div class="pcard-head" style="margin-bottom:0;">
+          <h2>📍 ${esc(t.towerName)}</h2>
+        </div>
+      </div>
+    `).join("");
+    attachLocationCardHandlers();
+  }
+
+  let mode = "crrid"; // "crrid" | "globalpark"
+  let selectedAreaId = null;
+  let selectedTowerId = null;
+
+  function attachLocationCardHandlers() {
+    document.querySelectorAll("#areaCards .pcard[data-tower-id]").forEach(card => {
+      card.addEventListener("click", () => {
+        const towerId = card.dataset.towerId;
+        const towerName = card.querySelector("h2").textContent.replace("📍 ", "");
+        document.querySelectorAll("#areaCards .pcard").forEach(c => c.classList.remove("selected"));
+        card.classList.add("selected");
+        selectedTowerId = towerId;
+        selectedAreaId = null;
+        if (mode === "crrid") selectTower(crridAreas, towerId, towerName);
+        else selectTower(globalParkAreas, towerId, towerName);
+      });
+    });
+  }
+
+  function selectTower(allAreasForProject, towerId, towerName) {
+    const areasInTower = allAreasForProject.filter(a => a.towerId === towerId);
+    renderAreaCards(areasInTower);
+
+    if (mode === "crrid") {
+      const tasksInTower = crridTasks.filter(t => areasInTower.some(a => a.areaId === subAreaToArea[t.subAreaId]));
+      renderSummary(tasksInTower, towerName);
+    } else {
+      const tasksInTower = gpTasks.filter(t => areasInTower.some(a => a.areaId === subAreaToArea[t.subAreaId]));
+      renderSummary(tasksInTower, towerName);
+    }
+
+    document.getElementById("summaryLabel").innerHTML =
+      `<a href="#" id="backToLocations" style="color:var(--accent); text-decoration:none;">← Locations</a> &middot; Showing: ${esc(towerName)}`;
+
+    document.getElementById("backToLocations").addEventListener("click", (e) => {
+      e.preventDefault();
+      selectedTowerId = null;
+      selectedAreaId = null;
+      if (mode === "crrid") {
+        renderLocationCards(groupByTower(crridAreas), "var(--accent)");
+        renderSummary(crridTasks, "All CRRID areas");
+      } else {
+        renderLocationCards(groupByTower(globalParkAreas), "#0891b2");
+        renderSummary(gpTasks, "All Homeland Global Park areas");
+      }
+    });
+  }
+
+  function attachAreaCardHandlers() {
+    document.querySelectorAll("#areaCards .pcard[data-area-id]").forEach(card => {
+      card.addEventListener("click", () => {
+        const areaId = card.dataset.areaId;
+        document.querySelectorAll("#areaCards .pcard").forEach(c => c.classList.remove("selected"));
+        const towerAreas = (mode === "crrid" ? crridAreas : globalParkAreas).filter(a => a.towerId === selectedTowerId);
+        const towerName = towerAreas[0] ? towerAreas[0].towerName.trim() : "";
+
+        if (selectedAreaId === areaId) {
+          selectedAreaId = null;
+          if (mode === "crrid") {
+            const tasksInTower = crridTasks.filter(t => towerAreas.some(a => a.areaId === subAreaToArea[t.subAreaId]));
+            renderSummary(tasksInTower, towerName);
+          } else {
+            const tasksInTower = gpTasks.filter(t => towerAreas.some(a => a.areaId === subAreaToArea[t.subAreaId]));
+            renderSummary(tasksInTower, towerName);
+          }
+          return;
+        }
+
+        selectedAreaId = areaId;
+        card.classList.add("selected");
+        const areaName = card.querySelector("h2").textContent;
+
+        if (mode === "crrid") {
+          const tasksInArea = crridTasks.filter(t => subAreaToArea[t.subAreaId] === areaId);
+          renderSummary(tasksInArea, areaName);
+        } else {
+          const tasksInArea = gpTasks.filter(t => subAreaToArea[t.subAreaId] === areaId);
+          renderSummary(tasksInArea, areaName);
+        }
+      });
+    });
+  }
+
+  function selectCrrid() {
+    mode = "crrid";
+    selectedAreaId = null;
+    document.getElementById("crridCard").classList.add("selected");
+    document.getElementById("globalParkCard").classList.remove("selected");
+
+    // CRRID has only one location, so skip straight to its areas.
+    const towers = groupByTower(crridAreas);
+    if (towers.length === 1) {
+      selectedTowerId = towers[0].towerId;
+      selectTower(crridAreas, towers[0].towerId, towers[0].towerName);
+    } else {
+      selectedTowerId = null;
+      renderLocationCards(towers, "var(--accent)");
+      renderSummary(crridTasks, "All CRRID areas");
+    }
+  }
+
+  function selectGlobalPark() {
+    mode = "globalpark";
+    selectedAreaId = null;
+    selectedTowerId = null;
+    document.getElementById("globalParkCard").classList.add("selected");
+    document.getElementById("crridCard").classList.remove("selected");
+    renderLocationCards(groupByTower(globalParkAreas), "#0891b2");
+    renderSummary(gpTasks, "All Homeland Global Park areas");
+  }
+
+  document.getElementById("crridCard").addEventListener("click", selectCrrid);
+  document.getElementById("globalParkCard").addEventListener("click", selectGlobalPark);
+
+  selectCrrid();
+
+  return;
+
+  const allProjects = await loadTable("AllProjects");
+  const projects = allProjects;
+
+  if (!allProjects.length) {
+    app.innerHTML = '<div class="empty">Could not load AllProjects.csv</div>';
+    return;
+  }
+  if (!projects.length) {
+    app.innerHTML = '<div class="empty">All projects are currently hidden from this dashboard.</div>';
+    return;
+  }
+
+  const totals = projects.reduce((acc, p) => {
+    acc.towers += num(p.towers);
+    acc.areas += num(p.areas);
+    acc.subAreas += num(p.subAreas);
+    acc.tasks += num(p.tasks);
+    acc.tasksCompleted += num(p.tasksCompleted);
+    acc.overdueTasks += num(p.overdueTasks);
+    acc.steps += num(p.steps);
+    acc.stepsCompleted += num(p.stepsCompleted);
+    acc.contractors += num(p.contractors);
+    return acc;
+  }, { towers:0, areas:0, subAreas:0, tasks:0, tasksCompleted:0, overdueTasks:0, steps:0, stepsCompleted:0, contractors:0 });
+
+  const overallPct = totals.steps ? Math.round((totals.stepsCompleted / totals.steps) * 100) : 0;
+
+  app.innerHTML = `
+    <div class="kpis">
+      <div class="kpi"><div class="value">${projects.length}</div><div class="label">Active Projects</div></div>
+      <div class="kpi"><div class="value">${totals.towers}</div><div class="label">Total Towers</div></div>
+      <div class="kpi"><div class="value">${totals.areas}</div><div class="label">Total Areas</div></div>
+      <div class="kpi"><div class="value">${totals.tasks}</div><div class="label">Total Tasks</div></div>
+      <div class="kpi"><div class="value">${totals.overdueTasks}</div><div class="label">Overdue Tasks</div></div>
+      <div class="kpi"><div class="value">${overallPct}%</div><div class="label">Overall Step Completion</div></div>
+    </div>
+
+    <div class="project-names">
+      ${projects.map(p => `
+        <div class="name-card">
+          <div class="pname">${esc(p.projectName)}</div>
+          <div class="pstatus">${esc(p.projectStatus || "active")}</div>
+        </div>
+      `).join("")}
+    </div>
+
+    <div class="projects">
+      ${projects.map(p => {
+        const stepPct = num(p.steps) ? Math.round((num(p.stepsCompleted) / num(p.steps)) * 100) : 0;
+        const taskPct = num(p.tasks) ? Math.round((num(p.tasksCompleted) / num(p.tasks)) * 100) : 0;
+        const overdue = num(p.overdueTasks);
+        const isCrrid = p.projectName.trim().toUpperCase() === "CRRID";
+        return `
+          <div class="pcard" data-project-id="${esc(p.projectId)}">
+            <div class="pcard-head">
+              <h2>${esc(p.projectName)} <span class="status">${esc(p.projectStatus || "active")}</span></h2>
+              <span class="${overdue ? 'overdue-tag' : 'overdue-tag none'}">${overdue ? overdue + " overdue task" + (overdue===1?"":"s") : "No overdue tasks"}</span>
+            </div>
+            <div class="stat-row">
+              <div class="stat"><div class="n">${p.towers}</div><div class="l">Towers</div></div>
+              <div class="stat"><div class="n">${p.areas}</div><div class="l">Areas</div></div>
+              <div class="stat"><div class="n">${p.subAreas}</div><div class="l">Sub-Areas</div></div>
+              <div class="stat"><div class="n">${p.tasks}</div><div class="l">Tasks</div></div>
+              <div class="stat"><div class="n">${p.steps}</div><div class="l">Steps</div></div>
+              <div class="stat"><div class="n">${p.contractors}</div><div class="l">Contractors</div></div>
+            </div>
+            <div class="plabel"><span>Task completion</span><span>${p.tasksCompleted}/${p.tasks} &middot; ${taskPct}%</span></div>
+            <div class="bar"><div style="width:${taskPct}%"></div></div>
+            <div class="plabel" style="margin-top:10px;"><span>Step completion</span><span>${p.stepsCompleted}/${p.steps} &middot; ${stepPct}%</span></div>
+            <div class="bar"><div style="width:${stepPct}%"></div></div>
+            <div class="expand-hint">Click to show areas &darr;</div>
+            <div class="area-panel" style="display:none;"></div>
+          </div>
+        `;
+      }).join("")}
+    </div>
+  `;
+
+  // Click a project card to expand/collapse its area list
+  document.querySelectorAll(".pcard").forEach(card => {
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return; // don't trigger on the "Open CRRID detail" link
+      const pid = card.dataset.projectId;
+      const panel = card.querySelector(".area-panel");
+      const hint = card.querySelector(".expand-hint");
+      const isOpen = panel.style.display !== "none";
+
+      if (isOpen) {
+        panel.style.display = "none";
+        card.classList.remove("expanded");
+        hint.textContent = "Click to show areas ↓";
+        return;
+      }
+
+      card.classList.add("expanded");
+      hint.textContent = "Click to hide areas ↑";
+
+      if (!panel.dataset.rendered) {
+        const areasForProject = allAreas.filter(a => a.projectId === pid);
+        if (!areasForProject.length) {
+          panel.innerHTML = '<div class="empty">No areas found for this project.</div>';
+        } else {
+          panel.innerHTML = `
+            <table>
+              <thead><tr><th>Area</th><th>Tower</th><th>Sub-Areas</th><th>Tasks</th><th>Steps</th><th>Step Progress</th></tr></thead>
+              <tbody>
+                ${areasForProject.map(a => {
+                  const sPct = num(a.steps) ? Math.round((num(a.stepsCompleted) / num(a.steps)) * 100) : 0;
+                  return `<tr>
+                    <td>${esc(a.areaName)}</td>
+                    <td>${esc(a.towerName)}</td>
+                    <td>${a.subAreas}</td>
+                    <td>${a.tasksCompleted}/${a.tasks}</td>
+                    <td>${a.stepsCompleted}/${a.steps}</td>
+                    <td><span class="mini-bar"><div style="width:${sPct}%"></div></span>${sPct}%</td>
+                  </tr>`;
+                }).join("")}
+              </tbody>
+            </table>
+          `;
+        }
+        panel.dataset.rendered = "1";
+      }
+      panel.style.display = "block";
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
