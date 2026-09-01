@@ -73,7 +73,7 @@
     color: #d3d9e8;
   }
   header .sub { color: rgba(255,255,255,0.75); font-size: 13px; margin-top: 3px; }
-  #themeToggle, #refreshBtn, #overviewBtn {
+  #themeToggle, #refreshBtn, #overviewBtn, #tasksBtn {
     background: var(--bg);
     border: 1px solid var(--border);
     color: var(--text);
@@ -85,9 +85,15 @@
     align-items: center;
     gap: 6px;
   }
-  #themeToggle:hover, #refreshBtn:hover, #overviewBtn:hover { background: var(--accent-bg); }
-  header #themeToggle, header #refreshBtn, #topBar #overviewBtn { color: #d3d9e8; border-color: rgba(255,255,255,0.28); background: rgba(255,255,255,0.08); }
-  header #themeToggle:hover, header #refreshBtn:hover, #topBar #overviewBtn:hover { background: rgba(255,255,255,0.22); }
+  #themeToggle:hover, #refreshBtn:hover, #overviewBtn:hover, #tasksBtn:hover { background: var(--accent-bg); }
+  header #themeToggle, header #refreshBtn, #topBar #overviewBtn, #topBar #tasksBtn { color: #d3d9e8; border-color: rgba(255,255,255,0.28); background: rgba(255,255,255,0.08); }
+  header #themeToggle:hover, header #refreshBtn:hover, #topBar #overviewBtn:hover, #topBar #tasksBtn:hover { background: rgba(255,255,255,0.22); }
+  #topBar #overviewBtn.navActive, #topBar #tasksBtn.navActive {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  #topBar #overviewBtn.navActive:hover, #topBar #tasksBtn.navActive:hover { background: var(--accent); }
   .headerChip {
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.28);
@@ -343,8 +349,9 @@
     <span><span style="font-size:14px; margin-right:2px;">🌧️</span> <span id="siteRain">-- mm</span></span>
   </div>
 
-  <div style="padding:2px 28px 8px;">
+  <div style="padding:2px 28px 8px; display:flex; gap:10px;">
     <button id="overviewBtn">📊 Overview</button>
+    <button id="tasksBtn">📋 Tasks</button>
   </div>
 </div>
 
@@ -1041,6 +1048,7 @@ function buildProgressRing(pct, color, label) {
         <h2 id="taskListTitle" style="font-size:14.5px;">📋 Tasks <span id="taskListCount" style="color:var(--muted); font-weight:400;"></span></h2>
         <button id="closeTaskList" style="background:var(--bg); border:1px solid var(--border); color:var(--text); border-radius:8px; padding:6px 12px; font-size:13px; cursor:pointer;">✕ Close</button>
       </div>
+      <div id="taskListContext" style="margin-bottom:12px; font-size:13px; color:var(--muted); display:flex; gap:18px; flex-wrap:wrap;"></div>
       <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
         <input id="taskSearch" type="text" placeholder="Search tasks..." style="flex:1; min-width:160px; padding:8px 12px; border:1px solid var(--border); border-radius:8px; background:var(--bg); color:var(--text); font-size:13px;">
         <select id="taskStatusFilter" style="padding:8px 12px; border:1px solid var(--border); border-radius:8px; background:var(--bg); color:var(--text); font-size:13px;">
@@ -1063,10 +1071,31 @@ function buildProgressRing(pct, color, label) {
     </div>
   `;
 
+  function setNavActive(which) {
+    document.getElementById("overviewBtn").classList.toggle("navActive", which === "overview");
+    document.getElementById("tasksBtn").classList.toggle("navActive", which === "tasks");
+  }
+
   function hideTaskList() {
     document.getElementById("taskListPanel").style.display = "none";
     document.getElementById("progressCard").style.display = "";
     document.querySelectorAll("#crridSummary .kpi.selected").forEach(c => c.classList.remove("selected"));
+    setNavActive("overview");
+  }
+
+  function currentProjectDisplayName() {
+    if (mode === "crrid") return "CRRID";
+    if (mode === "globalpark") return "Homeland Global Park";
+    return "Homeland Regalia";
+  }
+  function currentLocationDisplayName() {
+    if (!selectedTowerId) return "All locations";
+    const match = areasForMode(mode).find(a => a.towerId === selectedTowerId);
+    return match ? displayTowerName(match.towerName) : "—";
+  }
+  function currentAreaDisplayName() {
+    if (!selectedAreaId) return "All areas";
+    return areaNameById[selectedAreaId] || "—";
   }
 
   function statusBadge(t) {
@@ -1141,9 +1170,16 @@ function buildProgressRing(pct, color, label) {
 
   function showTaskList(tasks, title) {
     document.getElementById("progressCard").style.display = "none";
+    setNavActive("tasks");
     const panel = document.getElementById("taskListPanel");
     panel.style.display = "";
     document.getElementById("taskListTitle").innerHTML = "📋 " + esc(title) + ` <span id="taskListCount" style="color:var(--muted); font-weight:400;"></span>`;
+
+    document.getElementById("taskListContext").innerHTML = `
+      <span><strong>Project:</strong> ${esc(currentProjectDisplayName())}</span>
+      <span><strong>Location:</strong> ${esc(currentLocationDisplayName())}</span>
+      <span><strong>Area:</strong> ${esc(currentAreaDisplayName())}</span>
+    `;
 
     taskListBaseTasks = tasks;
 
@@ -1182,6 +1218,8 @@ function buildProgressRing(pct, color, label) {
   // CRRID summary: built from real task-level data (dates available), so overdue,
   // "done last 7 days" and the monthly trend chart are all accurate.
   function renderSummary(tasks, label) {
+    currentScopeTasks = tasks;
+    currentScopeLabel = label;
     const total = tasks.length;
     const completed = tasks.filter(t => t.completed === "true").length;
     const pending = tasks.filter(t => t.completed !== "true").length;
@@ -1238,6 +1276,8 @@ function buildProgressRing(pct, color, label) {
   // (no per-task dates), so overdue is shown only for the whole project and
   // "done last 7 days" / the monthly trend aren't available.
   function renderSummaryFromAreaRows(rows, label, overdueTotal) {
+    currentScopeTasks = null; // no per-task list exported for this project
+    currentScopeLabel = label;
     const total = rows.reduce((s, r) => s + num(r.tasks), 0);
     const completed = rows.reduce((s, r) => s + num(r.tasksCompleted), 0);
     const pending = total - completed;
@@ -1336,6 +1376,8 @@ function buildProgressRing(pct, color, label) {
   let mode = "crrid"; // "crrid" | "globalpark"
   let selectedAreaId = null;
   let selectedTowerId = null;
+  let currentScopeTasks = [];
+  let currentScopeLabel = "";
 
   function attachLocationCardHandlers() {
     document.querySelectorAll(".sidebarLocationsGroup .sidebarLocationChip").forEach(card => {
@@ -1479,6 +1521,15 @@ function buildProgressRing(pct, color, label) {
   document.getElementById("crridCard").addEventListener("click", selectCrrid);
   document.getElementById("globalParkCard").addEventListener("click", selectGlobalPark);
   document.getElementById("regaliaCard").addEventListener("click", selectRegalia);
+
+  document.getElementById("tasksBtn").addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (currentScopeTasks) {
+      showTaskList(currentScopeTasks, currentScopeLabel || "All Tasks");
+    } else {
+      showTaskList([], "Task list not available (only aggregate data exported for this project)");
+    }
+  });
 
   selectCrrid();
 
