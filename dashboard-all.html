@@ -448,12 +448,6 @@ if (navigator.geolocation) {
   setLocationText("Chandigarh, India");
 }
 
-document.getElementById("overviewBtn").addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-  const crridCard = document.getElementById("crridCard");
-  if (crridCard) crridCard.click();
-});
-
 document.getElementById("refreshBtn").addEventListener("click", () => {
   const btn = document.getElementById("refreshBtn");
   btn.classList.add("spinning");
@@ -1083,6 +1077,14 @@ function buildProgressRing(pct, color, label) {
     setNavActive("overview");
   }
 
+  // Explicit close (Close button / Overview button): actually leaves task view, so a
+  // later project/location/area switch goes back to the normal summary instead of
+  // staying in the task list.
+  function closeTaskView() {
+    taskViewActive = false;
+    hideTaskList();
+  }
+
   function currentProjectDisplayName() {
     if (mode === "crrid") return "CRRID";
     if (mode === "globalpark") return "Homeland Global Park";
@@ -1169,6 +1171,7 @@ function buildProgressRing(pct, color, label) {
   }
 
   function showTaskList(tasks, title) {
+    taskViewActive = true;
     document.getElementById("progressCard").style.display = "none";
     setNavActive("tasks");
     const panel = document.getElementById("taskListPanel");
@@ -1195,7 +1198,7 @@ function buildProgressRing(pct, color, label) {
     document.getElementById("taskSearch").oninput = renderTaskListRows;
     document.getElementById("taskStatusFilter").onchange = renderTaskListRows;
     document.getElementById("taskAreaFilter").onchange = renderTaskListRows;
-    document.getElementById("closeTaskList").onclick = (e) => { e.preventDefault(); hideTaskList(); };
+    document.getElementById("closeTaskList").onclick = (e) => { e.preventDefault(); closeTaskView(); };
   }
 
   function attachStatCardHandlers(getTasksForFilter) {
@@ -1244,7 +1247,13 @@ function buildProgressRing(pct, color, label) {
       </div>
     `;
 
-    hideTaskList();
+    // If the task list was already open when the project/location/area changed, keep it
+    // open and refresh it with the new scope's tasks instead of dropping back to Overview.
+    if (taskViewActive) {
+      showTaskList(tasks, label);
+    } else {
+      hideTaskList();
+    }
     attachStatCardHandlers(key => {
       const overdueTasks = tasks.filter(t => t.completed !== "true" && t.endDate && new Date(t.endDate) < NOW);
       const doneLast7Tasks = tasks.filter(t => t.completed === "true" && t.completedAt && new Date(t.completedAt) >= SEVEN_DAYS_AGO && new Date(t.completedAt) <= NOW);
@@ -1294,7 +1303,11 @@ function buildProgressRing(pct, color, label) {
       </div>
     `;
 
-    hideTaskList();
+    if (taskViewActive) {
+      showTaskList([], "Task list not available (only aggregate data exported for this project)");
+    } else {
+      hideTaskList();
+    }
     attachStatCardHandlers(() => null); // no per-task list exported for this project
 
     document.getElementById("chartTitle").textContent = "📈 Project Progress — " + label;
@@ -1378,6 +1391,7 @@ function buildProgressRing(pct, color, label) {
   let selectedTowerId = null;
   let currentScopeTasks = [];
   let currentScopeLabel = "";
+  let taskViewActive = false; // stays true across project/location/area switches until explicitly closed
 
   function attachLocationCardHandlers() {
     document.querySelectorAll(".sidebarLocationsGroup .sidebarLocationChip").forEach(card => {
@@ -1529,6 +1543,13 @@ function buildProgressRing(pct, color, label) {
     } else {
       showTaskList([], "Task list not available (only aggregate data exported for this project)");
     }
+  });
+
+  // Overview just closes the task list and returns to whichever project/tower/area was
+  // already selected — it does NOT reset back to CRRID.
+  document.getElementById("overviewBtn").addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    closeTaskView();
   });
 
   selectCrrid();
