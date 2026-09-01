@@ -18,6 +18,7 @@
     --amber-bg: #fef3e0;
     --red: #dc2626;
     --red-bg: #fdeaea;
+    --selected: #334155;
   }
   html[data-theme="dark"] {
     --bg: #0b1220;
@@ -33,6 +34,7 @@
     --amber-bg: #2e2412;
     --red: #f16060;
     --red-bg: #301826;
+    --selected: #52607a;
   }
   * { box-sizing: border-box; font-family: inherit; }
   html { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
@@ -96,6 +98,43 @@
     cursor: pointer;
   }
   .headerChip:hover { background: rgba(255,255,255,0.22); }
+  .sidebarChip {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-align: left;
+    padding: 16px 18px;
+    font-size: 14.5px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 168px;
+    line-height: 1.35;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    writing-mode: horizontal-tb;
+  }
+  .sidebarChip:hover { background: var(--bg); transform: translateY(-1px); }
+  .sidebarLocationChip {
+    width: 132px;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  .projectGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 12px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+  }
+  .sidebarLocationsGroup {
+    margin-left: 8px;
+    padding-left: 10px;
+    border-left: 2px solid var(--border);
+  }
+  @media (max-width: 1350px) { #projectSidebar { display: none; } }
   #refreshBtn.spinning { animation: spin-fade 0.6s ease; }
   @keyframes spin-fade { 0% { opacity: 0.5; } 100% { opacity: 1; } }
   main { padding: 22px 28px 40px; max-width: 1200px; margin: 0 auto; }
@@ -115,6 +154,8 @@
     transition: transform .12s, box-shadow .12s;
   }
   .kpi:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,0.07); }
+  .kpi.selected { background: var(--selected); border-color: var(--selected); }
+  .kpi.selected .value, .kpi.selected .label { color: #fff; }
   .kpi .value { font-size: 26px; font-weight: 700; color: var(--accent); }
   .kpi .label { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
 
@@ -219,13 +260,13 @@
 
   .pcard { cursor: pointer; }
   .pcard.selected {
-    background: var(--accent);
-    border-color: var(--accent);
+    background: var(--selected);
+    border-color: var(--selected);
   }
   .pcard.selected h2 { color: #fff; }
   .headerChip.selected {
-    background: var(--accent);
-    border-color: var(--accent);
+    background: var(--selected);
+    border-color: var(--selected);
     color: #fff;
   }
   .pcard:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
@@ -261,10 +302,6 @@
         <button id="refreshBtn">🔄 Refresh</button>
         <button id="themeToggle"><span id="themeIcon">🌙</span><span id="themeText">Dark mode</span></button>
       </div>
-      <div style="display:flex; gap:10px;">
-        <button class="headerChip" id="crridCard">🏗️ CRRID</button>
-        <button class="headerChip" id="globalParkCard">🏢 Homeland Global Park</button>
-      </div>
     </div>
   </header>
 
@@ -277,6 +314,25 @@
 
   <div style="padding:2px 28px 8px;">
     <button id="overviewBtn">📊 Overview</button>
+  </div>
+</div>
+
+<div id="projectSidebar" style="position:fixed; left:22px; top:150px; display:flex; flex-direction:column; gap:14px; z-index:5;">
+  <div style="font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); padding-left:2px;">Project Name</div>
+
+  <div class="projectGroup">
+    <button class="headerChip sidebarChip" id="crridCard">🏗️ CRRID</button>
+    <div id="crridLocations" class="sidebarLocationsGroup" style="display:none; flex-direction:column; gap:6px;"></div>
+  </div>
+
+  <div class="projectGroup">
+    <button class="headerChip sidebarChip" id="globalParkCard">🏢 Homeland Global Park</button>
+    <div id="globalParkLocations" class="sidebarLocationsGroup" style="display:none; flex-direction:column; gap:6px;"></div>
+  </div>
+
+  <div class="projectGroup">
+    <button class="headerChip sidebarChip" id="regaliaCard">🏙️ Homeland Regalia</button>
+    <div id="regaliaLocations" class="sidebarLocationsGroup" style="display:none; flex-direction:column; gap:6px;"></div>
   </div>
 </div>
 
@@ -421,6 +477,172 @@ function countsByMonthIndex(list, dateField) {
     counts[d.getMonth()]++;
   });
   return counts;
+}
+
+// Buckets tasks into 12 Jan..Dec months by dateField, splitting each month's count into
+// completed vs pending (by current status) so the two arrays sum to the month's total —
+// this is what makes them stackable in an area chart.
+function tasksByMonthSplit(list, dateField) {
+  const completed = new Array(12).fill(0);
+  const pending = new Array(12).fill(0);
+  list.forEach(t => {
+    if (!t[dateField]) return;
+    const d = new Date(t[dateField]);
+    if (isNaN(d)) return;
+    const m = d.getMonth();
+    if (t.completed === "true") completed[m]++; else pending[m]++;
+  });
+  return { completed, pending };
+}
+
+// Builds a cumulative running-total series from a date field: one point per day that has
+// at least one task on that date, value = the running total as of that day. Feed to
+// buildLineChart with cumulative:true so the line holds its value between listed dates.
+function cumulativeSeries(list, dateField) {
+  const counts = {};
+  list.forEach(t => {
+    if (!t[dateField]) return;
+    const d = new Date(t[dateField]);
+    if (isNaN(d)) return;
+    const key = d.toISOString().slice(0, 10);
+    counts[key] = (counts[key] || 0) + 1;
+  });
+  const dates = Object.keys(counts).sort();
+  let running = 0;
+  return dates.map(d => { running += counts[d]; return { date: d, value: running }; });
+}
+
+// Buckets tasks into fixed-size windows (default 10 days) along a date field — by default
+// the task's due date (endDate) — splitting each bucket's count into completed vs pending
+// so the two arrays sum to the bucket's total. Tasks with no valid date in that field are
+// skipped (they have no due date to place on this axis).
+function tasksByDueDateBuckets(list, dateField, bucketDays) {
+  bucketDays = bucketDays || 10;
+  const dated = list
+    .map(t => ({ t, d: t[dateField] ? new Date(t[dateField]) : null }))
+    .filter(x => x.d && !isNaN(x.d));
+  if (!dated.length) return { labels: [], completed: [], pending: [] };
+
+  const dayMs = 24 * 60 * 60 * 1000;
+  const toDayStart = d => { const c = new Date(d); c.setHours(0, 0, 0, 0); return c; };
+  const minDate = toDayStart(new Date(Math.min(...dated.map(x => x.d))));
+  const maxDate = toDayStart(new Date(Math.max(...dated.map(x => x.d))));
+
+  const bucketCount = Math.floor((maxDate - minDate) / (dayMs * bucketDays)) + 1;
+  const completed = new Array(bucketCount).fill(0);
+  const pending = new Array(bucketCount).fill(0);
+  const labels = [];
+  const fmt = d => (d.getMonth() + 1) + "/" + d.getDate();
+  for (let i = 0; i < bucketCount; i++) {
+    const start = new Date(minDate.getTime() + i * bucketDays * dayMs);
+    const end = new Date(start.getTime() + (bucketDays - 1) * dayMs);
+    labels.push(fmt(start) + "–" + fmt(end));
+  }
+
+  dated.forEach(({ t, d }) => {
+    const idx = Math.floor((toDayStart(d) - minDate) / (dayMs * bucketDays));
+    if (t.completed === "true") completed[idx]++; else pending[idx]++;
+  });
+
+  const total = completed.map((c, i) => c + pending[i]);
+  return { labels, completed, pending, total };
+}
+
+// Stacked area chart with arbitrary category labels on the x-axis (e.g. 10-day due-date
+// windows). series = [{ name, color, counts: [one number per label] }], stacked bottom-to-top
+// in array order (so the top edge of the last series is the total).
+function buildStackedAreaChart(labels, series) {
+  const n = Math.max(labels.length, 1);
+  const W = Math.max(480, n * 56), H = 260, padL = 42, padR = 20, padT = 26, padB = 46;
+  const totals = series[0].counts.map((_, i) => series.reduce((s, ser) => s + ser.counts[i], 0));
+  const rawMax = Math.max(...totals, 1);
+  const niceMax = (() => {
+    const magnitude = Math.pow(10, Math.floor(Math.log10(rawMax || 1)));
+    const steps = [1, 2, 2.5, 5, 10];
+    for (const s of steps) { if (rawMax <= s * magnitude) return s * magnitude; }
+    return 10 * magnitude;
+  })();
+  const maxVal = niceMax;
+  const stepX = n > 1 ? (W - padL - padR) / (n - 1) : 0;
+  const x = i => n > 1 ? padL + i * stepX : (padL + W - padR) / 2;
+  const y = v => padT + (H - padT - padB) * (1 - v / maxVal);
+
+  const xLabels = labels.map((l, i) =>
+    `<text x="${x(i).toFixed(1)}" y="${H - padB + 22}" font-size="10" fill="var(--muted)" text-anchor="middle" transform="rotate(20 ${x(i).toFixed(1)} ${H - padB + 22})">${esc(l)}</text>`
+  ).join("");
+
+  const ySteps = 4;
+  const gridLines = Array.from({ length: ySteps + 1 }, (_, i) => i / ySteps).map(f => {
+    const yy = padT + (H - padT - padB) * (1 - f);
+    return `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="${padL - 8}" y="${(yy + 3).toFixed(1)}" font-size="10" fill="var(--muted)" text-anchor="end">${Math.round(maxVal * f)}</text>`;
+  }).join("");
+
+  const gradId = "gradStack" + Math.random().toString(36).slice(2, 8);
+
+  let cumulative = new Array(n).fill(0);
+  const seriesSvg = series.map((s, idx) => {
+    const baseline = cumulative;
+    const topVals = s.counts.map((v, i) => baseline[i] + v);
+    cumulative = topVals;
+
+    const topPath = topVals.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+    const bottomPath = baseline.map((v, i) => i).reverse().map(i =>
+      `L ${x(i).toFixed(1)} ${y(baseline[i]).toFixed(1)}`
+    ).join(" ");
+    const areaPath = `${topPath} ${bottomPath} Z`;
+
+    const dots = topVals.map((v, i) => `
+      <circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="${s.color}" stroke="var(--panel)" stroke-width="1.2">
+        <title>${esc(s.name)} — ${esc(labels[i])}: ${s.counts[i]}</title>
+      </circle>
+      ${s.counts[i] > 0 ? `<text x="${x(i).toFixed(1)}" y="${(y(v) - 8).toFixed(1)}" font-size="10" font-weight="600" fill="${s.color}" text-anchor="middle">${s.counts[i]}</text>` : ""}
+    `).join("");
+
+    return `
+      <defs>
+        <linearGradient id="${gradId}${idx}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${s.color}" stop-opacity="0.55" />
+          <stop offset="100%" stop-color="${s.color}" stop-opacity="0.28" />
+        </linearGradient>
+      </defs>
+      <path d="${areaPath}" fill="url(#${gradId}${idx})" stroke="${s.color}" stroke-width="1.5" stroke-linejoin="round" />
+      ${dots}
+    `;
+  }).join("");
+
+  // Dashed "Total" line traced along the top edge of the stack — the standard combo-chart
+  // touch that keeps the overall trend visible alongside the completed/pending breakdown.
+  const totalColor = "#729bdb";
+  const totalPath = totals.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+  const totalDots = totals.map((v, i) => `
+    <circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="var(--panel)" stroke="${totalColor}" stroke-width="1.5">
+      <title>Total — ${esc(labels[i])}: ${v}</title>
+    </circle>
+  `).join("");
+  const totalLineSvg = `<path d="${totalPath}" fill="none" stroke="${totalColor}" stroke-width="2" stroke-dasharray="6 5" />${totalDots}`;
+
+  const legend = series.map(s => `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:12px; height:12px; background:${s.color}; border-radius:3px; display:inline-block;"></span>${esc(s.name)}
+    </span>
+  `).join("") + `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:16px; height:0; border-top:2px dashed ${totalColor}; display:inline-block;"></span>Total
+    </span>
+  `;
+
+  return `
+    <div style="background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:18px 14px 10px; overflow-x:auto;">
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%; min-width:${W}px; height:auto; overflow:visible;">
+        ${gridLines}
+        ${seriesSvg}
+        ${totalLineSvg}
+        ${xLabels}
+      </svg>
+      <div style="text-align:center; margin-top:6px;">${legend}</div>
+    </div>
+  `;
 }
 
 // Fixed Jan-Dec monthly chart. series = [{ name, color, counts: [12 numbers], style, fill }]
@@ -683,6 +905,9 @@ function buildProgressRing(pct, color, label) {
   const globalParkAreas = allAreas.filter(a => a.projectName.trim() === "Homeland Global Park");
   const globalParkProjectRow = allProjectsRows.find(p => p.projectName.trim() === "Homeland Global Park");
   const globalParkOverdueTotal = globalParkProjectRow ? num(globalParkProjectRow.overdueTasks) : 0;
+  const regaliaAreas = allAreas.filter(a => a.projectName.trim() === "Homeland Regalia");
+  const regaliaProjectRow = allProjectsRows.find(p => p.projectName.trim() === "Homeland Regalia");
+  const regaliaOverdueTotal = regaliaProjectRow ? num(regaliaProjectRow.overdueTasks) : 0;
   const crridSubAreas = await loadTable("SubArea");
   const crridTasks = await loadTable("Task");
   const crridUsers = await loadTable("User");
@@ -709,6 +934,23 @@ function buildProgressRing(pct, color, label) {
   Object.assign(areaNameById, gpAreaNameById);
   Object.assign(towerNameByAreaId, gpTowerNameByAreaId);
   Object.assign(userNameById, gpUserNameById);
+
+  // Homeland Regalia: real per-task data (live-pulled snapshot), merged into the
+  // same lookup maps so the task-list drill-down works identically for all three projects.
+  const regaliaSubAreas = await loadTable("RegaliaSubArea");
+  const regaliaTasks = await loadTable("RegaliaTask");
+  const regaliaUsers = await loadTable("RegaliaUser");
+  regaliaTasks.forEach(t => { t._project = "Homeland Regalia"; });
+  const regaliaSubAreaToArea = Object.fromEntries(regaliaSubAreas.map(s => [s.subAreaId, s.areaId]));
+  const regaliaSubAreaNameById = Object.fromEntries(regaliaSubAreas.map(s => [s.subAreaId, s.subAreaName]));
+  const regaliaAreaNameById = Object.fromEntries(regaliaAreas.map(a => [a.areaId, a.areaName]));
+  const regaliaTowerNameByAreaId = Object.fromEntries(regaliaAreas.map(a => [a.areaId, a.towerName.trim()]));
+  const regaliaUserNameById = Object.fromEntries(regaliaUsers.map(u => [u.userId, (u.firstName + " " + u.lastName).trim() || u.username || u.email]));
+  Object.assign(subAreaToArea, regaliaSubAreaToArea);
+  Object.assign(subAreaNameById, regaliaSubAreaNameById);
+  Object.assign(areaNameById, regaliaAreaNameById);
+  Object.assign(towerNameByAreaId, regaliaTowerNameByAreaId);
+  Object.assign(userNameById, regaliaUserNameById);
 
   function taskAreaName(t) { return areaNameById[subAreaToArea[t.subAreaId]] || "—"; }
   function taskSubAreaName(t) { return subAreaNameById[t.subAreaId] || "—"; }
@@ -793,6 +1035,7 @@ function buildProgressRing(pct, color, label) {
   function hideTaskList() {
     document.getElementById("taskListPanel").style.display = "none";
     document.getElementById("progressCard").style.display = "";
+    document.querySelectorAll("#crridSummary .kpi.selected").forEach(c => c.classList.remove("selected"));
   }
 
   function statusBadge(t) {
@@ -893,6 +1136,8 @@ function buildProgressRing(pct, color, label) {
       const key = card.dataset.filter;
       if (!key) return;
       card.addEventListener("click", () => {
+        document.querySelectorAll("#crridSummary .kpi[data-filter]").forEach(c => c.classList.remove("selected"));
+        card.classList.add("selected");
         const result = getTasksForFilter(key);
         if (result === null) {
           showTaskList([], "Task list not available (only aggregate data exported for this project)");
@@ -944,28 +1189,28 @@ function buildProgressRing(pct, color, label) {
       return map[key] || null;
     });
 
-    document.getElementById("chartTitle").textContent = "📈 Project Progress — " + label;
+    document.getElementById("chartTitle").textContent = "Project Progress Over Time";
 
     const pct = total ? Math.round((completed / total) * 100) : 0;
     document.getElementById("progressRing").innerHTML = buildProgressRing(pct, "var(--accent)", "Tasks Complete");
 
-    const createdCounts = countsByMonthIndex(tasks, "createdAt");
-    const completedCounts = countsByMonthIndex(tasks.filter(t => t.completed === "true"), "completedAt");
+    const totalPoints = cumulativeSeries(tasks, "createdAt");
+    const completedPoints = cumulativeSeries(tasks.filter(t => t.completed === "true"), "completedAt");
 
-    document.getElementById("taskChart").innerHTML = buildMonthlyChart([
-      { name: "Total tasks", color: "#729bdb", counts: createdCounts, style: "dashed", fill: false },
-      { name: "Completed", color: "#34d372", counts: completedCounts, style: "solid", fill: true }
-    ]);
+    document.getElementById("taskChart").innerHTML = buildLineChart([
+      { name: "Total tasks", color: "#5b9bff", points: totalPoints, style: "solid", fill: false, cumulative: true },
+      { name: "Completed", color: "#34d372", points: completedPoints, style: "solid", fill: true, cumulative: true }
+    ], "day");
   }
 
   // Homeland Global Park summary: this export only has area-level rollups for it
   // (no per-task dates), so overdue is shown only for the whole project and
   // "done last 7 days" / the monthly trend aren't available.
-  function renderSummaryFromAreaRows(rows, label, isWholeProject) {
+  function renderSummaryFromAreaRows(rows, label, overdueTotal) {
     const total = rows.reduce((s, r) => s + num(r.tasks), 0);
     const completed = rows.reduce((s, r) => s + num(r.tasksCompleted), 0);
     const pending = total - completed;
-    const overdue = isWholeProject ? globalParkOverdueTotal : null;
+    const overdue = (overdueTotal === null || overdueTotal === undefined) ? null : overdueTotal;
 
     document.getElementById("summaryLabel").textContent = "Showing: " + label;
     document.getElementById("crridSummary").innerHTML = `
@@ -985,13 +1230,9 @@ function buildProgressRing(pct, color, label) {
     const pct = total ? Math.round((completed / total) * 100) : 0;
     document.getElementById("progressRing").innerHTML = buildProgressRing(pct, "#0891b2", "Tasks Complete");
 
-    const totalCounts = new Array(12).fill(0);
-    const completedCounts = new Array(12).fill(0);
-    totalCounts[NOW.getMonth()] = total;
-    completedCounts[NOW.getMonth()] = completed;
-    document.getElementById("taskChart").innerHTML = buildMonthlyChart([
-      { name: "Total tasks", color: "#729bdb", counts: totalCounts, style: "dashed", fill: false },
-      { name: "Completed", color: "#34d372", counts: completedCounts, style: "solid", fill: true }
+    document.getElementById("taskChart").innerHTML = buildCategoryChart(["This month"], [
+      { name: "Total tasks", color: "#729bdb", values: [total], style: "dashed", fill: false },
+      { name: "Completed", color: "#34d372", values: [completed], style: "solid", fill: true }
     ]);
   }
 
@@ -1020,13 +1261,43 @@ function buildProgressRing(pct, color, label) {
     attachAreaCardHandlers();
   }
 
+  function displayTowerName(name) {
+    return name.trim() === "Homeland Global Park" ? "Global Park" : name;
+  }
+
+  function locationsContainerId() {
+    if (mode === "crrid") return "crridLocations";
+    if (mode === "globalpark") return "globalParkLocations";
+    return "regaliaLocations";
+  }
+
+  function areasForMode(m) {
+    if (m === "crrid") return crridAreas;
+    if (m === "globalpark") return globalParkAreas;
+    return regaliaAreas;
+  }
+
   function renderLocationCards(towers, accentColor) {
-    document.getElementById("areaCards").innerHTML = towers.map(t => `
-      <div class="pcard" data-tower-id="${esc(t.towerId)}" style="border-left:4px solid ${accentColor};">
-        <div class="pcard-head" style="margin-bottom:0;">
-          <h2>📍 ${esc(t.towerName)}</h2>
-        </div>
-      </div>
+    const containerId = locationsContainerId();
+    // Keep the other projects' location lists closed while this one is shown.
+    ["crridLocations", "globalParkLocations", "regaliaLocations"].forEach(id => {
+      if (id === containerId) return;
+      const other = document.getElementById(id);
+      other.style.display = "none";
+      other.innerHTML = "";
+    });
+
+    const container = document.getElementById(containerId);
+    if (towers.length === 0) {
+      container.style.display = "none";
+      container.innerHTML = "";
+      return;
+    }
+    container.style.display = "flex";
+    container.innerHTML = towers.map(t => `
+      <button class="headerChip sidebarChip sidebarLocationChip" data-tower-id="${esc(t.towerId)}" data-tower-name="${esc(t.towerName.trim())}" style="border-left:3px solid ${accentColor};">
+        📍 ${esc(displayTowerName(t.towerName))}
+      </button>
     `).join("");
     attachLocationCardHandlers();
   }
@@ -1036,16 +1307,15 @@ function buildProgressRing(pct, color, label) {
   let selectedTowerId = null;
 
   function attachLocationCardHandlers() {
-    document.querySelectorAll("#areaCards .pcard[data-tower-id]").forEach(card => {
+    document.querySelectorAll(".sidebarLocationsGroup .sidebarLocationChip").forEach(card => {
       card.addEventListener("click", () => {
         const towerId = card.dataset.towerId;
-        const towerName = card.querySelector("h2").textContent.replace("📍 ", "");
-        document.querySelectorAll("#areaCards .pcard").forEach(c => c.classList.remove("selected"));
+        const towerName = card.dataset.towerName;
+        document.querySelectorAll(".sidebarLocationsGroup .sidebarLocationChip").forEach(c => c.classList.remove("selected"));
         card.classList.add("selected");
         selectedTowerId = towerId;
         selectedAreaId = null;
-        if (mode === "crrid") selectTower(crridAreas, towerId, towerName);
-        else selectTower(globalParkAreas, towerId, towerName);
+        selectTower(areasForMode(mode), towerId, towerName);
       });
     });
   }
@@ -1057,24 +1327,29 @@ function buildProgressRing(pct, color, label) {
     if (mode === "crrid") {
       const tasksInTower = crridTasks.filter(t => areasInTower.some(a => a.areaId === subAreaToArea[t.subAreaId]));
       renderSummary(tasksInTower, towerName);
-    } else {
+    } else if (mode === "globalpark") {
       const tasksInTower = gpTasks.filter(t => areasInTower.some(a => a.areaId === subAreaToArea[t.subAreaId]));
+      renderSummary(tasksInTower, towerName);
+    } else {
+      const tasksInTower = regaliaTasks.filter(t => areasInTower.some(a => a.areaId === subAreaToArea[t.subAreaId]));
       renderSummary(tasksInTower, towerName);
     }
 
     document.getElementById("summaryLabel").innerHTML =
-      `<a href="#" id="backToLocations" style="color:var(--accent); text-decoration:none;">← Locations</a> &middot; Showing: ${esc(towerName)}`;
+      `<a href="#" id="backToLocations" style="color:var(--accent); text-decoration:none;">← Clear location</a> &middot; Showing: ${esc(displayTowerName(towerName))}`;
 
     document.getElementById("backToLocations").addEventListener("click", (e) => {
       e.preventDefault();
       selectedTowerId = null;
       selectedAreaId = null;
+      document.querySelectorAll(".sidebarLocationsGroup .sidebarLocationChip").forEach(c => c.classList.remove("selected"));
+      document.getElementById("areaCards").innerHTML = "";
       if (mode === "crrid") {
-        renderLocationCards(groupByTower(crridAreas), "var(--accent)");
         renderSummary(crridTasks, "All CRRID areas");
-      } else {
-        renderLocationCards(groupByTower(globalParkAreas), "#0891b2");
+      } else if (mode === "globalpark") {
         renderSummary(gpTasks, "All Homeland Global Park areas");
+      } else {
+        renderSummary(regaliaTasks, "All Homeland Regalia areas");
       }
     });
   }
@@ -1084,7 +1359,7 @@ function buildProgressRing(pct, color, label) {
       card.addEventListener("click", () => {
         const areaId = card.dataset.areaId;
         document.querySelectorAll("#areaCards .pcard").forEach(c => c.classList.remove("selected"));
-        const towerAreas = (mode === "crrid" ? crridAreas : globalParkAreas).filter(a => a.towerId === selectedTowerId);
+        const towerAreas = areasForMode(mode).filter(a => a.towerId === selectedTowerId);
         const towerName = towerAreas[0] ? towerAreas[0].towerName.trim() : "";
 
         if (selectedAreaId === areaId) {
@@ -1092,8 +1367,11 @@ function buildProgressRing(pct, color, label) {
           if (mode === "crrid") {
             const tasksInTower = crridTasks.filter(t => towerAreas.some(a => a.areaId === subAreaToArea[t.subAreaId]));
             renderSummary(tasksInTower, towerName);
-          } else {
+          } else if (mode === "globalpark") {
             const tasksInTower = gpTasks.filter(t => towerAreas.some(a => a.areaId === subAreaToArea[t.subAreaId]));
+            renderSummary(tasksInTower, towerName);
+          } else {
+            const tasksInTower = regaliaTasks.filter(t => towerAreas.some(a => a.areaId === subAreaToArea[t.subAreaId]));
             renderSummary(tasksInTower, towerName);
           }
           return;
@@ -1106,27 +1384,40 @@ function buildProgressRing(pct, color, label) {
         if (mode === "crrid") {
           const tasksInArea = crridTasks.filter(t => subAreaToArea[t.subAreaId] === areaId);
           renderSummary(tasksInArea, areaName);
-        } else {
+        } else if (mode === "globalpark") {
           const tasksInArea = gpTasks.filter(t => subAreaToArea[t.subAreaId] === areaId);
+          renderSummary(tasksInArea, areaName);
+        } else {
+          const tasksInArea = regaliaTasks.filter(t => subAreaToArea[t.subAreaId] === areaId);
           renderSummary(tasksInArea, areaName);
         }
       });
     });
   }
 
+  function deselectProjectCards() {
+    document.getElementById("crridCard").classList.remove("selected");
+    document.getElementById("globalParkCard").classList.remove("selected");
+    document.getElementById("regaliaCard").classList.remove("selected");
+  }
+
   function selectCrrid() {
     mode = "crrid";
     selectedAreaId = null;
+    deselectProjectCards();
     document.getElementById("crridCard").classList.add("selected");
-    document.getElementById("globalParkCard").classList.remove("selected");
 
-    // CRRID has only one location, so skip straight to its areas.
+    // CRRID has only one location — show it in the sidebar (pre-selected) and its areas.
     const towers = groupByTower(crridAreas);
     if (towers.length === 1) {
+      renderLocationCards(towers, "var(--accent)");
+      const btn = document.querySelector('#crridLocations .sidebarLocationChip[data-tower-id="' + towers[0].towerId + '"]');
+      if (btn) btn.classList.add("selected");
       selectedTowerId = towers[0].towerId;
       selectTower(crridAreas, towers[0].towerId, towers[0].towerName);
     } else {
       selectedTowerId = null;
+      document.getElementById("areaCards").innerHTML = "";
       renderLocationCards(towers, "var(--accent)");
       renderSummary(crridTasks, "All CRRID areas");
     }
@@ -1136,14 +1427,27 @@ function buildProgressRing(pct, color, label) {
     mode = "globalpark";
     selectedAreaId = null;
     selectedTowerId = null;
+    deselectProjectCards();
     document.getElementById("globalParkCard").classList.add("selected");
-    document.getElementById("crridCard").classList.remove("selected");
+    document.getElementById("areaCards").innerHTML = "";
     renderLocationCards(groupByTower(globalParkAreas), "#0891b2");
     renderSummary(gpTasks, "All Homeland Global Park areas");
   }
 
+  function selectRegalia() {
+    mode = "regalia";
+    selectedAreaId = null;
+    selectedTowerId = null;
+    deselectProjectCards();
+    document.getElementById("regaliaCard").classList.add("selected");
+    document.getElementById("areaCards").innerHTML = "";
+    renderLocationCards(groupByTower(regaliaAreas), "#7c3aed");
+    renderSummary(regaliaTasks, "All Homeland Regalia areas");
+  }
+
   document.getElementById("crridCard").addEventListener("click", selectCrrid);
   document.getElementById("globalParkCard").addEventListener("click", selectGlobalPark);
+  document.getElementById("regaliaCard").addEventListener("click", selectRegalia);
 
   selectCrrid();
 

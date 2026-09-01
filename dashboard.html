@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CRRID Project Dashboard</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --panel: #ffffff;
+    --border: #dde1e6;
+    --text: #1c1f24;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-bg: #eaf1ff;
+    --green: #16a34a;
+    --green-bg: #e9f9ef;
+    --amber: #d97706;
+    --amber-bg: #fef3e0;
+    --red: #dc2626;
+    --red-bg: #fdeaea;
+  }
+  * { box-sizing: border-box; font-family: inherit; }
+  html { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+  }
+  button, input, select, textarea { font-family: inherit; }
+  svg text { font-family: inherit; }
+  header {
+    padding: 18px 28px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  header h1 { font-size: 19px; margin: 0; }
+  header .sub { color: var(--muted); font-size: 13px; }
+  header a { color: var(--accent); font-size: 13px; text-decoration: none; }
+  #overviewBtn:hover { background: var(--accent-bg); }
+  main { padding: 22px 28px 40px; max-width: 1200px; margin: 0 auto; }
+
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    margin-bottom: 26px;
+  }
+  .kpi {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .kpi .value { font-size: 26px; font-weight: 700; }
+  .kpi .label { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+  .kpi.accent .value { color: var(--accent); }
+  .kpi.green .value { color: var(--green); }
+  .kpi.amber .value { color: var(--amber); }
+  .kpi.red .value { color: var(--red); }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+  @media (max-width: 900px) { .grid2 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+  }
+  .card h2 {
+    font-size: 14.5px;
+    margin: 0 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card h2 .count { color: var(--muted); font-weight: 400; font-size: 12.5px; }
+
+  .progress-row { margin-bottom: 12px; }
+  .progress-row .plabel {
+    display: flex; justify-content: space-between;
+    font-size: 13px; margin-bottom: 5px;
+  }
+  .progress-row .plabel .pct { color: var(--muted); }
+  .bar {
+    height: 8px;
+    background: #eef0f3;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .bar > div {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 5px;
+  }
+
+  .list { display: flex; flex-direction: column; gap: 10px; }
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 13px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f1f3;
+  }
+  .list-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .list-item .meta { color: var(--muted); font-size: 11.5px; margin-top: 2px; }
+  .tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .tag.done { background: var(--green-bg); color: var(--green); }
+  .tag.pending { background: var(--amber-bg); color: var(--amber); }
+  .tag.overdue { background: var(--red-bg); color: var(--red); }
+
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  thead th {
+    text-align: left; padding: 6px 8px; color: var(--muted);
+    font-weight: 600; border-bottom: 1px solid var(--border); font-size: 12px;
+  }
+  tbody td { padding: 7px 8px; border-bottom: 1px solid #f2f3f5; }
+  tbody tr:last-child td { border-bottom: none; }
+
+  .empty { color: var(--muted); font-size: 13px; padding: 12px 0; }
+  .loading { padding: 60px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>CRRID Project Dashboard</h1>
+    <div class="sub" id="subHeader">Loading...</div>
+  </div>
+</header>
+
+<div style="padding:10px 28px; background:var(--panel); border-bottom:1px solid var(--border);">
+  <a href="dashboard-all.html" id="overviewBtn" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px; background:var(--bg); border:1px solid var(--border); color:var(--text); border-radius:20px; padding:7px 14px; font-size:13px;">📊 Overview</a>
+</div>
+
+<main id="app">
+  <div class="loading">Loading project data...</div>
+</main>
+
+<script>
+function parseCSV(text) {
+  const rows = [];
+  let row = [], field = "", inQuotes = false;
+  text = text.replace(/\r\n/g, "\n");
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQuotes = false; }
+      else field += c;
+    } else {
+      if (c === '"') inQuotes = true;
+      else if (c === ',') { row.push(field); field = ""; }
+      else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ""; }
+      else field += c;
+    }
+  }
+  if (field.length || row.length) { row.push(field); rows.push(row); }
+  if (rows.length && rows[rows.length-1].length === 1 && rows[rows.length-1][0] === "") rows.pop();
+  return rows;
+}
+
+async function loadTable(name) {
+  try {
+    const res = await fetch(name + ".csv");
+    if (!res.ok) return [];
+    const rows = parseCSV(await res.text());
+    if (!rows.length) return [];
+    const cols = rows[0];
+    return rows.slice(1).map(r => {
+      const obj = {};
+      cols.forEach((c, i) => obj[c] = r[i] !== undefined ? r[i] : "");
+      return obj;
+    });
+  } catch (e) {
+    return [];
+  }
+}
+
+function esc(s) {
+  return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+const MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+// Counts items into 12 buckets (Jan..Dec) by the month of a date field, regardless of year.
+function countsByMonthIndex(list, dateField) {
+  const counts = new Array(12).fill(0);
+  list.forEach(t => {
+    if (!t[dateField]) return;
+    const d = new Date(t[dateField]);
+    if (isNaN(d)) return;
+    counts[d.getMonth()]++;
+  });
+  return counts;
+}
+
+// Buckets tasks into 12 Jan..Dec months by dateField, splitting each month's count into
+// completed vs pending (by current status) so the two arrays sum to the month's total —
+// this is what makes them stackable in an area chart.
+function tasksByMonthSplit(list, dateField) {
+  const completed = new Array(12).fill(0);
+  const pending = new Array(12).fill(0);
+  list.forEach(t => {
+    if (!t[dateField]) return;
+    const d = new Date(t[dateField]);
+    if (isNaN(d)) return;
+    const m = d.getMonth();
+    if (t.completed === "true") completed[m]++; else pending[m]++;
+  });
+  return { completed, pending };
+}
+
+// Builds a cumulative running-total series from a date field: one point per day that has
+// at least one task on that date, value = the running total as of that day. Feed to
+// buildLineChart with cumulative:true so the line holds its value between listed dates.
+function cumulativeSeries(list, dateField) {
+  const counts = {};
+  list.forEach(t => {
+    if (!t[dateField]) return;
+    const d = new Date(t[dateField]);
+    if (isNaN(d)) return;
+    const key = d.toISOString().slice(0, 10);
+    counts[key] = (counts[key] || 0) + 1;
+  });
+  const dates = Object.keys(counts).sort();
+  let running = 0;
+  return dates.map(d => { running += counts[d]; return { date: d, value: running }; });
+}
+
+// Buckets tasks into fixed-size windows (default 10 days) along a date field — by default
+// the task's due date (endDate) — splitting each bucket's count into completed vs pending
+// so the two arrays sum to the bucket's total. Tasks with no valid date in that field are
+// skipped (they have no due date to place on this axis).
+function tasksByDueDateBuckets(list, dateField, bucketDays) {
+  bucketDays = bucketDays || 10;
+  const dated = list
+    .map(t => ({ t, d: t[dateField] ? new Date(t[dateField]) : null }))
+    .filter(x => x.d && !isNaN(x.d));
+  if (!dated.length) return { labels: [], completed: [], pending: [] };
+
+  const dayMs = 24 * 60 * 60 * 1000;
+  const toDayStart = d => { const c = new Date(d); c.setHours(0, 0, 0, 0); return c; };
+  const minDate = toDayStart(new Date(Math.min(...dated.map(x => x.d))));
+  const maxDate = toDayStart(new Date(Math.max(...dated.map(x => x.d))));
+
+  const bucketCount = Math.floor((maxDate - minDate) / (dayMs * bucketDays)) + 1;
+  const completed = new Array(bucketCount).fill(0);
+  const pending = new Array(bucketCount).fill(0);
+  const labels = [];
+  const fmt = d => (d.getMonth() + 1) + "/" + d.getDate();
+  for (let i = 0; i < bucketCount; i++) {
+    const start = new Date(minDate.getTime() + i * bucketDays * dayMs);
+    const end = new Date(start.getTime() + (bucketDays - 1) * dayMs);
+    labels.push(fmt(start) + "–" + fmt(end));
+  }
+
+  dated.forEach(({ t, d }) => {
+    const idx = Math.floor((toDayStart(d) - minDate) / (dayMs * bucketDays));
+    if (t.completed === "true") completed[idx]++; else pending[idx]++;
+  });
+
+  const total = completed.map((c, i) => c + pending[i]);
+  return { labels, completed, pending, total };
+}
+
+// Same visual style as buildMonthlyChart but with arbitrary category labels on the x-axis.
+// series = [{ name, color, values: [numbers, one per label], style, fill }]
+function buildCategoryChart(labels, series) {
+  const n = Math.max(labels.length, 1);
+  const W = Math.max(480, n * 70), H = 260, padL = 42, padR = 20, padT = 26, padB = 46;
+  const rawMax = Math.max(...series.flatMap(s => s.values), 1);
+  const niceMax = (() => {
+    const magnitude = Math.pow(10, Math.floor(Math.log10(rawMax || 1)));
+    const steps = [1, 2, 2.5, 5, 10];
+    for (const s of steps) { if (rawMax <= s * magnitude) return s * magnitude; }
+    return 10 * magnitude;
+  })();
+  const maxVal = niceMax;
+  const stepX = n > 1 ? (W - padL - padR) / (n - 1) : 0;
+  const x = i => n > 1 ? padL + i * stepX : (padL + W - padR) / 2;
+  const y = v => padT + (H - padT - padB) * (1 - v / maxVal);
+
+  const xLabels = labels.map((l, i) =>
+    `<text x="${x(i).toFixed(1)}" y="${H - padB + 22}" font-size="10" fill="var(--muted)" text-anchor="middle" transform="rotate(20 ${x(i).toFixed(1)} ${H - padB + 22})">${esc(l.length > 14 ? l.slice(0, 13) + "…" : l)}</text>`
+  ).join("");
+
+  const ySteps = 4;
+  const gridLines = Array.from({ length: ySteps + 1 }, (_, i) => i / ySteps).map(f => {
+    const yy = padT + (H - padT - padB) * (1 - f);
+    return `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="${padL - 8}" y="${(yy + 3).toFixed(1)}" font-size="10" fill="var(--muted)" text-anchor="end">${Math.round(maxVal * f)}</text>`;
+  }).join("");
+
+  const gradId = "gradFillC" + Math.random().toString(36).slice(2, 8);
+
+  const seriesSvg = series.map((s, idx) => {
+    const linePath = s.values.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+    const dashArr = s.style === "dashed" ? `stroke-dasharray="6 5"` : "";
+    const dots = s.values.map((v, i) => `
+      <circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.5" fill="${s.style === "dashed" ? "var(--panel)" : s.color}" stroke="${s.color}" stroke-width="1.5">
+        <title>${esc(s.name)} — ${esc(labels[i])}: ${v}</title>
+      </circle>
+      <text x="${x(i).toFixed(1)}" y="${(y(v) - 10).toFixed(1)}" font-size="10.5" font-weight="600" fill="${s.color}" text-anchor="middle">${v}</text>
+    `).join("");
+    let fillSvg = "";
+    if (s.fill && n > 1) {
+      const areaPath = linePath + ` L ${x(n - 1).toFixed(1)} ${y(0).toFixed(1)} L ${x(0).toFixed(1)} ${y(0).toFixed(1)} Z`;
+      fillSvg = `
+        <defs>
+          <linearGradient id="${gradId}${idx}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="${s.color}" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="${s.color}" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="${areaPath}" fill="url(#${gradId}${idx})" stroke="none" />
+      `;
+    }
+    return `${fillSvg}<path d="${linePath}" fill="none" stroke="${s.color}" stroke-width="2.5" ${dashArr} />${dots}`;
+  }).join("");
+
+  const legend = series.map(s => `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:16px; height:0; border-top:2.5px ${s.style === "dashed" ? "dashed" : "solid"} ${s.color}; display:inline-block;"></span>${esc(s.name)}
+    </span>
+  `).join("");
+
+  return `
+    <div style="background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:18px 14px 10px; overflow-x:auto;">
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%; min-width:${W}px; height:auto; overflow:visible;">
+        ${gridLines}
+        ${seriesSvg}
+        ${xLabels}
+      </svg>
+      <div style="text-align:center; margin-top:6px;">${legend}</div>
+    </div>
+  `;
+}
+
+// Stacked area chart with arbitrary category labels on the x-axis (e.g. 10-day due-date
+// windows). series = [{ name, color, counts: [one number per label] }], stacked bottom-to-top
+// in array order (so the top edge of the last series is the total).
+function buildStackedAreaChart(labels, series) {
+  const n = Math.max(labels.length, 1);
+  const W = Math.max(480, n * 56), H = 260, padL = 42, padR = 20, padT = 26, padB = 46;
+  const totals = series[0].counts.map((_, i) => series.reduce((s, ser) => s + ser.counts[i], 0));
+  const rawMax = Math.max(...totals, 1);
+  const niceMax = (() => {
+    const magnitude = Math.pow(10, Math.floor(Math.log10(rawMax || 1)));
+    const steps = [1, 2, 2.5, 5, 10];
+    for (const s of steps) { if (rawMax <= s * magnitude) return s * magnitude; }
+    return 10 * magnitude;
+  })();
+  const maxVal = niceMax;
+  const stepX = n > 1 ? (W - padL - padR) / (n - 1) : 0;
+  const x = i => n > 1 ? padL + i * stepX : (padL + W - padR) / 2;
+  const y = v => padT + (H - padT - padB) * (1 - v / maxVal);
+
+  const xLabels = labels.map((l, i) =>
+    `<text x="${x(i).toFixed(1)}" y="${H - padB + 22}" font-size="10" fill="var(--muted)" text-anchor="middle" transform="rotate(20 ${x(i).toFixed(1)} ${H - padB + 22})">${esc(l)}</text>`
+  ).join("");
+
+  const ySteps = 4;
+  const gridLines = Array.from({ length: ySteps + 1 }, (_, i) => i / ySteps).map(f => {
+    const yy = padT + (H - padT - padB) * (1 - f);
+    return `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="${padL - 8}" y="${(yy + 3).toFixed(1)}" font-size="10" fill="var(--muted)" text-anchor="end">${Math.round(maxVal * f)}</text>`;
+  }).join("");
+
+  const gradId = "gradStack" + Math.random().toString(36).slice(2, 8);
+
+  let cumulative = new Array(n).fill(0);
+  const seriesSvg = series.map((s, idx) => {
+    const baseline = cumulative;
+    const topVals = s.counts.map((v, i) => baseline[i] + v);
+    cumulative = topVals;
+
+    const topPath = topVals.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+    const bottomPath = baseline.map((v, i) => i).reverse().map(i =>
+      `L ${x(i).toFixed(1)} ${y(baseline[i]).toFixed(1)}`
+    ).join(" ");
+    const areaPath = `${topPath} ${bottomPath} Z`;
+
+    const dots = topVals.map((v, i) => `
+      <circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="${s.color}" stroke="var(--panel)" stroke-width="1.2">
+        <title>${esc(s.name)} — ${esc(labels[i])}: ${s.counts[i]}</title>
+      </circle>
+      ${s.counts[i] > 0 ? `<text x="${x(i).toFixed(1)}" y="${(y(v) - 8).toFixed(1)}" font-size="10" font-weight="600" fill="${s.color}" text-anchor="middle">${s.counts[i]}</text>` : ""}
+    `).join("");
+
+    return `
+      <defs>
+        <linearGradient id="${gradId}${idx}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${s.color}" stop-opacity="0.55" />
+          <stop offset="100%" stop-color="${s.color}" stop-opacity="0.28" />
+        </linearGradient>
+      </defs>
+      <path d="${areaPath}" fill="url(#${gradId}${idx})" stroke="${s.color}" stroke-width="1.5" stroke-linejoin="round" />
+      ${dots}
+    `;
+  }).join("");
+
+  // Dashed "Total" line traced along the top edge of the stack — the standard combo-chart
+  // touch that keeps the overall trend visible alongside the completed/pending breakdown.
+  const totalColor = "#729bdb";
+  const totalPath = totals.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+  const totalDots = totals.map((v, i) => `
+    <circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="var(--panel)" stroke="${totalColor}" stroke-width="1.5">
+      <title>Total — ${esc(labels[i])}: ${v}</title>
+    </circle>
+  `).join("");
+  const totalLineSvg = `<path d="${totalPath}" fill="none" stroke="${totalColor}" stroke-width="2" stroke-dasharray="6 5" />${totalDots}`;
+
+  const legend = series.map(s => `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:12px; height:12px; background:${s.color}; border-radius:3px; display:inline-block;"></span>${esc(s.name)}
+    </span>
+  `).join("") + `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:16px; height:0; border-top:2px dashed ${totalColor}; display:inline-block;"></span>Total
+    </span>
+  `;
+
+  return `
+    <div style="background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:18px 14px 10px; overflow-x:auto;">
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%; min-width:${W}px; height:auto; overflow:visible;">
+        ${gridLines}
+        ${seriesSvg}
+        ${totalLineSvg}
+        ${xLabels}
+      </svg>
+      <div style="text-align:center; margin-top:6px;">${legend}</div>
+    </div>
+  `;
+}
+
+// Fixed Jan-Dec monthly chart. series = [{ name, color, counts: [12 numbers], style, fill }]
+function buildMonthlyChart(series) {
+  const W = 680, H = 260, padL = 42, padR = 20, padT = 26, padB = 34;
+  const rawMax = Math.max(...series.flatMap(s => s.counts), 1);
+  const niceMax = (() => {
+    const magnitude = Math.pow(10, Math.floor(Math.log10(rawMax || 1)));
+    const steps = [1, 2, 2.5, 5, 10];
+    for (const s of steps) { if (rawMax <= s * magnitude) return s * magnitude; }
+    return 10 * magnitude;
+  })();
+  const maxVal = niceMax;
+  const stepX = (W - padL - padR) / 11;
+  const x = i => padL + i * stepX;
+  const y = v => padT + (H - padT - padB) * (1 - v / maxVal);
+
+  const xLabels = MONTH_NAMES.map((m, i) =>
+    `<text x="${x(i).toFixed(1)}" y="${H - 10}" font-size="11" fill="var(--muted)" text-anchor="middle">${m}</text>`
+  ).join("");
+
+  const ySteps = 4;
+  const gridLines = Array.from({ length: ySteps + 1 }, (_, i) => i / ySteps).map(f => {
+    const yy = padT + (H - padT - padB) * (1 - f);
+    return `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="${padL - 8}" y="${(yy + 3).toFixed(1)}" font-size="10" fill="var(--muted)" text-anchor="end">${Math.round(maxVal * f)}</text>`;
+  }).join("");
+
+  const gradId = "gradFillM" + Math.random().toString(36).slice(2, 8);
+
+  const seriesSvg = series.map((s, idx) => {
+    const linePath = s.counts.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+    const dashArr = s.style === "dashed" ? `stroke-dasharray="6 5"` : "";
+    const dots = s.counts.map((v, i) => `
+      <circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.5" fill="${s.style === "dashed" ? "var(--panel)" : s.color}" stroke="${s.color}" stroke-width="1.5">
+        <title>${esc(s.name)} in ${MONTH_NAMES[i]}: ${v}</title>
+      </circle>
+      <text x="${x(i).toFixed(1)}" y="${(y(v) - 10).toFixed(1)}" font-size="10.5" font-weight="600" fill="${s.color}" text-anchor="middle">${v}</text>
+    `).join("");
+    let fillSvg = "";
+    if (s.fill) {
+      const areaPath = linePath + ` L ${x(11).toFixed(1)} ${y(0).toFixed(1)} L ${x(0).toFixed(1)} ${y(0).toFixed(1)} Z`;
+      fillSvg = `
+        <defs>
+          <linearGradient id="${gradId}${idx}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="${s.color}" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="${s.color}" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="${areaPath}" fill="url(#${gradId}${idx})" stroke="none" />
+      `;
+    }
+    return `${fillSvg}<path d="${linePath}" fill="none" stroke="${s.color}" stroke-width="2.5" ${dashArr} />${dots}`;
+  }).join("");
+
+  const legend = series.map(s => `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:16px; height:0; border-top:2.5px ${s.style === "dashed" ? "dashed" : "solid"} ${s.color}; display:inline-block;"></span>${esc(s.name)}
+    </span>
+  `).join("");
+
+  return `
+    <div style="background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:18px 14px 10px;">
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%; height:auto; overflow:visible;">
+        ${gridLines}
+        ${seriesSvg}
+        ${xLabels}
+      </svg>
+      <div style="text-align:center; margin-top:6px;">${legend}</div>
+    </div>
+  `;
+}
+
+// Dependency-free dark analytics-style multi-series line chart.
+// series = [{ name, color, points: [{date, value}], style: "dashed"|"solid", fill: true|false }]
+function buildLineChart(series, granularity) {
+  const allPoints = series.flatMap(s => s.points);
+  if (!allPoints.length) {
+    return '<div class="empty">No task data to chart.</div>';
+  }
+  const dates = [...new Set(allPoints.map(p => p.date))].sort();
+  const W = 680, H = 260, padL = 42, padR = 20, padT = 20, padB = 34;
+  const rawMax = Math.max(...allPoints.map(p => p.value), 1);
+  const niceMax = (() => {
+    const magnitude = Math.pow(10, Math.floor(Math.log10(rawMax || 1)));
+    const steps = [1, 2, 2.5, 5, 10];
+    for (const s of steps) { if (rawMax <= s * magnitude) return s * magnitude; }
+    return 10 * magnitude;
+  })();
+  const maxVal = niceMax;
+  const stepX = dates.length > 1 ? (W - padL - padR) / (dates.length - 1) : 0;
+  const x = i => padL + (dates.length > 1 ? i * stepX : (W - padL - padR) / 2);
+  const y = v => padT + (H - padT - padB) * (1 - v / maxVal);
+
+  const formatLabel = d => granularity === "month"
+    ? new Date(d + "T00:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" })
+    : new Date(d + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+
+  // for months, show every label (usually few); for days, thin them out
+  const labelEvery = granularity === "month" ? 1 : Math.max(1, Math.ceil(dates.length / 7));
+  const xLabels = dates.map((d, i) => (i % labelEvery === 0 || i === dates.length - 1)
+    ? `<text x="${x(i).toFixed(1)}" y="${H - 10}" font-size="11" fill="var(--muted)" text-anchor="middle">${esc(formatLabel(d))}</text>`
+    : "").join("");
+
+  const ySteps = 4;
+  const gridLines = Array.from({ length: ySteps + 1 }, (_, i) => i / ySteps).map(f => {
+    const yy = padT + (H - padT - padB) * (1 - f);
+    return `<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="${padL - 8}" y="${(yy + 3).toFixed(1)}" font-size="10" fill="var(--muted)" text-anchor="end">${Math.round(maxVal * f)}</text>`;
+  }).join("");
+
+  const gradId = "gradFill" + Math.random().toString(36).slice(2, 8);
+
+  const seriesSvg = series.map((s, idx) => {
+    let last = 0;
+    const byDate = Object.fromEntries(s.points.map(p => [p.date, p.value]));
+    const filled = dates.map(d => {
+      if (byDate[d] !== undefined) { last = byDate[d]; return last; }
+      return s.cumulative ? last : 0;
+    });
+    const linePath = filled.map((v, i) => `${i === 0 ? "M" : "L"} ${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+    const dashArr = s.style === "dashed" ? `stroke-dasharray="6 5"` : "";
+    const dots = filled.map((v, i) => {
+      const label = granularity === "month"
+        ? `<text x="${x(i).toFixed(1)}" y="${(y(v) - 10).toFixed(1)}" font-size="10.5" font-weight="600" fill="${s.color}" text-anchor="middle">${v}</text>`
+        : "";
+      const niceDate = new Date(dates[i] + "T00:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+      return `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="${s.style === "dashed" ? "var(--panel)" : s.color}" stroke="${s.color}" stroke-width="1.5"><title>${esc(s.name)} as of ${esc(niceDate)}: ${v}</title></circle>${label}`;
+    }).join("");
+    let fillSvg = "";
+    if (s.fill) {
+      const areaPath = linePath + ` L ${x(dates.length - 1).toFixed(1)} ${y(0).toFixed(1)} L ${x(0).toFixed(1)} ${y(0).toFixed(1)} Z`;
+      fillSvg = `
+        <defs>
+          <linearGradient id="${gradId}${idx}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="${s.color}" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="${s.color}" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="${areaPath}" fill="url(#${gradId}${idx})" stroke="none" />
+      `;
+    }
+    return `${fillSvg}<path d="${linePath}" fill="none" stroke="${s.color}" stroke-width="2.5" ${dashArr} />${dots}`;
+  }).join("");
+
+  const legend = series.map(s => `
+    <span style="display:inline-flex; align-items:center; gap:6px; margin:0 12px; font-size:12.5px; color:var(--muted);">
+      <span style="width:16px; height:0; border-top:2.5px ${s.style === "dashed" ? "dashed" : "solid"} ${s.color}; display:inline-block;"></span>${esc(s.name)}
+    </span>
+  `).join("");
+
+  return `
+    <div style="background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:18px 14px 10px;">
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%; height:auto; overflow:visible;">
+        ${gridLines}
+        ${seriesSvg}
+        ${xLabels}
+      </svg>
+      <div style="text-align:center; margin-top:6px;">${legend}</div>
+    </div>
+  `;
+}
+
+// Circular progress ring showing a single percentage
+function buildProgressRing(pct, color, label) {
+  const size = 120, stroke = 11, r = (size - stroke) / 2, c = 2 * Math.PI * r;
+  const offset = c - (Math.min(100, Math.max(0, pct)) / 100) * c;
+  return `
+    <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+      <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--border)" stroke-width="${stroke}" />
+      <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="${stroke}"
+        stroke-linecap="round" stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="${offset.toFixed(1)}"
+        transform="rotate(-90 ${size/2} ${size/2})" />
+      <text x="50%" y="47%" text-anchor="middle" font-size="21" font-weight="700" fill="var(--text)">${pct}%</text>
+      <text x="50%" y="64%" text-anchor="middle" font-size="10.5" fill="var(--muted)">${esc(label)}</text>
+    </svg>
+  `;
+}
+
+function timeAgo(dateStr) {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  if (isNaN(d)) return dateStr;
+  const diffMs = Date.now() - d.getTime();
+  const mins = Math.round(diffMs / 60000);
+  if (mins < 60) return mins + "m ago";
+  const hrs = Math.round(mins / 60);
+  if (hrs < 24) return hrs + "h ago";
+  const days = Math.round(hrs / 24);
+  return days + "d ago";
+}
+
+(async function init() {
+  const [projects, towers, areas, subAreas, tasks, steps, attachments, contractors,
+         areaToContractor, chatmessages, updates, groupUsers, users] = await Promise.all([
+    loadTable("Project"), loadTable("Tower"), loadTable("Area"), loadTable("SubArea"), loadTable("Task"),
+    loadTable("Step"), loadTable("Attachments"), loadTable("Contractor"),
+    loadTable("AreaToContractor"), loadTable("Chatmessage"), loadTable("Update"),
+    loadTable("GroupUsers"), loadTable("User")
+  ]);
+
+  const projectById = Object.fromEntries(projects.map(p => [p.projectId, p]));
+  const projectName = projects.length ? projects[0].projectName : "CRRID";
+  const towerNames = towers.map(t => t.towerName).filter(Boolean).join(", ") || "—";
+  document.getElementById("subHeader").textContent =
+    `${projectName} · ${towerNames}${towers.length > 1 ? " Towers" : " Tower"}`;
+
+  const areaById = Object.fromEntries(areas.map(a => [a.areaId, a]));
+  const subAreaById = Object.fromEntries(subAreas.map(s => [s.subAreaId, s]));
+  const taskById = Object.fromEntries(tasks.map(t => [t.taskId, t]));
+
+  const totalTasks = tasks.length;
+  const completedTasks = tasks.filter(t => t.completed === "true").length;
+  const totalSteps = steps.length;
+  const completedSteps = steps.filter(s => s.completed === "true").length;
+  const overallPct = totalSteps ? Math.round((completedSteps / totalSteps) * 100) : 0;
+
+  const now = new Date("2026-08-31");
+  const overdueTasks = tasks.filter(t => {
+    if (t.completed === "true") return false;
+    if (!t.endDate) return false;
+    return new Date(t.endDate) < now;
+  });
+
+  // Progress per Area (via SubArea -> Task -> Step)
+  const areaProgress = areas.map(area => {
+    const subIds = subAreas.filter(sa => sa.areaId === area.areaId).map(sa => sa.subAreaId);
+    const areaTasks = tasks.filter(t => subIds.includes(t.subAreaId));
+    const taskIds = areaTasks.map(t => t.taskId);
+    const areaSteps = steps.filter(s => taskIds.includes(s.taskId));
+    const done = areaSteps.filter(s => s.completed === "true").length;
+    const pct = areaSteps.length ? Math.round((done / areaSteps.length) * 100) : 0;
+    return { name: area.areaName, total: areaSteps.length, done, pct, taskCount: areaTasks.length };
+  }).sort((a,b) => b.total - a.total);
+
+  // Recent activity from Update.csv
+  const recentUpdates = [...updates]
+    .filter(u => u.createdAt)
+    .sort((a,b) => new Date(b.createdAt) - new Date(a.createdAt))
+    .slice(0, 8);
+
+  // Recent chat
+  const recentChats = [...chatmessages]
+    .filter(c => c.createdAt)
+    .sort((a,b) => new Date(b.createdAt) - new Date(a.createdAt))
+    .slice(0, 5);
+
+  // Contractors with area names
+  const contractorAreas = {};
+  areaToContractor.forEach(link => {
+    contractorAreas[link.contractorId] = contractorAreas[link.contractorId] || [];
+    const a = areaById[link.areaId];
+    if (a) contractorAreas[link.contractorId].push(a.areaName);
+  });
+
+  const app = document.getElementById("app");
+  app.innerHTML = `
+    <div class="kpis">
+      <div class="kpi accent"><div class="value">${esc(projectName)}</div><div class="label">Project</div></div>
+      <div class="kpi accent"><div class="value">${towers.length}</div><div class="label">Towers (${esc(towerNames)})</div></div>
+      <div class="kpi accent"><div class="value">${areas.length}</div><div class="label">Areas</div></div>
+      <div class="kpi accent"><div class="value">${subAreas.length}</div><div class="label">Sub-Areas</div></div>
+      <div class="kpi accent"><div class="value">${totalTasks}</div><div class="label">Tasks</div></div>
+      <div class="kpi green"><div class="value">${completedTasks}/${totalTasks}</div><div class="label">Tasks Completed</div></div>
+      <div class="kpi ${overdueTasks.length ? 'red' : 'green'}"><div class="value">${overdueTasks.length}</div><div class="label">Overdue Tasks</div></div>
+      <div class="kpi accent"><div class="value">${overallPct}%</div><div class="label">Step Completion</div></div>
+      <div class="kpi accent"><div class="value">${contractors.length}</div><div class="label">Contractors</div></div>
+    </div>
+
+    <div class="card">
+      <h2>Project Progress Over Time</h2>
+      <div style="display:grid; grid-template-columns:140px 1fr; gap:20px; align-items:center;">
+        <div id="progressRing" style="display:flex; justify-content:center;"></div>
+        <div id="taskChart"></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <div class="card">
+          <h2>Progress by Area <span class="count">${completedSteps}/${totalSteps} steps overall</span></h2>
+          <div id="areaProgress"></div>
+        </div>
+
+        <div class="card">
+          <h2>Overdue Tasks <span class="count">${overdueTasks.length} of ${totalTasks}</span></h2>
+          <div id="overdueList"></div>
+        </div>
+
+        <div class="card">
+          <h2>Recent Activity</h2>
+          <div class="list" id="activityList"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>Contractors</h2>
+          <div id="contractorList"></div>
+        </div>
+
+        <div class="card">
+          <h2>Recent Chat Messages</h2>
+          <div class="list" id="chatList"></div>
+        </div>
+
+        <div class="card">
+          <h2>Team</h2>
+          <div id="teamList"></div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Project Progress: completion ring + created-vs-completed cumulative trend
+  document.getElementById("progressRing").innerHTML = buildProgressRing(
+    totalTasks ? Math.round((completedTasks / totalTasks) * 100) : 0, "var(--accent)", "Tasks Complete"
+  );
+  const totalPoints = cumulativeSeries(tasks, "createdAt");
+  const completedPoints = cumulativeSeries(tasks.filter(t => t.completed === "true"), "completedAt");
+  document.getElementById("taskChart").innerHTML = buildLineChart([
+    { name: "Total tasks", color: "#5b9bff", points: totalPoints, style: "solid", fill: false, cumulative: true },
+    { name: "Completed", color: "#34d372", points: completedPoints, style: "solid", fill: true, cumulative: true }
+  ], "day");
+
+  // Area progress bars
+  const areaProgressEl = document.getElementById("areaProgress");
+  if (!areaProgress.length) {
+    areaProgressEl.innerHTML = '<div class="empty">No areas found.</div>';
+  } else {
+    areaProgressEl.innerHTML = areaProgress.map(a => `
+      <div class="progress-row">
+        <div class="plabel">
+          <span>${esc(a.name)} <span class="meta" style="margin-left:6px;">${a.taskCount} tasks</span></span>
+          <span class="pct">${a.done}/${a.total} steps &middot; ${a.pct}%</span>
+        </div>
+        <div class="bar"><div style="width:${a.pct}%"></div></div>
+      </div>
+    `).join("");
+  }
+
+  // Overdue tasks
+  const overdueEl = document.getElementById("overdueList");
+  if (!overdueTasks.length) {
+    overdueEl.innerHTML = '<div class="empty">No overdue tasks — everything on schedule.</div>';
+  } else {
+    overdueEl.innerHTML = `<table><thead><tr><th>Task</th><th>Area</th><th>Due</th></tr></thead><tbody>` +
+      overdueTasks.map(t => {
+        const sa = subAreaById[t.subAreaId];
+        const area = sa ? areaById[sa.areaId] : null;
+        return `<tr>
+          <td>${esc(t.taskName)}</td>
+          <td>${esc(area ? area.areaName : "—")}</td>
+          <td><span class="tag overdue">${esc(t.endDate ? t.endDate.split("T")[0] : "—")}</span></td>
+        </tr>`;
+      }).join("") + `</tbody></table>`;
+  }
+
+  // Recent activity
+  const activityEl = document.getElementById("activityList");
+  if (!recentUpdates.length) {
+    activityEl.innerHTML = '<div class="empty">No activity recorded.</div>';
+  } else {
+    activityEl.innerHTML = recentUpdates.map(u => `
+      <div class="list-item">
+        <div>
+          ${esc(u.content)}
+          <div class="meta">${esc(u.senderEmail)} &middot; ${timeAgo(u.createdAt)}</div>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  // Contractors
+  const contractorEl = document.getElementById("contractorList");
+  if (!contractors.length) {
+    contractorEl.innerHTML = '<div class="empty">No contractors linked.</div>';
+  } else {
+    contractorEl.innerHTML = contractors.map(c => `
+      <div class="list-item">
+        <div>
+          <strong>${esc(c.contractorName)}</strong>
+          <div class="meta">${(contractorAreas[c.contractorId] || []).map(esc).join(", ") || "No areas assigned"}</div>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  // Chat
+  const chatEl = document.getElementById("chatList");
+  if (!recentChats.length) {
+    chatEl.innerHTML = '<div class="empty">No chat activity.</div>';
+  } else {
+    chatEl.innerHTML = recentChats.map(m => `
+      <div class="list-item">
+        <div>
+          ${esc(m.message)}
+          <div class="meta">${esc(m.senderName)} &middot; ${timeAgo(m.createdAt)}</div>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  // Team
+  const teamEl = document.getElementById("teamList");
+  if (!users.length) {
+    teamEl.innerHTML = '<div class="empty">No team members found.</div>';
+  } else {
+    teamEl.innerHTML = users.map(u => `
+      <div class="list-item">
+        <div>
+          <strong>${esc(u.firstName)} ${esc(u.lastName)}</strong>
+          <div class="meta">${esc(u.email)} &middot; ${esc(u.role || "user")}</div>
+        </div>
+      </div>
+    `).join("");
+  }
+})();
+</script>
+
+</body>
+</html>

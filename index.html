@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CRRID Data Viewer</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --panel: #ffffff;
+    --border: #dde1e6;
+    --text: #1c1f24;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-bg: #eaf1ff;
+  }
+  * { box-sizing: border-box; font-family: inherit; }
+  html { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+  }
+  button, input, select, textarea { font-family: inherit; }
+  header {
+    padding: 16px 24px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  header h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  header .sub {
+    color: var(--muted);
+    font-size: 13px;
+  }
+  #search {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    width: 260px;
+    font-size: 14px;
+  }
+  .layout {
+    display: flex;
+    min-height: calc(100vh - 65px);
+  }
+  nav {
+    width: 220px;
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    padding: 12px 0;
+    flex-shrink: 0;
+  }
+  nav button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    padding: 9px 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13.5px;
+    color: var(--text);
+  }
+  nav button .count {
+    color: var(--muted);
+    font-size: 12px;
+  }
+  nav button:hover { background: var(--accent-bg); }
+  nav button.active {
+    background: var(--accent-bg);
+    color: var(--accent);
+    font-weight: 600;
+    border-right: 3px solid var(--accent);
+  }
+  main {
+    flex: 1;
+    padding: 20px 24px;
+    overflow: auto;
+  }
+  .table-wrap {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: auto;
+    max-height: calc(100vh - 130px);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  thead th {
+    position: sticky;
+    top: 0;
+    background: #f0f2f5;
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { background: #e6e9ee; }
+  tbody td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #eef0f2;
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  tbody tr:hover { background: #fafbfc; }
+  .empty {
+    padding: 40px;
+    text-align: center;
+    color: var(--muted);
+  }
+  .rowcount {
+    color: var(--muted);
+    font-size: 12.5px;
+    margin-bottom: 8px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 10px;
+    background: var(--accent-bg);
+    color: var(--accent);
+    font-size: 11px;
+    margin-left: 6px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>CRRID Data Viewer</h1>
+    <div class="sub">Local viewer for the exported project CSVs</div>
+  </div>
+  <input id="search" type="text" placeholder="Filter rows in current table...">
+</header>
+
+<div class="layout">
+  <nav id="nav"></nav>
+  <main>
+    <div class="rowcount" id="rowcount"></div>
+    <div class="table-wrap" id="tableWrap">
+      <div class="empty">Loading...</div>
+    </div>
+  </main>
+</div>
+
+<script>
+const TABLES = [
+  "Project", "Tower", "Area", "SubArea", "Task", "Step",
+  "Attachments", "StepPermissions", "TaskPermission",
+  "Chatroom", "Chatmessage", "Contractor", "User", "Group",
+  "AreaToContractor", "GroupUsers", "Update"
+];
+
+let currentTable = null;
+let currentRows = [];
+let currentCols = [];
+let sortCol = null;
+let sortDir = 1;
+const rowCounts = {};
+
+// Minimal RFC4180-ish CSV parser (handles quoted fields with commas/newlines/escaped quotes)
+function parseCSV(text) {
+  const rows = [];
+  let row = [];
+  let field = "";
+  let inQuotes = false;
+  text = text.replace(/\r\n/g, "\n");
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (text[i + 1] === '"') { field += '"'; i++; }
+        else { inQuotes = false; }
+      } else {
+        field += c;
+      }
+    } else {
+      if (c === '"') inQuotes = true;
+      else if (c === ',') { row.push(field); field = ""; }
+      else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ""; }
+      else field += c;
+    }
+  }
+  if (field.length || row.length) { row.push(field); rows.push(row); }
+  if (rows.length && rows[rows.length - 1].length === 1 && rows[rows.length - 1][0] === "") rows.pop();
+  return rows;
+}
+
+async function loadCounts() {
+  for (const name of TABLES) {
+    try {
+      const res = await fetch(name + ".csv");
+      const text = await res.text();
+      const rows = parseCSV(text);
+      rowCounts[name] = Math.max(0, rows.length - 1);
+    } catch (e) {
+      rowCounts[name] = null;
+    }
+  }
+}
+
+function renderNav() {
+  const nav = document.getElementById("nav");
+  nav.innerHTML = "";
+  TABLES.forEach(name => {
+    const btn = document.createElement("button");
+    btn.dataset.table = name;
+    const count = rowCounts[name];
+    btn.innerHTML = `<span>${name}</span><span class="count">${count === null ? "-" : count}</span>`;
+    btn.onclick = () => selectTable(name);
+    nav.appendChild(btn);
+  });
+}
+
+async function selectTable(name) {
+  currentTable = name;
+  sortCol = null;
+  document.querySelectorAll("#nav button").forEach(b => {
+    b.classList.toggle("active", b.dataset.table === name);
+  });
+  document.getElementById("search").value = "";
+  const wrap = document.getElementById("tableWrap");
+  wrap.innerHTML = '<div class="empty">Loading...</div>';
+  try {
+    const res = await fetch(name + ".csv");
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const text = await res.text();
+    const rows = parseCSV(text);
+    currentCols = rows[0] || [];
+    currentRows = rows.slice(1);
+    renderTable(currentRows);
+  } catch (e) {
+    wrap.innerHTML = `<div class="empty">Could not load ${name}.csv — ${e.message}</div>`;
+  }
+}
+
+function renderTable(rows) {
+  const wrap = document.getElementById("tableWrap");
+  document.getElementById("rowcount").textContent =
+    `${currentTable}.csv — ${rows.length} row${rows.length === 1 ? "" : "s"}`;
+
+  if (!currentCols.length) {
+    wrap.innerHTML = '<div class="empty">No data</div>';
+    return;
+  }
+
+  let html = "<table><thead><tr>";
+  currentCols.forEach((col, i) => {
+    let arrow = "";
+    if (sortCol === i) arrow = sortDir === 1 ? " ▲" : " ▼";
+    html += `<th data-col="${i}">${escapeHtml(col)}${arrow}</th>`;
+  });
+  html += "</tr></thead><tbody>";
+  if (rows.length === 0) {
+    html += `<tr><td colspan="${currentCols.length}" class="empty">No rows match</td></tr>`;
+  } else {
+    rows.forEach(r => {
+      html += "<tr>" + r.map(cell => `<td title="${escapeHtml(cell)}">${escapeHtml(cell)}</td>`).join("") + "</tr>";
+    });
+  }
+  html += "</tbody></table>";
+  wrap.innerHTML = html;
+
+  wrap.querySelectorAll("thead th").forEach(th => {
+    th.onclick = () => {
+      const col = parseInt(th.dataset.col, 10);
+      if (sortCol === col) sortDir = -sortDir;
+      else { sortCol = col; sortDir = 1; }
+      const sorted = [...currentFilteredRows()].sort((a, b) => {
+        const av = a[col] || "", bv = b[col] || "";
+        const an = parseFloat(av), bn = parseFloat(bv);
+        let cmp;
+        if (!isNaN(an) && !isNaN(bn) && av.trim() !== "" && bv.trim() !== "") cmp = an - bn;
+        else cmp = av.localeCompare(bv);
+        return cmp * sortDir;
+      });
+      renderTable(sorted);
+    };
+  });
+}
+
+function currentFilteredRows() {
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  if (!q) return currentRows;
+  return currentRows.filter(r => r.some(cell => (cell || "").toLowerCase().includes(q)));
+}
+
+function escapeHtml(s) {
+  return String(s == null ? "" : s)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+document.getElementById("search").addEventListener("input", () => {
+  if (!currentTable) return;
+  renderTable(currentFilteredRows());
+});
+
+(async function init() {
+  await loadCounts();
+  renderNav();
+  const first = TABLES.find(t => rowCounts[t] !== null) || TABLES[0];
+  selectTable(first);
+})();
+</script>
+
+</body>
+</html>
