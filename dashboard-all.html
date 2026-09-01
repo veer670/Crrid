@@ -134,7 +134,38 @@
     padding-left: 10px;
     border-left: 2px solid var(--border);
   }
-  @media (max-width: 1350px) { #projectSidebar { display: none; } }
+  #projectSidebar {
+    position: fixed;
+    left: 22px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 5;
+  }
+  /* Below this width there isn't room for the fixed left rail without overlapping the
+     content, so it drops into normal document flow as a horizontal strip above main
+     instead of disappearing — project switching has to stay reachable on mobile. */
+  @media (max-width: 1350px) {
+    #projectSidebar {
+      position: static;
+      left: auto;
+      top: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 14px 20px 0;
+      z-index: auto;
+    }
+    #projectSidebar > .sidebarLabel { display: none; }
+    .projectGroup { flex: 1 1 160px; padding: 8px; gap: 6px; }
+    .sidebarChip { width: 100%; padding: 10px 12px; font-size: 13px; }
+    .sidebarLocationsGroup { flex-direction: row !important; flex-wrap: wrap; margin-left: 0; padding-left: 0; border-left: none; }
+    .sidebarLocationChip { width: auto; }
+  }
+  @media (max-width: 640px) {
+    .projectGroup { flex: 1 1 100%; }
+  }
   #refreshBtn.spinning { animation: spin-fade 0.6s ease; }
   @keyframes spin-fade { 0% { opacity: 0.5; } 100% { opacity: 1; } }
   main { padding: 22px 28px 40px; max-width: 1200px; margin: 0 auto; }
@@ -317,8 +348,8 @@
   </div>
 </div>
 
-<div id="projectSidebar" style="position:fixed; left:22px; top:150px; display:flex; flex-direction:column; gap:14px; z-index:5;">
-  <div style="font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); padding-left:2px;">Project Name</div>
+<div id="projectSidebar">
+  <div class="sidebarLabel" style="font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); padding-left:2px;">Project Name</div>
 
   <div class="projectGroup">
     <button class="headerChip sidebarChip" id="crridCard">🏗️ CRRID</button>
